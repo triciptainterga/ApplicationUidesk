@@ -1,0 +1,114 @@
+Return-Path: <test-mail@pelni.co.id>
+Received: from localhost (localhost [127.0.0.1])
+	by zmtap2.pelni.co.id (Postfix) with ESMTP id ABF0E41A6366
+	for <MAILER-DAEMON@zmtap2.pelni.co.id>; Fri, 21 Jun 2024 13:28:59 +0700 (WIB)
+Authentication-Results: zmtap2.pelni.co.id (amavisd-new); dkim=neutral
+	reason="invalid (public key: not available)" header.d=pelni.co.id
+Received: from zmtap2.pelni.co.id ([127.0.0.1])
+	by localhost (zmtap2.pelni.co.id [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id 3FmyNVb-e45I for <MAILER-DAEMON@zmtap2.pelni.co.id>;
+	Fri, 21 Jun 2024 13:28:59 +0700 (WIB)
+Received: from zmtap2.pelni.co.id (localhost [127.0.0.1])
+	by zmtap2.pelni.co.id (Postfix) with ESMTPS id 86CD041A6368
+	for <MAILER-DAEMON@zmtap2.pelni.co.id>; Fri, 21 Jun 2024 13:28:59 +0700 (WIB)
+DKIM-Filter: OpenDKIM Filter v2.10.3 zmtap2.pelni.co.id 86CD041A6368
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=pelni.co.id;
+	s=C9C15D0C-5C0B-11ED-8263-4A2046B165AB; t=1718951339;
+	bh=KiAN0O6kmxGnSuwBe+Ms/rzShajQHVdrTo2O61DMWKM=;
+	h=Message-ID:From:To:Date:MIME-Version;
+	b=yCIL9o0iUgzcG0Mo12Lj60IDCGtUjNHg8bMblMoqx8MVyTPepQHc78hyAnon5BTHj
+	 ibZB+/xRVTHeLv0ruypT7tzS7biX5cOE5Vx4biB4v82YIu8e/ZhJ8doByFiz2BYA57
+	 FhR22IKSlD6kXkEL5HbR2jakk9UPte3qF+Mt8Ur1HDWQVuNzZWSssMxZHxA4Evm2JB
+	 Ez75wrC3ACt2R1LJiBPEWbRnKcDXCc0arOocaau5AnYg4Nenqb2RfC+FPuvSJXk6ht
+	 2QV50ycGSMkjoafvEr2W91zo3EFe79oOKFzY/4+G2dXXx3IPIe2jfA2x0Y6dA4oA7/
+	 pyzf8Oxxk6Ixg==
+Received: from zmtap2.pelni.co.id (localhost [127.0.0.1])
+	by zmtap2.pelni.co.id (Postfix) with ESMTP id 81DC441A6366
+	for <MAILER-DAEMON@zmtap2.pelni.co.id>; Fri, 21 Jun 2024 13:28:59 +0700 (WIB)
+X-JLM-Suspect: 902f3615de274aa897606372682b166d
+X-JLM-Spamstatus: NO
+Received: from uidesk-pelni-ap.domain (unknown [103.149.177.110])
+	by zmtap2.pelni.co.id (Postfix) with ESMTPSA
+	for <MAILER-DAEMON@zmtap2.pelni.co.id>; Fri, 21 Jun 2024 13:28:59 +0700 (WIB)
+Message-ID: <9c274c8a66818ae73ff3e4d603205757@pelni.co.id>
+From: "test-mail@pelni.co.id" <test-mail@pelni.co.id>
+To: <MAILER-DAEMON@zmtap2.pelni.co.id>
+Subject: =?utf-8?B?WzAxMjg1Mzg4OV0gQXV0b21hdGljIFJlcGx5IDogVW5kZWxp?=
+	=?utf-8?B?dmVyZWQgTWFpbCBSZXR1cm5lZCB0byBTZW5kZXI=?=
+Date: Fri, 21 Jun 2024 13:28:59 +0700
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b177b0531f232338a2cd21a70001fab0"
+
+This is a multi-part message in MIME format.
+
+--b177b0531f232338a2cd21a70001fab0
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bapak/Ibu Yth,
+
+Terima kasih telah mengirimkan email kepada kami=2E
+
+Kami akan segera menindaklanjuti email Anda hari ini atau paling lambat =
+esok hari=2E
+Terima kasih dan sehat selalu=2E
+
+=20
+
+Salam,Pelni Contact Center
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D
+
+Dear Sir/Madam,
+
+Thank you for sending us your email=2E
+
+We will follow up your email today or latest tomorrow=2E
+Thank you and stay healthy.
+
+ 
+Regards,Pelni Contact Center
+
+--b177b0531f232338a2cd21a70001fab0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p>Bapak/Ibu Yth,</p>
+
+<p>Terima kasih telah mengirimkan email kepada kami.</p>
+
+<p>Kami akan segera menindaklanjuti email Anda hari ini atau paling lambat =
+esok hari.<br />
+Terima kasih dan sehat selalu.</p>
+
+<p>&nbsp;</p>
+
+<p><p>Salam,</p><p></p><p><strong>Pelni Contact Center</strong></p><img =
+src=3D"https://pelni.uidesk.id/apps/Signature/Pelni.jpg" alt=3D"logo" =
+width=3D"160px"></p></p>
+
+<p>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D</p>
+
+<p>Dear Sir/Madam,</p>
+
+<p>Thank you for sending us your email.</p>
+
+<p>We will follow up your email today or latest tomorrow.<br />
+Thank you and stay healthy.</p>
+
+<p>&nbsp;</p>
+</br><p>Regards,</p><p></p><p><strong>Pelni Contact =
+Center</strong></p><img =
+src=3D"https://pelni.uidesk.id/apps/Signature/Pelni.jpg" alt=3D"logo" =
+width=3D"160px"></p>
+
+--b177b0531f232338a2cd21a70001fab0--

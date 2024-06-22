@@ -1,0 +1,15 @@
+Reporting-MTA: dns; zmtap2.pelni.co.id
+X-Postfix-Queue-ID: 2E30941A634B
+X-Postfix-Sender: rfc822; test-mail@pelni.co.id
+Arrival-Date: Thu, 20 Jun 2024 12:09:40 +0700 (WIB)
+
+Final-Recipient: rfc822; triciptaterga@gmail.com
+Original-Recipient: rfc822;triciptaterga@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. For more information, go
+    to 550 5.1.1  https://support.google.com/mail/?p=NoSuchUser
+    41be03b00d2f7-6fee310c70bsi13180124a12.312 - gsmtp

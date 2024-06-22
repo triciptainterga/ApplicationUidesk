@@ -1,0 +1,10 @@
+Reporting-MTA: dns; zmtap2.pelni.co.id
+X-Postfix-Queue-ID: 0894841A6357
+X-Postfix-Sender: rfc822; test-mail@pelni.co.id
+Arrival-Date: Fri, 21 Jun 2024 13:14:23 +0700 (WIB)
+
+Final-Recipient: rfc822; MAILER-DAEMON@zmtap2.pelni.co.id
+Original-Recipient: rfc822;MAILER-DAEMON@zmtap2.pelni.co.id
+Action: failed
+Status: 5.4.6
+Diagnostic-Code: X-Postfix; mail for zmtap2.pelni.co.id loops back to myself

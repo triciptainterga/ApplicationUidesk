@@ -1,0 +1,1383 @@
+Time: 14/06/2024 05.16.16.874 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 05.16.17.191 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 05.16.17.253 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 05.16.17.886 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 05.16.18.274 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 05.16.18.771 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 05.16.19.281 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 05.38.15.520 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'ajisakha', 'Open', '3','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 05.38.15.778 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','ajisakha','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 05.38.15.804 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 05.38.16.310 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','ajisakha','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 05.38.16.847 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','ajisakha','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 05.38.17.323 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','ajisakha','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 06.26.01.072 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 06.26.01.573 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.19.555 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.20.015 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.20.527 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.21.041 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.21.555 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.22.068 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.22.564 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.39.526 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.39.923 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.40.424 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.40.980 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.41.447 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.41.962 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 07.57.42.462 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.03.472 PM
+---------------------------Failed-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLogoutActivity '9','','Insert'
+Message: Procedure or function 'UIDESK_SP_TrxLogoutActivity' expects parameter '@TrxLoginUserName', which was not supplied.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at ICC.TrmAux.InsertLogoutActivity(String TrxLoginID, String TrxLoginUserName, String TrxAction) in C:\Users\Public\Programmer\Sementara\AJI\PELNI ON CLOUD\Apps\apps\asmx\TrmAux.asmx.vb:line 255
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 14/06/2024 08.00.03.472 PM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLogoutActivity '9','','Insert'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.33.682 PM
+---------------------------Failed-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'Abdul', 'Solved', '1','1073'
+Message: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.ServiceTaskboard.DataTableTaskboardNew(String TrxUserName, String TrxStatus, String TrxLoginTypeAngka, String TrxDivisi) in C:\Users\Public\Programmer\Sementara\AJI\PELNI ON CLOUD\Apps\apps\asmx\ServiceTaskboard.asmx.vb:line 387
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 14/06/2024 08.00.33.686 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'Abdul', 'Solved', '1','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.33.730 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','Abdul','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.33.809 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','admin','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.34.229 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','Abdul','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.34.419 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.34.743 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','Abdul','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.34.852 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.35.058 PM
+---------------------------Failed-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLogoutActivity '9','','Insert'
+Message: Procedure or function 'UIDESK_SP_TrxLogoutActivity' expects parameter '@TrxLoginUserName', which was not supplied.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at ICC.TrmAux.InsertLogoutActivity(String TrxLoginID, String TrxLoginUserName, String TrxAction) in C:\Users\Public\Programmer\Sementara\AJI\PELNI ON CLOUD\Apps\apps\asmx\TrmAux.asmx.vb:line 255
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 14/06/2024 08.00.35.058 PM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLogoutActivity '9','','Insert'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.35.243 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.35.332 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.35.348 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec Feature_SP_HEADERNOTA 'N-'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.35.762 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','Abdul','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.35.843 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.35.859 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.36.262 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','Abdul','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.36.357 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.36.901 PM
+---------------------------Failed-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'Abdul', 'Open', '1','1073'
+Message: A cursor with the name 'mStatus_Cursor' already exists.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.ServiceTaskboard.DataTableTaskboardNew(String TrxUserName, String TrxStatus, String TrxLoginTypeAngka, String TrxDivisi) in C:\Users\Public\Programmer\Sementara\AJI\PELNI ON CLOUD\Apps\apps\asmx\ServiceTaskboard.asmx.vb:line 387
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 14/06/2024 08.00.36.901 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'Abdul', 'Open', '1','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.37.286 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','Abdul','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.37.384 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.38.024 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'Abdul', '1', 'layer1'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.38.308 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.38.399 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.38.822 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','Abdul','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.38.932 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec Feature_SP_CONTENTNOTA ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.39.447 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec Feature_SP_NOTADISPOSISI ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.39.961 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_Temp_SelectInstanNote '', 'Ticket'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.40.475 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'null','UideskIndonesia','admin','UIDESK319'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.40.985 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','admin','UIDESK306'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.41.493 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','admin','UIDESK307'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.41.994 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket '-','UideskIndonesia','admin','UIDESK305'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.42.507 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','admin','UIDESK304'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.43.024 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','admin','UIDESK303'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.43.524 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','admin','UIDESK332'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.44.027 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','admin','UIDESK302'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.44.541 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'null','null','admin','UIDESK322'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.45.007 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.45.072 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','admin','UIDESK301'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.45.430 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.45.455 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.45.918 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.45.949 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.46.462 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.00.46.976 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.01.13.497 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.01.13.868 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.01.14.363 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.01.14.877 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.01.15.417 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.01.15.900 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.01.16.416 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.00.442 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.00.712 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.01.197 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.01.279 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.01.729 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.02.242 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.02.743 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.16.227 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.16.673 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.17.185 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.17.683 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.18.197 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.18.758 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.19.243 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.58.118 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.58.545 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.58.578 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.59.074 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.59.089 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.05.59.648 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.06.00.170 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.06.50.569 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.06.50.950 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.06.51.015 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.06.51.464 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.06.51.511 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.06.52.025 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.06.52.536 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.12.58.684 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.12.58.797 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.12.59.503 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.12.59.851 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.13.00.339 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.13.00.851 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.13.01.364 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.03.403 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.03.901 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.03.932 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.04.414 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.04.926 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.05.431 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.06.212 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.41.182 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.41.414 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.41.462 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.42.094 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.42.479 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.42.994 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.14.43.511 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.37.308 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.38.027 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.38.381 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.38.493 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.38.604 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.38.620 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.38.806 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.39.331 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.39.399 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.39.640 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.39.833 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.40.155 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.40.349 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.16.40.670 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.17.56.800 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.17.57.040 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.17.57.587 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.17.58.056 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.17.58.786 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.17.59.073 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.17.59.586 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.17.323 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.17.339 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.17.370 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.18.189 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.18.399 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.18.899 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.19.438 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.30.814 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.30.944 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.30.962 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.31.695 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.31.993 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.32.484 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.19.32.993 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.21.16.993 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.21.17.041 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.21.17.106 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.21.19.520 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.21.19.619 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.21.20.119 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.21.20.629 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.23.23.618 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.23.23.685 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.23.23.729 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.23.25.903 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.23.26.243 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.23.26.743 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.23.27.243 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.29.49.274 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.29.49.400 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.29.49.881 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.29.50.487 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.29.50.903 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.29.51.401 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.29.51.915 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.47.58.481 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.47.58.545 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.47.58.594 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.47.59.089 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.47.59.617 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.00.140 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.00.634 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.49.217 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.49.346 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.49.824 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.49.856 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.50.337 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.50.851 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.51.354 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.56.087 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.56.240 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.56.261 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.56.774 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.57.278 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.57.789 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.48.58.297 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.49.10.806 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.49.10.981 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.49.11.447 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.49.11.478 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.49.11.951 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.49.11.993 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.49.12.458 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.49.46.982 PM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLogoutActivity '9','sudibyo','Logout'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.12.792 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.12.873 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.12.889 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.13.482 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.13.916 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.14.431 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.14.931 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.33.633 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.42.220 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', ''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.42.236 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.42.252 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.42.792 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.43.274 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.43.787 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.52.44.299 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.59.33.903 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', 'Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.59.33.984 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.59.34.049 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.59.34.528 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.59.35.026 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.59.35.539 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 08.59.36.052 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 09.06.57.375 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 09.06.57.430 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 09.06.57.462 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 09.06.58.681 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', 'Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 09.06.58.979 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 09.06.59.493 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 09.07.00.005 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 10.17.54.439 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','admin','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 10.17.54.944 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','admin','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 10.17.55.608 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'admin', 'Open', '5',''
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.44.06.599 PM
+---------------------------Success-------------------------------------------------------
+Message: SELECT * FROM TrmMenuPreviledge Where USERID='' And (UrlUser1='TrmUserAdd.aspx' OR UrlUser2='TrmUserAdd.aspx' OR UrlUser3='TrmUserAdd.aspx')
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.44.12.551 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK06'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.44.12.582 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.44.13.042 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK05'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.44.13.057 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.44.13.089 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.44.13.547 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK01'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.44.13.578 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.44.14.053 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK108'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.44.14.559 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK07'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.44.17.908 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '2538','','UIDESK113'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.48.54.550 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '2538','','UIDESK113'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.50.27.567 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '2538','','UIDESK113'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.50.49.615 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '100','','UIDESK113'
+---------------------------Success-------------------------------------------------------
+
+Time: 14/06/2024 11.50.55.844 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '2538','','UIDESK113'
+---------------------------Success-------------------------------------------------------
+

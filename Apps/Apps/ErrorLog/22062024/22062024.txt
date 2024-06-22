@@ -1,0 +1,297 @@
+Time: 22/06/2024 12.51.30.120 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','Cesar','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.51.42.251 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','Cesar','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.51.43.657 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','Cesar','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.30.087 PM
+---------------------------Success-------------------------------------------------------
+Message: SELECT * FROM TrmMenuPreviledge Where USERID='' And (UrlUser1='1_doticket.aspx' OR UrlUser2='1_doticket.aspx' OR UrlUser3='1_doticket.aspx')
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.30.728 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','','UIDESK332'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.30.743 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.31.224 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','','UIDESK302'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.31.240 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.31.708 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'null','UideskIndonesia','','UIDESK319'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.31.740 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.32.209 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'null','null','','UIDESK322'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.32.287 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.32.724 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','','UIDESK307'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.33.240 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','','UIDESK304'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.33.755 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','','UIDESK306'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.34.255 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_Temp_SelectInstanNote '', 'Ticket'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.34.771 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket '-','UideskIndonesia','','UIDESK305'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.35.286 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','','UIDESK303'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.35.802 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'UideskIndonesia','UideskIndonesia','','UIDESK301'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.39.630 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'CAT-00000','UideskIndonesia','','UIDESK308'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 12.18.49.013 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'CT1-00001','UideskIndonesia','','UIDESK309'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 01.10.20.237 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'CT2-00001','UideskIndonesia','','UIDESK310_2_1'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 02.36.53.529 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'CAT-00001','UideskIndonesia','','UIDESK308'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 02.37.13.189 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'CT1-00000','UideskIndonesia','','UIDESK309'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 02.37.30.844 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'CT2-00000','UideskIndonesia','','UIDESK310_2_1'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 02.37.56.138 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket '','UideskIndonesia','','UIDESK310_2_1'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 02.37.58.396 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'CT2-00000','UideskIndonesia','','UIDESK310_2_1'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 02.38.06.459 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'CAT-00000','UideskIndonesia','','UIDESK308'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 02.38.07.802 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'CT1-00001','UideskIndonesia','','UIDESK309'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 02.38.09.412 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket 'CT2-00001','UideskIndonesia','','UIDESK310_2_1'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 03.43.35.237 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdownCategory 'UideskIndonesia','admin'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 03.43.35.237 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '','admin','UIDESK310_2_1'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 03.43.35.237 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','admin','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 03.43.35.237 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 03.43.35.237 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','admin','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 03.43.35.253 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','admin','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.37.11.203 PM
+---------------------------Success-------------------------------------------------------
+Message: SELECT * FROM TrmMenuPreviledge Where USERID='' And (UrlUser1='TrmCustomer.aspx' OR UrlUser2='TrmCustomer.aspx' OR UrlUser3='TrmCustomer.aspx')
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.37.12.124 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.37.12.656 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.37.12.843 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxCustomer '0','','0','Table'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.37.13.140 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UIDESK0001','','UIDESK32'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.37.13.656 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.37.14.163 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.37.57.292 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket '','UideskIndonesia','','UIDESK330'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.37.59.777 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxCustomer '240102095259','','0','Select'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.37.59.855 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxCustomer '240102095259','','0','Channel'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.38.00.370 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxCustomer '0','','0','Table'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.38.00.870 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxTransactionTicket '240102095259','UideskIndonesia','','UIDESK330'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.38.01.382 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '240102095259','','UIDESK117'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 07.38.01.883 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxCustomer '240102095259','','0','Ticket'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 10.02.18.175 PM
+---------------------------Success-------------------------------------------------------
+Message: exec SP_LOGIN_APPLIKASI  'admin','Uid35k32!'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 10.02.18.191 PM
+---------------------------Success-------------------------------------------------------
+Message: SELECT * FROM UIDESK_SOCIAL_ACCOUNT WHERE AccountID=''
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 10.02.18.206 PM
+---------------------------Failed-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLoginActivity '9','','Insert'
+Message: Procedure or function 'UIDESK_SP_TrxLoginActivity' expects parameter '@TrxLoginUserName', which was not supplied.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at ICC.TrmAux.InsertLoginActivity(String TrxLoginID, String TrxLoginUserName, String TrxAction)
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 22/06/2024 10.02.18.222 PM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLoginActivity '9','','Insert'
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 10.02.18.222 PM
+---------------------------Success-------------------------------------------------------
+Message: SELECT TOP 1 * FROM UIDESK_TrxAux WHERE AuxUserName='' ORDER BY ID DESC
+---------------------------Success-------------------------------------------------------
+
+Time: 22/06/2024 10.02.18.237 PM
+---------------------------Failed-------------------------------------------------------
+Message: Select COUNT (UserID) as userID from msUser where UserName=@uservalue
+Message: Object reference not set to an instance of an object.
+StackTrace:    at ICC.auth_local.AccessLogin(String UserName, String Password)
+   at ICC.auth_local.Login_ButtonSubmit_ServerClick(Object sender, EventArgs e)
+Source: ICC
+TargetSite: System.Object AccessLogin(System.String, System.String)
+---------------------------Failed-------------------------------------------------------
+

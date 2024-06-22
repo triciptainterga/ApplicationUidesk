@@ -1,0 +1,30 @@
+Time: 06/05/2024 11.11.15.511 AM
+---------------------------Success-------------------------------------------------------
+Message: Select COUNT (UserID) as userID from msUser where UserName=@uservalue
+---------------------------Success-------------------------------------------------------
+
+Time: 06/05/2024 11.11.15.604 AM
+---------------------------Success-------------------------------------------------------
+Message: UPDATE MSUSER SET LOGIN='1', IdAUX='9', DescAUX='READY', AUTHORITY='6TPJA1F0OXUM0L2UHWCC7GVZYVKJ61EVXTZX60RCHJA4X6HMB7' WHERE USERNAME ='admin'
+---------------------------Success-------------------------------------------------------
+
+Time: 06/05/2024 11.24.46.227 AM
+---------------------------Success-------------------------------------------------------
+Message: Select COUNT (UserID) as userID from msUser where UserName=@uservalue
+---------------------------Success-------------------------------------------------------
+
+Time: 06/05/2024 11.24.46.258 AM
+---------------------------Success-------------------------------------------------------
+Message: UPDATE MSUSER SET LOGIN='1', IdAUX='9', DescAUX='READY', AUTHORITY='EEJBWJAHD8VHDNHH223BI4SCW16GWNK64GQ5J45BS3G7X8XAB4' WHERE USERNAME ='admin'
+---------------------------Success-------------------------------------------------------
+
+Time: 06/05/2024 11.32.15.282 AM
+---------------------------Success-------------------------------------------------------
+Message: Select COUNT (UserID) as userID from msUser where UserName=@uservalue
+---------------------------Success-------------------------------------------------------
+
+Time: 06/05/2024 11.32.15.313 AM
+---------------------------Success-------------------------------------------------------
+Message: UPDATE MSUSER SET LOGIN='1', IdAUX='9', DescAUX='READY', AUTHORITY='AU5NGPYEYPBG61XOSUFORRONNQTGYTMG4RXNK01OMIDZ31R8XI' WHERE USERNAME ='admin'
+---------------------------Success-------------------------------------------------------
+

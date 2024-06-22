@@ -1,0 +1,34 @@
+Time: 04/06/2024 06.13.32.868 PM
+---------------------------Success-------------------------------------------------------
+Message: exec SP_LOGIN_APPLIKASI  'broto','Uidesk123!'
+---------------------------Success-------------------------------------------------------
+
+Time: 04/06/2024 06.13.32.884 PM
+---------------------------Success-------------------------------------------------------
+Message: SELECT * FROM UIDESK_SOCIAL_ACCOUNT WHERE AccountID=''
+---------------------------Success-------------------------------------------------------
+
+Time: 04/06/2024 06.13.32.884 PM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLoginActivity '9','broto','Insert'
+---------------------------Success-------------------------------------------------------
+
+Time: 04/06/2024 06.13.32.900 PM
+---------------------------Success-------------------------------------------------------
+Message: SELECT TOP 1 * FROM UIDESK_TrxAux WHERE AuxUserName='broto' ORDER BY ID DESC
+---------------------------Success-------------------------------------------------------
+
+Time: 04/06/2024 06.13.32.900 PM
+---------------------------Failed-------------------------------------------------------
+Message: Select COUNT (UserID) as userID from msUser where UserName=@uservalue
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at ICC.auth_local.AccessLogin(String UserName, String Password) in C:\Users\Public\Programmer\Sementara\AJI\PELNI ON CLOUD\Apps\auth_local.aspx.vb:line 128
+   at ICC.auth_local.Login_ButtonSubmit_ServerClick(Object sender, EventArgs e) in C:\Users\Public\Programmer\Sementara\AJI\PELNI ON CLOUD\Apps\auth_local.aspx.vb:line 57
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------Failed-------------------------------------------------------
+

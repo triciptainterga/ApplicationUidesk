@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body onload="playBackVoice()">
+
+<audio id="playRec" controls>
+<source type="audio/wav" autoplay="true">
+Your browser does not support the audio element.
+</audio>
+
+<script>
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+function playBackVoice(){
+	console.log(getParameterByName("voice"));
+	var audio = document.getElementById('playRec');
+	audio.src = getParameterByName("voice");
+	audio.load();
+ } 
+ 
+</script>
+
+</body>
+</html>

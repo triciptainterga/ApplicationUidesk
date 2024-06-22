@@ -1,0 +1,108 @@
+Return-Path: <test-mail@pelni.co.id>
+Received: from localhost (localhost [127.0.0.1])
+	by zmtap2.pelni.co.id (Postfix) with ESMTP id 93C0B41A6342
+	for <chandra@gmail.com>; Fri, 21 Jun 2024 12:59:39 +0700 (WIB)
+Received: from zmtap2.pelni.co.id ([127.0.0.1])
+	by localhost (zmtap2.pelni.co.id [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id gzFz4Lqwbv96 for <chandra@gmail.com>;
+	Fri, 21 Jun 2024 12:59:39 +0700 (WIB)
+Received: from zmtap2.pelni.co.id (localhost [127.0.0.1])
+	by zmtap2.pelni.co.id (Postfix) with ESMTPS id 6B88C41A6368
+	for <chandra@gmail.com>; Fri, 21 Jun 2024 12:59:39 +0700 (WIB)
+DKIM-Filter: OpenDKIM Filter v2.10.3 zmtap2.pelni.co.id 6B88C41A6368
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=pelni.co.id;
+	s=C9C15D0C-5C0B-11ED-8263-4A2046B165AB; t=1718949579;
+	bh=tT6dV5WlcHK8hzumgig01HR+ggPJS3+yKkR27+xCkSE=;
+	h=Message-ID:From:To:Date:MIME-Version;
+	b=q4TNcoH/IuVlmhGlM18dn4rHM9Bi/JGW2ZJbIlJPBNRs8AopBR6+y/bwiOIo+gxvK
+	 7BWBP66+7fyydWTW48OZOubKMUsyHcROdWDRMUMHKcswAuFgJtbwJjOUwQL3W/Lc07
+	 Ofo7WNPqTsnwtJqHbYPDit131DkzzQNQG0UXAY3wMa1cZQOE7tfry9CA10gYTpyDZZ
+	 4VdQ99rn7+APtwMsjVd1x0PiYlztJXa9icRTBbFIeHGouDl1hv942WJgmhbM2/4GNS
+	 qKzfLFttUVIxGvfhD1FlWpLf86g/Qc2kTg8ruDdQiWGkwDPnYnPrvKrezTQUnOWXW6
+	 3Mts4FWm4esTg==
+Received: from zmtap2.pelni.co.id (localhost [127.0.0.1])
+	by zmtap2.pelni.co.id (Postfix) with ESMTP id 64D4441A6360
+	for <chandra@gmail.com>; Fri, 21 Jun 2024 12:59:39 +0700 (WIB)
+X-JLM-Suspect: eb399a6fa4104d5da7492b964facb0fd
+X-JLM-Spamstatus: NO
+Received: from uidesk-pelni-ap.domain (unknown [103.149.177.110])
+	by zmtap2.pelni.co.id (Postfix) with ESMTPSA
+	for <chandra@gmail.com>; Fri, 21 Jun 2024 12:59:39 +0700 (WIB)
+Message-ID: <01468dccd0aa6b4c4aeadf61027be291@pelni.co.id>
+From: "test-mail@pelni.co.id" <test-mail@pelni.co.id>
+To: <chandra@gmail.com>
+Subject: #20240621125936067  Email Notification Ticket Create
+Date: Fri, 21 Jun 2024 12:59:38 +0700
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="3083c26032563dca164d5d94000b5f70"
+
+This is a multi-part message in MIME format.
+
+--3083c26032563dca164d5d94000b5f70
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Kepada Yth,
+
+Bapak/Ibu Noer
+
+Terima kasih kami ucapkan atas kepercayaan Bapak/Ibu. Kami senantiasa =
+berupaya memberikan pelayanan terbaik dan profesional bagi Bapak/Ibu=2E
+
+Bersama ini kami sampaikan nomor Tiket Bapak/Ibu 20240621125936067
+
+Demikian disampaikan, apabila ada hal yang lain yang dapat kami bantu =
+mohon menghubungi langsung ke layanan Customer Care kami, dengan senang =
+hati kami akan membantu anda=2E
+
+=20
+
+Atas perhatian dan kerjasamanya, kami ucapkan terima kasih=2E
+
+=20
+
+Salam,
+
+CUSTOMER CARE
+
+DISTRICT 8, TOWER TREASURY, 21ST FLOOR, UNIT A,
+LOT 28 SCBD, JL. JENDRAL SUDIRMAN KAV 52-53, Kel=2E
+Senayan, Kec. Kebayoran Baru, Kota Adm. Jakarta Selatan, Prov=2E
+DKI Jakarta
+
+--3083c26032563dca164d5d94000b5f70
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p>Kepada Yth,</p>
+
+<p>Bapak/Ibu Noer</p>
+
+<p>Terima kasih kami ucapkan atas kepercayaan Bapak/Ibu. Kami senantiasa =
+berupaya memberikan pelayanan terbaik dan profesional bagi Bapak/Ibu.</p>
+
+<p>Bersama ini kami sampaikan nomor Tiket Bapak/Ibu 20240621125936067</p>
+
+<p>Demikian disampaikan, apabila ada hal yang lain yang dapat kami bantu =
+mohon menghubungi langsung ke layanan Customer Care kami, dengan senang =
+hati kami akan membantu anda.</p>
+
+<p>&nbsp;</p>
+
+<p>Atas perhatian dan kerjasamanya, kami ucapkan terima kasih.</p>
+
+<p>&nbsp;</p>
+
+<p>Salam,</p>
+
+<p><strong>CUSTOMER CARE</strong></p>
+
+<p>DISTRICT 8, TOWER TREASURY, 21ST FLOOR, UNIT A,<br />
+LOT 28 SCBD, JL. JENDRAL SUDIRMAN KAV 52-53, Kel.<br />
+Senayan, Kec. Kebayoran Baru, Kota Adm. Jakarta Selatan, Prov.<br />
+DKI Jakarta</p>
+
+--3083c26032563dca164d5d94000b5f70--

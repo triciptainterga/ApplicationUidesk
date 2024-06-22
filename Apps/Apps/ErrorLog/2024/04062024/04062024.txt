@@ -1,0 +1,20 @@
+Time: 04/06/2024 06.13.24.251 PM
+---------------------------Success-------------------------------------------------------
+Message: Select COUNT (UserID) as userID from msUser where UserName=@uservalue
+---------------------------Success-------------------------------------------------------
+
+Time: 04/06/2024 06.13.24.298 PM
+---------------------------Success-------------------------------------------------------
+Message: UPDATE MSUSER SET LOGIN='1', IdAUX='9', DescAUX='READY', AUTHORITY='FVQ1LU8W38KJ2LNLN0ILZZEM8AGOA121AX7Y06WAOYT8QMS6BW' WHERE USERNAME =''
+---------------------------Success-------------------------------------------------------
+
+Time: 04/06/2024 06.13.32.868 PM
+---------------------------Success-------------------------------------------------------
+Message: Select COUNT (UserID) as userID from msUser where UserName=@uservalue
+---------------------------Success-------------------------------------------------------
+
+Time: 04/06/2024 06.13.32.884 PM
+---------------------------Success-------------------------------------------------------
+Message: UPDATE MSUSER SET LOGIN='1', IdAUX='9', DescAUX='READY', AUTHORITY='P8MPILNFV6323J3G3RVX3KYCZRNRIRDCFHEI6E5K3CSPNEXKQ1' WHERE USERNAME ='broto'
+---------------------------Success-------------------------------------------------------
+

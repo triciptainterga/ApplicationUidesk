@@ -1,0 +1,1589 @@
+Time: 19/06/2024 06.48.48.414 AM
+---------------------------Success-------------------------------------------------------
+Message: SELECT * FROM UIDESK_SOCIAL_ACCOUNT WHERE AccountID=''
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.48.48.414 AM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLoginActivity '9','sudibyo','Insert'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.48.48.430 AM
+---------------------------Success-------------------------------------------------------
+Message: SELECT TOP 1 * FROM UIDESK_TrxAux WHERE AuxUserName='sudibyo' ORDER BY ID DESC
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.48.49.789 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', 'Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.48.49.948 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.48.50.416 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.48.50.447 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.48.50.976 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.48.51.461 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.48.51.966 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.02.697 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','Open','UIDESK57'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.02.697 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK115'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.02.744 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.03.291 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxEmailCounting 'sudibyo','Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.03.711 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK116'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.03.765 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.04.233 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '6','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.04.273 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.04.761 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK56'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.04.771 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.05.306 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK54'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.05.774 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK73'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.06.274 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxFilterDate '0','0','sudibyo','FilterDate'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.06.798 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK55'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.06.858 AM
+---------------------------Failed-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK60'
+Message: Arithmetic overflow error converting expression to data type bigint.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.WebServiceGetDataMaster.UIDESK_TrmMasterCombo(String TrxID, String TrxUserName, String TrxAction)
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 19/06/2024 06.49.06.858 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK60'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.07.300 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','sudibyo','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.07.353 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK59'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.07.866 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '231206093308','sudibyo','UIDESK53'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.34.336 AM
+---------------------------Success-------------------------------------------------------
+Message: exec Update_TransactionTicket_New '20240618102952517','<p>tstts</p>
+','Open','sudibyo', 'Yes','0', '0', '1073', '2', '4'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.34.870 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','Open','UIDESK57'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.34.870 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK116'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.34.902 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.34.902 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.35.384 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '6','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.35.431 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.35.898 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK115'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.35.933 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.36.430 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK56'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.37.018 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxEmailCounting 'sudibyo','Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.37.431 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK73'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.37.961 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK55'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.38.249 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK59'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.38.460 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','sudibyo','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.38.777 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '231206093308','sudibyo','UIDESK53'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.39.004 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK54'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.39.306 AM
+---------------------------Failed-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK60'
+Message: Arithmetic overflow error converting expression to data type bigint.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.WebServiceGetDataMaster.UIDESK_TrmMasterCombo(String TrxID, String TrxUserName, String TrxAction)
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 19/06/2024 06.49.39.306 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK60'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 06.49.39.458 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxFilterDate '0','0','sudibyo','FilterDate'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.21.494 AM
+---------------------------Success-------------------------------------------------------
+Message: SELECT * FROM UIDESK_SOCIAL_ACCOUNT WHERE AccountID=''
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.21.512 AM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLoginActivity '9','sudibyo','Insert'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.21.516 AM
+---------------------------Success-------------------------------------------------------
+Message: SELECT TOP 1 * FROM UIDESK_TrxAux WHERE AuxUserName='sudibyo' ORDER BY ID DESC
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.22.514 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', 'Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.22.716 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.22.755 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.22.776 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.23.269 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.23.757 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.24.258 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.26.981 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','Open','UIDESK57'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.26.998 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK56'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.27.002 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK73'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.27.005 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.27.020 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.27.498 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK55'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.27.516 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.27.520 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '231206093308','sudibyo','UIDESK53'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.28.035 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK54'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.28.528 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','sudibyo','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.29.020 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '6','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.29.042 AM
+---------------------------Failed-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK60'
+Message: Arithmetic overflow error converting expression to data type bigint.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.WebServiceGetDataMaster.UIDESK_TrmMasterCombo(String TrxID, String TrxUserName, String TrxAction)
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 19/06/2024 08.29.29.043 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK60'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.29.518 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK116'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.29.532 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK59'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.30.032 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxFilterDate '0','0','sudibyo','FilterDate'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.30.047 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.30.570 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxEmailCounting 'sudibyo','Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.31.051 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK115'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.46.803 AM
+---------------------------Success-------------------------------------------------------
+Message: exec Update_TransactionTicket_New '20240618064101938','<p>ke 2 harus nya</p>
+','Open','sudibyo', 'Yes','0', '0', '1073', '2', '4'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.47.952 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK55'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.47.981 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxEmailCounting 'sudibyo','Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.48.450 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','sudibyo','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.48.461 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK115'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.48.468 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.48.504 AM
+---------------------------Failed-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK60'
+Message: Arithmetic overflow error converting expression to data type bigint.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.WebServiceGetDataMaster.UIDESK_TrmMasterCombo(String TrxID, String TrxUserName, String TrxAction)
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 19/06/2024 08.29.48.505 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK60'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.48.954 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK73'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.48.970 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.49.001 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK59'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.49.468 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK56'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.49.517 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '231206093308','sudibyo','UIDESK53'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.49.984 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.50.471 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxFilterDate '0','0','sudibyo','FilterDate'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.50.972 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','Open','UIDESK57'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.51.473 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.51.973 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK116'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.52.476 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '6','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.29.53.016 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK54'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.01.873 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK55'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.01.926 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.02.000 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK59'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.02.404 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK54'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.02.450 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.02.535 AM
+---------------------------Failed-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK60'
+Message: Arithmetic overflow error converting expression to data type bigint.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.WebServiceGetDataMaster.UIDESK_TrmMasterCombo(String TrxID, String TrxUserName, String TrxAction)
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 19/06/2024 08.31.02.537 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK60'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.02.859 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK116'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.02.891 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.02.955 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.03.017 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '231206093308','sudibyo','UIDESK53'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.03.360 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK73'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.03.909 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxEmailCounting 'sudibyo','Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.04.381 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '6','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.04.879 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxFilterDate '0','0','sudibyo','FilterDate'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.05.380 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','Open','UIDESK57'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.05.881 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK115'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.06.389 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','sudibyo','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.06.895 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618064101938','sudibyo','UIDESK56'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.09.097 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', 'Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.09.381 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.09.413 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.09.437 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.09.911 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.09.938 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.10.440 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.20.632 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','Open','UIDESK57'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.20.667 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK56'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.20.682 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.21.153 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK55'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.21.174 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK115'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.21.191 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK59'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.21.670 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','sudibyo','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.21.716 AM
+---------------------------Failed-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK60'
+Message: Arithmetic overflow error converting expression to data type bigint.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.WebServiceGetDataMaster.UIDESK_TrmMasterCombo(String TrxID, String TrxUserName, String TrxAction)
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 19/06/2024 08.31.21.718 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK60'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.22.159 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxFilterDate '0','0','sudibyo','FilterDate'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.22.173 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK73'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.22.227 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.22.693 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxEmailCounting 'sudibyo','Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.22.719 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '231206093308','sudibyo','UIDESK53'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.23.190 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '6','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.23.220 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.23.704 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK116'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.23.720 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.24.242 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK54'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.33.093 AM
+---------------------------Success-------------------------------------------------------
+Message: exec Update_TransactionTicket_New '20240618102952517','<p>dsdsd</p>
+','Open','sudibyo', 'Yes','0', '0', '1073', '2', '4'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.33.767 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','Open','UIDESK57'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.33.801 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','sudibyo','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.34.281 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK55'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.34.349 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.34.358 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK59'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.34.362 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '231206093308','sudibyo','UIDESK53'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.34.796 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK56'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.34.849 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.34.876 AM
+---------------------------Failed-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK60'
+Message: Arithmetic overflow error converting expression to data type bigint.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.WebServiceGetDataMaster.UIDESK_TrmMasterCombo(String TrxID, String TrxUserName, String TrxAction)
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 19/06/2024 08.31.34.877 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK60'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.35.297 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxFilterDate '0','0','sudibyo','FilterDate'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.35.360 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.35.853 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240618102952517','sudibyo','UIDESK54'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.35.859 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.36.359 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK73'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.36.862 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK116'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.37.364 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK115'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.37.908 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxEmailCounting 'sudibyo','Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.31.38.365 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '6','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 08.35.56.736 AM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLogoutActivity '9','sudibyo','Logout'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.04.117 AM
+---------------------------Success-------------------------------------------------------
+Message: SELECT * FROM UIDESK_SOCIAL_ACCOUNT WHERE AccountID=''
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.04.117 AM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLoginActivity '9','sudibyo','Insert'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.04.117 AM
+---------------------------Success-------------------------------------------------------
+Message: SELECT TOP 1 * FROM UIDESK_TrxAux WHERE AuxUserName='sudibyo' ORDER BY ID DESC
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.04.867 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', 'Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.05.023 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.05.508 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.06.023 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.06.539 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.07.039 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.07.555 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.08.461 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK55'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.08.508 AM
+---------------------------Failed-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK60'
+Message: Arithmetic overflow error converting expression to data type bigint.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.WebServiceGetDataMaster.UIDESK_TrmMasterCombo(String TrxID, String TrxUserName, String TrxAction)
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 19/06/2024 11.30.08.508 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK60'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.08.961 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.09.008 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK59'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.09.524 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxEmailCounting 'sudibyo','Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.09.992 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.10.039 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '240619100634','sudibyo','UIDESK53'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.10.508 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.11.023 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK73'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.11.539 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','sudibyo','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.12.055 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxFilterDate '0','0','sudibyo','FilterDate'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.12.570 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK115'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.13.180 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK54'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.13.601 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '6','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.14.117 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.14.633 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','Open','UIDESK57'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.15.149 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK116'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.15.680 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK56'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.57.399 AM
+---------------------------Success-------------------------------------------------------
+Message: exec Update_TransactionTicket_New '20240619112019008','<p>to L3 GASSSKENNN</p>
+','Open','sudibyo', 'Yes','0', '0', '1073', '2', '4'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.57.867 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK55'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.57.898 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK59'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.58.383 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxEmailCounting 'sudibyo','Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.58.399 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '240619100634','sudibyo','UIDESK53'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.58.867 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK115'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.58.914 AM
+---------------------------Failed-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK60'
+Message: Arithmetic overflow error converting expression to data type bigint.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.WebServiceGetDataMaster.UIDESK_TrmMasterCombo(String TrxID, String TrxUserName, String TrxAction)
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 19/06/2024 11.30.58.930 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK60'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.59.367 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.30.59.883 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','sudibyo','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.31.00.398 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK73'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.31.00.914 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '6','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.31.01.430 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.31.01.946 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxFilterDate '0','0','sudibyo','FilterDate'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.31.02.461 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK116'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.31.02.977 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.31.03.493 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK56'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.31.04.008 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.31.04.586 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK54'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.31.05.039 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','Open','UIDESK57'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.32.21.711 AM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLogoutActivity '9','sudibyo','Logout'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.32.29.492 AM
+---------------------------Success-------------------------------------------------------
+Message: SELECT * FROM UIDESK_SOCIAL_ACCOUNT WHERE AccountID=''
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.32.29.508 AM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLoginActivity '9','sudibyo','Insert'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.32.29.508 AM
+---------------------------Success-------------------------------------------------------
+Message: SELECT TOP 1 * FROM UIDESK_TrxAux WHERE AuxUserName='sudibyo' ORDER BY ID DESC
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.32.30.305 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', 'Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.32.30.414 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.32.30.930 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.32.31.446 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.32.31.976 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.32.32.508 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.32.32.992 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.32.34.773 AM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLogoutActivity '9','sudibyo','Logout'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.06.664 AM
+---------------------------Success-------------------------------------------------------
+Message: SELECT * FROM UIDESK_SOCIAL_ACCOUNT WHERE AccountID=''
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.06.680 AM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLoginActivity '9','sudibyo','Insert'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.06.680 AM
+---------------------------Success-------------------------------------------------------
+Message: SELECT TOP 1 * FROM UIDESK_TrxAux WHERE AuxUserName='sudibyo' ORDER BY ID DESC
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.07.274 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempKotakTodolist 'sudibyo', '4', 'Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.07.430 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK124'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.07.461 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.07.946 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec DataTableTaskboardNew 'sudibyo', 'Open', '4','1073'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.07.977 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.08.492 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.09.008 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.19.242 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','Open','UIDESK57'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.19.242 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.19.258 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.19.758 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxFilterDate '0','0','sudibyo','FilterDate'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.20.258 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK73'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.20.805 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxEmailCounting 'sudibyo','Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.21.289 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '6','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.21.805 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','sudibyo','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.22.321 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.22.851 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK56'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.23.352 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.23.867 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK55'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.24.008 AM
+---------------------------Failed-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK60'
+Message: Arithmetic overflow error converting expression to data type bigint.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.WebServiceGetDataMaster.UIDESK_TrmMasterCombo(String TrxID, String TrxUserName, String TrxAction)
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 19/06/2024 11.35.24.008 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK60'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.24.383 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK115'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.24.508 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '240619100634','sudibyo','UIDESK53'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.24.899 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK116'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.25.024 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK59'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.25.461 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK54'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.36.305 AM
+---------------------------Success-------------------------------------------------------
+Message: exec Update_TransactionTicket_New '20240619112019008','<p>GASSS LP2</p>
+','Open','sudibyo', 'Yes','0', '0', '1073', '2', '4'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.36.664 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','Open','UIDESK57'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.36.664 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK66'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.36.680 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK132'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.37.180 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK115'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.37.711 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxEmailCounting 'sudibyo','Layer Pelni'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.38.211 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','null','UIDESK125'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.38.726 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmMasterDropdown 'UideskIndonesia','InboxTable','sudibyo','UIDESK100'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.39.242 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '6','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.39.789 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK54'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.40.273 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrxFilterDate '0','0','sudibyo','FilterDate'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.40.789 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK73'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.41.305 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown 'UideskIndonesia','sudibyo','UIDESK14'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.41.836 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK56'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.42.336 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '4','sudibyo','UIDESK116'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.42.852 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK55'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.42.883 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK59'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.43.383 AM
+---------------------------Failed-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK60'
+Message: Arithmetic overflow error converting expression to data type bigint.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at ICC.WebServiceGetDataMaster.UIDESK_TrmMasterCombo(String TrxID, String TrxUserName, String TrxAction)
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------Failed-------------------------------------------------------
+
+Time: 19/06/2024 11.35.43.398 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '20240619112019008','sudibyo','UIDESK60'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.43.899 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec UIDESK_TrmDropdown '240619100634','sudibyo','UIDESK53'
+---------------------------Success-------------------------------------------------------
+
+Time: 19/06/2024 11.35.49.414 AM
+---------------------------Success-------------------------------------------------------
+Message: exec UIDESK_SP_TrxLogoutActivity '9','sudibyo','Logout'
+---------------------------Success-------------------------------------------------------
+

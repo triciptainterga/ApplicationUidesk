@@ -1,0 +1,202 @@
+Return-Path: <test-mail@pelni.co.id>
+Received: from localhost (localhost [127.0.0.1])
+	by zmtap2.pelni.co.id (Postfix) with ESMTP id 2E30941A634B;
+	Thu, 20 Jun 2024 12:09:40 +0700 (WIB)
+Received: from zmtap2.pelni.co.id ([127.0.0.1])
+	by localhost (zmtap2.pelni.co.id [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id l7tMf__k5fpa; Thu, 20 Jun 2024 12:09:40 +0700 (WIB)
+Received: from zmtap2.pelni.co.id (localhost [127.0.0.1])
+	by zmtap2.pelni.co.id (Postfix) with ESMTPS id 04DB641A6348;
+	Thu, 20 Jun 2024 12:09:40 +0700 (WIB)
+DKIM-Filter: OpenDKIM Filter v2.10.3 zmtap2.pelni.co.id 04DB641A6348
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=pelni.co.id;
+	s=C9C15D0C-5C0B-11ED-8263-4A2046B165AB; t=1718860180;
+	bh=c8OUX6ynq93ICOYkZh5+RVtk6Lj0O8Woe7wDDeyNyV4=;
+	h=Message-ID:From:To:Date:MIME-Version;
+	b=yNvrFfeJDmswWxyJmwe7ACTXC9k516L3RNFUe/eK/R3yyjZ4GDmI85pCiaPoiHZrS
+	 IQtAxWnflW+B/526xlniQhyIgUfw9PhuqLWrK89sSuFmMKmAvQiyMpJbtLR4TStaJ1
+	 41iZ7k1bxU1Wjjx81yxtbY9AV4C7Sj9cUwgT3TAuMDDUDD1v7uHV4pR5uWcoHrePyg
+	 1GrrATd9sFi38UDKVZgeFC9XQsfNleYu0uBlNONnr/G5/7GQRf0IWvGx/xrs87Xn2N
+	 BAqRxchrLdAJbnZJJHP1qRIor7cZKj01yshFiY/jMXJuBFi2Hvo2NATL6kPk0Jnwfg
+	 g/4ZJTRyy0tXg==
+Received: from zmtap2.pelni.co.id (localhost [127.0.0.1])
+	by zmtap2.pelni.co.id (Postfix) with ESMTP id F10CC41A6346;
+	Thu, 20 Jun 2024 12:09:39 +0700 (WIB)
+X-JLM-Suspect: 07ac90140ea043b1a78e735c13274a74
+X-JLM-Spamstatus: NO
+Received: from uidesk-pelni-ap.domain (unknown [103.149.177.110])
+	by zmtap2.pelni.co.id (Postfix) with ESMTPSA;
+	Thu, 20 Jun 2024 12:09:39 +0700 (WIB)
+Message-ID: <a6481db3a073d70eb5b0df4e17c9bd6e@pelni.co.id>
+From: "test-mail@pelni.co.id" <test-mail@pelni.co.id>
+To: <triciptaterga@gmail.com>
+Cc: <triciptaterga@gmail.com>,
+	<wandairwansyah47@gmail.com>
+Subject: FWD :penawaran hp
+Date: Thu, 20 Jun 2024 12:09:36 +0700
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="c351765dc7f5125d754e850a000842f0"
+
+This is a multi-part message in MIME format.
+
+--c351765dc7f5125d754e850a000842f0
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Pak/Bu (nama customer),=20
+
+
+Terima kasih telah menghubungi layanan email Cantas=2E
+
+Menanggapi email Bapak/Ibu yang di sampaikan pada pesan sebelumnya, mohon =
+di infokan perihal apa yang dapat kami bantu=2E
+
+Terkait hal diatas, jika kami tidak menerima tanggapan atau informasi dari =
+Bapak/Ibu dalam waktu 2X24 jam maka kami anggap Bapak/Ibu sudah memahami =
+masalah ini dan permasalahan ini akan kami tutup=2E
+
+Apabila Bapak/Ibu masih memiliki pertanyaan atau permasalahan lainnya, =
+dapat menghubungi kami pada layanan Contact Center Cantas di 021-50869996 =
+atau layanan WhatsApp Cantas di 0812 8630 5888.=20
+
+Demikian informasi yang dapat kami sampaikan.  Terima kasih atas perhatian =
+dan kerjasamanya=2E
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Dear Mr/Ms (customer name),=20
+
+Thank you for contacting Cantas email service=2E
+
+In response to your email given in the previous message, please inform us =
+regarding information that we can assist
+
+Related to the above, if we do not receive any response or information =
+from you within 2X24 hours, then we consider you have already understood =
+this matter, hence we will close this case. =20
+
+If you still have other questions or queries, you may contact our Cantas =
+Contact Center at 021-50869996 or our Cantas WhatsApp service at 0812 8630 =
+5888=2E
+
+This is the information that we can convey. Thank you for your kind =
+attention and cooperation=2E
+
+=20
+Salam,Muhamad Cesar YasinPelni Contact CenterVisiMenjadi lembaga =
+pembiayaan terkemuka dalam meningkatkan nilai tambah secara berkelanjutan =
+bagi Usaha Mikro, Kecil, Menengah dan Koperasi (UMKMK) yang berlandaskan =
+prinsip-prinsip Good Corporate Governance (GCG) atau Tata Kelola =
+Perusahaan yang Baik.MisiMenjalankan berbagai upaya, yang terkait dengan =
+operasional perusahaan, untuk meningkatkan kelayakan usaha dan kemampuan =
+wirausaha para pelaku bisnis UMKMK.Membantu pelaku UMKMK untuk mendapatkan =
+dan kemudian meningkatkan akses pembiayaan UMKMK kepada lembaga keuangan =
+baik bank maupun non-bank yang pada akhirnya akan meningkatkan kontribusi =
+mereka dalam perluasan lapangan kerja dan peningkatan kesejahteraan =
+masyarakat.Meningkatkan kreatifitas dan produktivitas karyawan untuk =
+mencapai kinerja terbaik dalam usaha pengembangan sektor UMKM dalam usaha =
+pengembangan UMKM dan Ultra Mikro perempuan prasejahtera melalui =
+peningkatan kapasitas usaha dan pembiayaan modal usaha=2E
+
+VisiMenjadi lembaga pembiayaan terkemuka dalam meningkatkan nilai tambah =
+secara berkelanjutan bagi Usaha Mikro, Kecil, Menengah dan Koperasi =
+(UMKMK) yang berlandaskan prinsip-prinsip Good Corporate Governance (GCG) =
+atau Tata Kelola Perusahaan yang Baik.MisiMenjalankan berbagai upaya, yang =
+terkait dengan operasional perusahaan, untuk meningkatkan kelayakan usaha =
+dan kemampuan wirausaha para pelaku bisnis UMKMK.Membantu pelaku UMKMK =
+untuk mendapatkan dan kemudian meningkatkan akses pembiayaan UMKMK kepada =
+lembaga keuangan baik bank maupun non-bank yang pada akhirnya akan =
+meningkatkan kontribusi mereka dalam perluasan lapangan kerja dan =
+peningkatan kesejahteraan masyarakat.Meningkatkan kreatifitas dan =
+produktivitas karyawan untuk mencapai kinerja terbaik dalam usaha =
+pengembangan sektor UMKM dalam usaha pengembangan UMKM dan Ultra Mikro =
+perempuan prasejahtera melalui peningkatan kapasitas usaha dan pembiayaan =
+modal usaha.
+
+
+--c351765dc7f5125d754e850a000842f0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p>Dear Pak/Bu (nama customer),&nbsp;</p>
+
+<p><br />
+Terima kasih telah menghubungi layanan email Cantas.</p>
+
+<p>Menanggapi email Bapak/Ibu yang di sampaikan pada pesan sebelumnya, =
+mohon di infokan perihal apa yang dapat kami bantu.</p>
+
+<p>Terkait hal diatas, jika kami tidak menerima tanggapan atau informasi =
+dari Bapak/Ibu dalam waktu 2X24 jam maka kami anggap Bapak/Ibu sudah =
+memahami masalah ini dan permasalahan ini akan kami tutup.</p>
+
+<p>Apabila Bapak/Ibu masih memiliki pertanyaan atau permasalahan lainnya, =
+dapat menghubungi kami pada layanan Contact Center Cantas di 021-50869996 =
+atau layanan WhatsApp Cantas di 0812 8630 5888.&nbsp;</p>
+
+<p>Demikian informasi yang dapat kami sampaikan.&nbsp; Terima kasih atas =
+perhatian dan kerjasamanya.</p>
+
+<p>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</p>
+
+<p>Dear Mr/Ms (customer name),&nbsp;</p>
+
+<p>Thank you for contacting Cantas email service.</p>
+
+<p>In response to your email given in the previous message, please inform =
+us regarding information that we can assist</p>
+
+<p>Related to the above, if we do not receive any response or information =
+from you within 2X24 hours, then we consider you have already understood =
+this matter, hence we will close this case.&nbsp;&nbsp;</p>
+
+<p>If you still have other questions or queries, you may contact our =
+Cantas Contact Center at 021-50869996 or our Cantas WhatsApp service at =
+0812 8630 5888.</p>
+
+<p>This is the information that we can convey. Thank you for your kind =
+attention and cooperation.</p>
+
+<p>&nbsp;</p>
+</br><p>Salam,</p><p>Muhamad Cesar Yasin</p><p><strong>Pelni Contact =
+Center</strong></p><img =
+src=3D"https://pelni.uidesk.id/apps/Signature/Pelni.jpg" alt=3D"logo" =
+width=3D"160px"></p><br><hr><div dir=3D"ltr">Visi<br>Menjadi lembaga =
+pembiayaan terkemuka dalam meningkatkan nilai tambah secara berkelanjutan =
+bagi Usaha Mikro, Kecil, Menengah dan Koperasi (UMKMK) yang berlandaskan =
+prinsip-prinsip Good Corporate Governance (GCG) atau Tata Kelola =
+Perusahaan yang Baik.<br><br>Misi<br>Menjalankan berbagai upaya, yang =
+terkait dengan operasional perusahaan, untuk meningkatkan kelayakan usaha =
+dan kemampuan wirausaha para pelaku bisnis UMKMK.<br>Membantu pelaku UMKMK =
+untuk mendapatkan dan kemudian meningkatkan akses pembiayaan UMKMK kepada =
+lembaga keuangan baik bank maupun non-bank yang pada akhirnya akan =
+meningkatkan kontribusi mereka dalam perluasan lapangan kerja dan =
+peningkatan kesejahteraan masyarakat.<br>Meningkatkan kreatifitas dan =
+produktivitas karyawan untuk mencapai kinerja terbaik dalam usaha =
+pengembangan sektor UMKM dalam usaha pengembangan UMKM dan Ultra Mikro =
+perempuan prasejahtera melalui peningkatan kapasitas usaha dan pembiayaan =
+modal usaha.<br></div>
+
+<p><hr></p><div dir=3D"ltr">Visi<br>Menjadi lembaga pembiayaan terkemuka =
+dalam meningkatkan nilai tambah secara berkelanjutan bagi Usaha Mikro, =
+Kecil, Menengah dan Koperasi (UMKMK) yang berlandaskan prinsip-prinsip =
+Good Corporate Governance (GCG) atau Tata Kelola Perusahaan yang =
+Baik.<br><br>Misi<br>Menjalankan berbagai upaya, yang terkait dengan =
+operasional perusahaan, untuk meningkatkan kelayakan usaha dan kemampuan =
+wirausaha para pelaku bisnis UMKMK.<br>Membantu pelaku UMKMK untuk =
+mendapatkan dan kemudian meningkatkan akses pembiayaan UMKMK kepada =
+lembaga keuangan baik bank maupun non-bank yang pada akhirnya akan =
+meningkatkan kontribusi mereka dalam perluasan lapangan kerja dan =
+peningkatan kesejahteraan masyarakat.<br>Meningkatkan kreatifitas dan =
+produktivitas karyawan untuk mencapai kinerja terbaik dalam usaha =
+pengembangan sektor UMKM dalam usaha pengembangan UMKM dan Ultra Mikro =
+perempuan prasejahtera melalui peningkatan kapasitas usaha dan pembiayaan =
+modal usaha.<br></div>
+
+
+--c351765dc7f5125d754e850a000842f0--

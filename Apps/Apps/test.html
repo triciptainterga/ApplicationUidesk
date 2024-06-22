@@ -1,0 +1,30 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+</script>
+<audio controls autoplay src="https://sip.uidesk.id/stream.php?file=/var/spool/asterisk/monitor/2024/01/09/q-60012-02150869993-20240109-081411-1704762845.87015.wav" type="audio/wav"></audio>
+<script>
+  var audio = $("audio")[0];
+  $(document).keydown(function(e) {
+    var unicode = e.charCode ? e.charCode : e.keyCode;
+    console.log(unicode);
+      // right arrow
+    if (unicode == 39) {
+      audio.currentTime += 5;
+	  console.log("2");
+      // back arrow
+    } else if (unicode == 37) {
+      audio.currentTime -= 5;
+	  console.log("3");
+      // spacebar
+    } else if (unicode == 32) {
+      if (audio.paused) {
+        audio.play();
+		console.log("4");
+      } 
+      else {
+        audio.pause()
+		console.log("5");
+      }
+    }
+  });
+
+</script>
