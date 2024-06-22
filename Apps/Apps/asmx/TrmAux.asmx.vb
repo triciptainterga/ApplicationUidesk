@@ -189,7 +189,6 @@ Public Class TrmAux
             LogError(HttpContext.Current.Session("UserName"), ex, strExec)
         Finally
             Dim objectTickets As resultInsert = New resultInsert()
-			 objectTickets.Result = "True"
             objectTickets.TrxmsgSystem = "Data Has Been Save"
             listTickets.Add(objectTickets)
             strExec = "exec UIDESK_TrxAgentAux '" & TrxAuxXSS & "','" & TrxUserNameXSS & "'"

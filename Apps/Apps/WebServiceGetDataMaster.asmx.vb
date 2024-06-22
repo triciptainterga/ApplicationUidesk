@@ -2578,7 +2578,7 @@ Public Class WebServiceGetDataMaster
                 sqlComm.Parameters.AddWithValue("@TrxCategoryID", "0")
                 sqlComm.Parameters.AddWithValue("@TrxSubCategory1ID", "0")
                 sqlComm.Parameters.AddWithValue("@TrxSubCategory2ID", "0")
-				sqlComm.Parameters.AddWithValue("@TrxSubCategory2_1ID", "0")
+                sqlComm.Parameters.AddWithValue("@TrxSubCategory2_1ID", "0")
                 sqlComm.Parameters.AddWithValue("@TrxName", "0")
                 sqlComm.Parameters.AddWithValue("@TrxEscalationUnit", "0")
                 sqlComm.Parameters.AddWithValue("@TrxLayer", "0")
@@ -5433,6 +5433,38 @@ Public Class WebServiceGetDataMaster
     End Function
     <WebMethod(EnableSession:=True)>
     <ScriptMethod(UseHttpGet:=False, ResponseFormat:=ResponseFormat.Json)>
+    Public Function TableTransactionTrmCategoryDetail_2_1(ByVal TrxID As String, ByVal TrxSearching As String, ByVal TrxUserName As String, ByVal TrxAction As String) As String
+        Dim connstring As String = ConfigurationManager.ConnectionStrings("DefaultConnection").ConnectionString
+        Dim dt As DataTable = New DataTable()
+
+        Dim NameSP = "Exec UIDESK_TrxTransactionTicket"
+        Dim ExecSP = "" & NameSP & " '" & TrxID & "','" & TrxSearching & "','" & TrxUserName & "','" & TrxAction & "'"
+        Try
+            Using conn As SqlConnection = New SqlConnection(connstring)
+                conn.Open()
+                Dim sqlComm As SqlCommand = New SqlCommand("UIDESK_TrxTransactionTicket", conn)
+                sqlComm.Parameters.AddWithValue("@TrxID", TrxID)
+                sqlComm.Parameters.AddWithValue("@TrxSearching", TrxSearching)
+                sqlComm.Parameters.AddWithValue("@TrxUserName", TrxUserName)
+                sqlComm.Parameters.AddWithValue("@TrxAction", TrxAction)
+                sqlComm.CommandType = CommandType.StoredProcedure
+                Dim da As SqlDataAdapter = New SqlDataAdapter()
+                Dim ds As DataSet = New DataSet()
+                da.SelectCommand = sqlComm
+                da.Fill(ds)
+                dt = ds.Tables(0)
+                conn.Close()
+            End Using
+        Catch ex As Exception
+            LogError(HttpContext.Current.Session("UserName"), ex, ExecSP)
+        Finally
+            LogSuccess(HttpContext.Current.Session("UserName"), ExecSP)
+        End Try
+        Dim tableJson As String = BigConvertDataTabletoString(dt)
+        Return tableJson
+    End Function
+    <WebMethod(EnableSession:=True)>
+    <ScriptMethod(UseHttpGet:=False, ResponseFormat:=ResponseFormat.Json)>
     Public Function UIDESK_TrxSosialMedia(ByVal TrxID As String, ByVal TrxSearching As String, ByVal TrxUserName As String, ByVal TrxAction As String) As String
         Dim connstring As String = ConfigurationManager.ConnectionStrings("DefaultConnection").ConnectionString
         Dim dt As DataTable = New DataTable()
@@ -5611,6 +5643,46 @@ Public Class WebServiceGetDataMaster
             objectTickets.TrxmsgSystem = "Data Has Been Save"
             listTickets.Add(objectTickets)
             strExec = "exec VUE_UIDESK_InsertTransaction '" & Data_1 & "','" & Data_2 & "','" & Data_3 & "','" & Data_4 & "'"
+            LogSuccess(HttpContext.Current.Session("UserName"), strExec)
+        End Try
+        Dim js As JavaScriptSerializer = New JavaScriptSerializer()
+        Return js.Serialize(listTickets)
+    End Function
+    <WebMethod(EnableSession:=True)>
+    <ScriptMethod(UseHttpGet:=False, ResponseFormat:=ResponseFormat.Json)>
+    Public Function InsertTransactionTrmCategoryDetail_2_1(ByVal ID As Int32, ByVal TrxCategoryID As String, ByVal TrxSubCategory1ID As String, ByVal TrxSubCategory2ID As String, ByVal TrxName As String, ByVal TrxStatus As String, ByVal TrxUserName As String) As String
+        Dim listTickets As List(Of resultInsert) = New List(Of resultInsert)()
+        Dim strExec As String = String.Empty
+        Dim constr As String = ConfigurationManager.ConnectionStrings("DefaultConnection").ConnectionString
+        Try
+            Using con As New SqlConnection(constr)
+                Dim sqlComm As New SqlCommand()
+                sqlComm.Connection = con
+                sqlComm.CommandText = "UIDESK_TrxCategoryDetail_2_1"
+                sqlComm.CommandType = CommandType.StoredProcedure
+                sqlComm.Parameters.AddWithValue("TrxID", ID)
+                sqlComm.Parameters.AddWithValue("TrxCategoryID", TrxCategoryID)
+                sqlComm.Parameters.AddWithValue("TrxSubCategory1ID", TrxSubCategory1ID)
+                sqlComm.Parameters.AddWithValue("TrxSubCategory2ID", TrxSubCategory2ID)
+                sqlComm.Parameters.AddWithValue("TrxName", TrxName)
+                sqlComm.Parameters.AddWithValue("TrxStatus", TrxStatus)
+                sqlComm.Parameters.AddWithValue("TrxUserName", TrxUserName)
+                con.Open()
+                sqlComm.ExecuteNonQuery()
+            End Using
+        Catch ex As Exception
+            Dim objectTickets As resultInsert = New resultInsert()
+            objectTickets.Result = "False"
+            objectTickets.TrxmsgSystem = ex.Message()
+            listTickets.Add(objectTickets)
+            ' strExec = "exec VUE_UIDESK_InsertTransaction '" & Data_1 & "','" & Data_2 & "','" & Data_3 & "','" & Data_4 & "'"
+            LogError(HttpContext.Current.Session("UserName"), ex, strExec)
+        Finally
+            Dim objectTickets As resultInsert = New resultInsert()
+            objectTickets.Result = "True"
+            objectTickets.TrxmsgSystem = "Data Has Been Save"
+            listTickets.Add(objectTickets)
+            ' strExec = "exec VUE_UIDESK_InsertTransaction '" & Data_1 & "','" & Data_2 & "','" & Data_3 & "','" & Data_4 & "'"
             LogSuccess(HttpContext.Current.Session("UserName"), strExec)
         End Try
         Dim js As JavaScriptSerializer = New JavaScriptSerializer()

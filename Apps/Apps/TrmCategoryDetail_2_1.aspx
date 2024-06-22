@@ -26,11 +26,12 @@
                         <table id="TrmCategoryDetail" class="table mt-0 table-hover no-wrap table-borderless" style="width: 100%; overflow-x: scroll; overflow: scroll;">
                             <thead>
                                 <tr>
+                                   
                                     <th>ID</th>
-                                    <th>Category 1 ID</th>
-                                    <th>Category 2 ID </th>
-                                    <th>Sub Name</th>
-                                    <th>Description</th>
+                                    <th>Type </th>
+                                    <th>Category </th>
+                                    <th>Topic</th>
+                                    <th>Name</th>
                                     <th>Status</th>
                                     <th>User Create</th>
                                     <th style="width: 200px;">Date Create</th>
@@ -110,7 +111,7 @@
                 <div class="modal-footer modal-footer-uniform">
                     <button type="button" class="btn btn-rounded btn-danger" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-rounded btn-primary float-right" onclick="ActionUpdate()" id="Update">Update</button>
-                    <button type="button" class="btn btn-rounded btn-primary float-right" onclick="ActionSimpan()" id="Simpan">Save</button>
+                    <button type="button" class="btn btn-rounded btn-primary float-right" onclick="ActionSimpan(0)" id="Simpan">Save</button>
                 </div>
             </div>
         </div>
