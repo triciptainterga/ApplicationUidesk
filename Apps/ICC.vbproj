@@ -1931,6 +1931,7 @@
     <Content Include="apps\js\TrmCampaignScript.js" />
     <Content Include="apps\js\TrmCategory.js" />
     <Content Include="apps\js\TrmCategoryDetail.js" />
+    <Content Include="apps\js\TrmCategoryDetail_2_1.js" />
     <Content Include="apps\js\TrmCategoryReason.js" />
     <Content Include="apps\js\TrmCategoryType.js" />
     <Content Include="apps\js\TrmChannel.js" />
