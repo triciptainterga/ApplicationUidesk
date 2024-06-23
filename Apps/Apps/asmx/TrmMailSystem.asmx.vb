@@ -1841,4 +1841,46 @@ Public Class TrmMailSystem1
             Return js.Serialize(listTickets)
         End If
     End Function
+
+    <WebMethod(EnableSession:=True)>
+    <ScriptMethod(UseHttpGet:=False, ResponseFormat:=ResponseFormat.Json)>
+    Public Function AHU_Uidesk_TrxAssignEmail(ByVal Access As String, ByVal IvcID As String, ByVal Agent As String, ByVal ReasonAssign As String, ByVal User As String) As String
+        Dim listTickets As List(Of resultInsert) = New List(Of resultInsert)()
+        Dim strExec As String = String.Empty
+        Dim constr As String = ConfigurationManager.ConnectionStrings("DefaultConnection").ConnectionString
+        Try
+            Using con As New SqlConnection(constr)
+                Dim sqlComm As New SqlCommand()
+                sqlComm.Connection = con
+                sqlComm.CommandText = "AHU_Uidesk_TrxAssignEmail"
+                sqlComm.CommandType = CommandType.StoredProcedure
+                sqlComm.Parameters.AddWithValue("Access", Access)
+                sqlComm.Parameters.AddWithValue("IvcID", IvcID)
+                sqlComm.Parameters.AddWithValue("Agent", Agent)
+                sqlComm.Parameters.AddWithValue("ReasonAssign", ReasonAssign)
+                sqlComm.Parameters.AddWithValue("User", User)
+                con.Open()
+                sqlComm.ExecuteNonQuery()
+                con.Close()
+            End Using
+        Catch ex As Exception
+            Dim objectTickets As resultInsert = New resultInsert()
+            objectTickets.Result = "False"
+            objectTickets.TrxmsgSystem = ex.Message()
+            listTickets.Add(objectTickets)
+            strExec = "exec AHU_Uidesk_TrxAssignEmail '" & Access & "','" & IvcID & "','" & Agent & "','" & ReasonAssign & "','" & User & "'"
+            LogError(HttpContext.Current.Session("UserName"), ex, strExec)
+        Finally
+            Dim objectTickets As resultInsert = New resultInsert()
+            objectTickets.Result = "True"
+            objectTickets.TrxmsgSystem = "Data Has Been Save"
+            listTickets.Add(objectTickets)
+            strExec = "exec AHU_Uidesk_TrxAssignEmail '" & Access & "','" & IvcID & "','" & Agent & "','" & ReasonAssign & "','" & User & "'"
+            LogSuccess(HttpContext.Current.Session("UserName"), strExec)
+        End Try
+        Dim js As JavaScriptSerializer = New JavaScriptSerializer()
+        Return js.Serialize(listTickets)
+    End Function
+
+
 End Class
