@@ -27,16 +27,16 @@ function TrmCategoryDetail() {
                 var urlClick = "<div class='dropdown'>" +
                     "<a data-toggle='dropdown' href='#'><i class='ti-more-alt rotate-90 text-black'></i></a>" +
                     "<div class='dropdown-menu dropdown-menu-right'>" +
-                    "<a class='dropdown-item' href='#' onclick=showUpdate('" + json[i].ID + "')><i class='fa fa-pencil'></i> Edit</a>" +
+                    "<a class='dropdown-item' href='#' onclick=showUpdate('" + json[i].Id + "','" + json[i].CategoryID + "','" + json[i].SubCategory1ID + "','" + json[i].SubCategory2ID + "','" + json[i].name + "','" + json[i].Status + "')><i class='fa fa-pencil'></i> Edit</a>" +
                     "</div>" +
                     "</div>"
-                if (json[i].Status == "Aktif") {
+                if (json[i].Status == "Y") {
                     var TrxParam = "<span class='badge badge-pill badge-success' style='width: 60px;'>Aktif</span>"
                 } else {
                     var TrxParam = "<span class='badge badge-pill badge-danger' style='width: 60px;'>Non Aktif</span>"
                 }
-
-                myTable.row.add([json[i].ID, json[i].CategoryID, json[i].SubCategory1ID, json[i].SubCategory2ID, json[i].SubName, TrxParam, json[i].UserCreate, newDate + ' ' + newTime, urlClick]).draw(false);
+                //var IdData = "<label style='display:none'>'" +json[i].Id +"'</span>"
+                myTable.row.add([json[i].Id, json[i].category, json[i].SubName, json[i].Topik, json[i].name, TrxParam, json[i].UserCreate, newDate + ' ' + newTime, urlClick]).draw(false);
 
             }
 
@@ -80,40 +80,7 @@ function TrmSelectCategoryDetail(TrxID) {
         }
     })
 
-    //var JenisKondisi = "AllWhereData";
-    //var NamaView = "TrmCategoryDetail";
-    //var KondisiData = "Where ID='" + TrxID + "'";
-    //var jsonText = JSON.stringify({ tableType: JenisKondisi, tableName: NamaView, paramQuery: KondisiData });
-
-    //$.ajax({
-    //    type: "POST",
-    //    url: "WebServiceGetDataMaster.asmx/GetWhereRecords",
-    //    data: jsonText,
-    //    contentType: "application/json; charset=utf-8",
-    //    dataType: "json",
-    //    success: function (data) {
-    //        var json = JSON.parse(data.d);
-    //        var i, x, result = "";
-
-    //        for (i = 0; i < json.length; i++) {
-
-    //            $('#cmbCategory option:selected').text(json[i].CategoryName);
-    //            $("#cmbCategoryType option:selected").text(json[i].CategoryType);
-    //            $('#TxtCategoryTypeName').val(json[i].SubName);
-    //            $("#cmbStatus option:selected").text(json[i].Status);
-
-    //            $("#ContentPlaceHolder1_Hd_CmbCategory").val(json[i].CategoryID);
-    //            $("#ContentPlaceHolder1_Hd_CmbCategoryType").val(json[i].SubCategory1ID);
-    //            $("#ContentPlaceHolder1_Hd_Status").val(json[i].NA);
-    //        }
-
-    //    },
-    //    error: function (xmlHttpRequest, textStatus, errorThrown) {
-    //        console.log(xmlHttpRequest.responseText);
-    //        console.log(textStatus);
-    //        console.log(errorThrown);
-    //    }
-    //})
+    
 }
 function cmbCategory() {
     var cmbCategorySource = $('#cmbCategory');
@@ -144,7 +111,50 @@ function cmbCategory() {
         }
     })
 }
+
+
+async function cmbCategoryChangebyId(Id,subId) {
+
+
+    var JenisKondisi = "AllWhereData";
+    var cmbCategoryType = $('#cmbCategoryType');
+    var selectedText = $("#cmbCategory").find("option:selected").text();
+    var selectedValue = $("#cmbCategory").val();
+    $("#ContentPlaceHolder1_Hd_CmbCategory").val(selectedValue);
+
+    $.ajax({
+        type: "POST",
+        url: "WebServiceGetDataMaster.asmx/OnChangeTransactionTrmCategoryType",
+        data: "{TrxID:'" + selectedValue + "', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxName: '0', TrxStatus: '0'}",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+            var json = JSON.parse(data.d);
+            var i, x, resultCategoryType = "";
+
+            cmbCategoryType.empty();
+            cmbCategoryType.append('<option value="">Select</option>');
+            for (i = 0; i < json.length; i++) {
+                if (json[i].SubCategory1ID == Id)
+                    resultCategoryType = '<option selected value="' + json[i].SubCategory1ID + '">' + json[i].SubName + '</option>';
+                else
+                    resultCategoryType = '<option value="' + json[i].SubCategory1ID + '">' + json[i].SubName + '</option>';
+                cmbCategoryType.append(resultCategoryType);
+            }
+
+            getWS_cmbCategoryTypeById(subId);
+            
+        },
+        error: function (xmlHttpRequest, textStatus, errorThrown) {
+            console.log(xmlHttpRequest.responseText);
+            console.log(textStatus);
+            console.log(errorThrown);
+        }
+    })
+}
 function cmbCategoryChange() {
+
+
     var JenisKondisi = "AllWhereData";
     var cmbCategoryType = $('#cmbCategoryType');
     var selectedText = $("#cmbCategory").find("option:selected").text();
@@ -208,16 +218,17 @@ function cmbTypeChange() {
         }
     })
 }
-function getWS_cmbCategoryType(value) {
-    var selectedText = $("#cmbCategoryType").find("option:selected").text();
-    var selectedValue = $("#cmbCategoryType").val();
+
+function cmbTypeChangebyId(Id) {
+    var JenisKondisi = "AllWhereData";
     var cmbCategoryTopic = $('#cmbCategoryTopic');
-    console.log("Selected Text: " + selectedText + " Value: " + selectedValue);
-    $("#ContentPlaceHolder1_Hd_CmbCategoryType").val(selectedValue)
+    var selectedText = $("#cmbCategory").find("option:selected").text();
+    var selectedValue = $("#cmbCategory").val();
+    $("#ContentPlaceHolder1_Hd_CmbCategory").val(selectedValue);
 
     $.ajax({
         type: "POST",
-        url: "WebServiceGetDataMaster.asmx/OnChangeTransactionTrmCategoryTopic",
+        url: "WebServiceGetDataMaster.asmx/OnChangeTransactionTrmCategoryType",
         data: "{TrxID:'" + selectedValue + "', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxName: '0', TrxStatus: '0'}",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
@@ -228,7 +239,86 @@ function getWS_cmbCategoryType(value) {
             cmbCategoryTopic.empty();
             cmbCategoryTopic.append('<option value="">Select</option>');
             for (i = 0; i < json.length; i++) {
+                if (json[i].SubCategory1ID == Id)
+                    resultCategoryType = '<option selected value="' + json[i].SubCategory1ID + '">' + json[i].SubName + '</option>';
+                else
+                    resultCategoryType = '<option value="' + json[i].SubCategory1ID + '">' + json[i].SubName + '</option>';
+
+                cmbCategoryTopic.append(resultCategoryType);
+            }
+
+        },
+        error: function (xmlHttpRequest, textStatus, errorThrown) {
+            console.log(xmlHttpRequest.responseText);
+            console.log(textStatus);
+            console.log(errorThrown);
+        }
+    })
+}
+function getWS_cmbCategoryType(value) {
+    var selectedText = $("#cmbCategoryType").find("option:selected").text();
+    var selectedValue = $("#cmbCategoryType").val();
+    
+    console.log("Selected Text: " + selectedText + " Value: " + selectedValue);
+
+    var cmbCategoryTopic = $('#cmbCategoryTopic');
+   
+
+    $.ajax({
+        type: "POST",
+        url: "WebServiceGetDataMaster.asmx/UIDESK_TrxTransactionTicket",
+        data: "{TrxID:'" + selectedValue + "', TrxSearching:'UideskIndonesia', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxAction: 'UIDESK309'}",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+            var json = JSON.parse(data.d);
+            var i, x, resultCategoryType = "";
+
+            cmbCategoryTopic.empty();
+            cmbCategoryTopic.append('<option value="">Select</option>');
+            for (i = 0; i < json.length; i++) {
                 resultCategoryType = '<option value="' + json[i].SubCategory2ID + '">' + json[i].SubName + '</option>';
+                cmbCategoryTopic.append(resultCategoryType);
+            }
+
+        },
+        error: function (xmlHttpRequest, textStatus, errorThrown) {
+            console.log(xmlHttpRequest.responseText);
+            console.log(textStatus);
+            console.log(errorThrown);
+        }
+    })
+    //alert(selectedValue)
+    //alert($("#ContentPlaceHolder1_Hd_CmbCategoryDetail").val())
+}
+
+async function getWS_cmbCategoryTypeById(value) {
+    var selectedText = $("#cmbCategoryType").find("option:selected").text();
+    var selectedValue = $("#cmbCategoryType").val();
+
+    console.log("Selected Text: " + selectedText + " Value: " + selectedValue);
+
+    var cmbCategoryTopic = $('#cmbCategoryTopic');
+
+
+    $.ajax({
+        type: "POST",
+        url: "WebServiceGetDataMaster.asmx/UIDESK_TrxTransactionTicket",
+        data: "{TrxID:'" + selectedValue + "', TrxSearching:'UideskIndonesia', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxAction: 'UIDESK309'}",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+            var json = JSON.parse(data.d);
+            var i, x, resultCategoryType = "";
+
+            cmbCategoryTopic.empty();
+            cmbCategoryTopic.append('<option value="">Select</option>');
+            for (i = 0; i < json.length; i++) {
+
+                if (value == json[i].SubCategory2ID)
+                    resultCategoryType = '<option selected value="' + json[i].SubCategory2ID + '">' + json[i].SubName + '</option>';
+                else
+                    resultCategoryType = '<option value="' + json[i].SubCategory2ID + '">' + json[i].SubName + '</option>';
                 cmbCategoryTopic.append(resultCategoryType);
             }
 
@@ -267,18 +357,40 @@ function showAdd() {
     $("#cmbCategoryType").val("");
     $("#cmbStatus").val("");
 }
-function showUpdate(TrxID) {
+ function showUpdate(TrxID,CategoryID,SubCategory1ID,SubCategory2ID,Name,Status) {
+
     $("#ModalChannel").modal('show');
     $("#Simpan").css("display", "none");
     $("#Update").css("display", "block");
     $("#ContentPlaceHolder1_TrxID").val(TrxID);
-    TrmSelectCategoryDetail($("#ContentPlaceHolder1_TrxID").val())
+
+
+
+   
+
+    //$('#cmbCategory').selectedValue();
+    $('#cmbCategory').val(CategoryID);
+
+   
+     cmbCategoryChangebyId(SubCategory1ID, SubCategory2ID)
+
+     // getWS_cmbCategoryTypeById(SubCategory2ID)
+    //$("#cmbCategoryType").val(SubCategory1ID);
+   // $("#cmbCategoryTopic").val(SubCategory2ID);
+    $('#TxtCategoryTypeName').val(Name);
+    $("#cmbStatus").val(Status);
+        
+      
+
+
+   //TrmSelectCategoryDetail($("#ContentPlaceHolder1_TrxID").val())
 }
-function ActionSimpan() {
+function ActionSimpan(Id) {
+    var ID = Id;
     var TrxName = $('#TxtCategoryTypeName').val();
-    var TrxCmbCategory = $("#ContentPlaceHolder1_Hd_CmbCategory").val();
-    var TrxCmbCategoryType = $("#ContentPlaceHolder1_Hd_CmbCategoryType").val();
-    var TrxCmbCategoryTopic = $("#ContentPlaceHolder1_Hd_CmbCategoryTopic").val();
+    var TrxCmbCategory = $("#cmbCategory").val();
+    var TrxCmbCategoryType = $("#cmbCategoryType").val();
+    var TrxCmbCategoryTopic = $("#cmbCategoryTopic").val();
     var TrxCmbStatus = $("#ContentPlaceHolder1_Hd_Status").val();
 
     if (TrxCmbCategory == '') {
@@ -290,28 +402,15 @@ function ActionSimpan() {
         return false;
     }
     if (TrxCmbCategoryTopic == '') {
-        swal("Topic is empty")
+        swal("Category is empty")
         return false;
     }
+   
     if (TrxName == '') {
         swal("Topic is empty")
         return false;
     }
-    //else {
-    //    var regex = /^[\u2019a-zA-ZÀ-ÿ0-9\s\\-]+$/;
-    //    if (regex.test(TrxName)) {
-    //    } else {
-    //        console.log(TrxName)
-    //        swal(
-    //            '',
-    //            'Data has been block',
-    //            'error'
-    //        ).then(function () {
-    //            return false;
-    //        });
-    //        return false;
-    //    }
-    //}
+    
     if (TrxCmbStatus == '') {
         swal("Status is empty")
         return false;
@@ -325,7 +424,7 @@ function ActionSimpan() {
         .then((willDelete) => {
             if (willDelete) {
 
-                var form_data = JSON.stringify({ TrxCategoryID: TrxCmbCategory, TrxSubCategory1ID: TrxCmbCategoryType, TrxSubCategory2ID: TrxCmbCategoryTopic, TrxName: TrxName, TrxStatus: TrxCmbStatus, TrxUserName: $("#hd_sessionLogin").val() });
+                var form_data = JSON.stringify({ ID:ID, TrxCategoryID: TrxCmbCategory, TrxSubCategory1ID: TrxCmbCategoryType, TrxSubCategory2ID: TrxCmbCategoryTopic, TrxName: TrxName, TrxStatus: TrxCmbStatus, TrxUserName: $("#hd_sessionLogin").val() });
                 $.ajax({
                     url: "WebServiceGetDataMaster.asmx/InsertTransactionTrmCategoryDetail_2_1",
                     method: "POST",
@@ -352,25 +451,35 @@ function ActionSimpan() {
         });
 }
 function ActionUpdate() {
+    var ID = $('#TxtCategoryTypeName').val() ;
     var TrxName = $('#TxtCategoryTypeName').val();
-    if (TrxName != '') {
-        //var regex = /^[^0-9*\\\^\/<>_#']+$/;
-        //if (regex.test(TrxName)) {
-        //} else {
-        //    console.log(TrxName)
-        //    swal(
-        //        '',
-        //        'Data has been block',
-        //        'error'
-        //    ).then(function () {
-        //        return false;
-        //    });
-        //    return false;
-        //}
-    }
-    var TrxCmbCategory = $("#ContentPlaceHolder1_Hd_CmbCategory").val();
-    var TrxCmbCategoryType = $("#ContentPlaceHolder1_Hd_CmbCategoryType").val();
+    var TrxCmbCategory = $("#cmbCategory").val();
+    var TrxCmbCategoryType = $("#cmbCategoryType").val();
+    var TrxCmbCategoryTopic = $("#cmbCategoryTopic").val();
     var TrxCmbStatus = $("#ContentPlaceHolder1_Hd_Status").val();
+
+    if (TrxCmbCategory == '') {
+        swal("Type is empty")
+        return false;
+    }
+    if (TrxCmbCategoryType == '') {
+        swal("Category is empty")
+        return false;
+    }
+    if (TrxCmbCategoryTopic == '') {
+        swal("Category is empty")
+        return false;
+    }
+
+    if (TrxName == '') {
+        swal("Topic is empty")
+        return false;
+    }
+
+    if (TrxCmbStatus == '') {
+        swal("Status is empty")
+        return false;
+    }
     swal({
         title: "Do you want to process?",
         icon: "warning",
@@ -380,9 +489,9 @@ function ActionUpdate() {
         .then((willDelete) => {
             if (willDelete) {
 
-                var form_data = JSON.stringify({ TrxID: $("#ContentPlaceHolder1_TrxID").val(), TrxCategoryID: TrxCmbCategory, TrxSubCategory1ID: TrxCmbCategoryType, TrxName: TrxName, TrxStatus: TrxCmbStatus, TrxUserName: $("#hd_sessionLogin").val() });
+                var form_data = JSON.stringify({ ID: $("#ContentPlaceHolder1_TrxID").val(), TrxCategoryID: TrxCmbCategory, TrxSubCategory1ID: TrxCmbCategoryType, TrxSubCategory2ID: TrxCmbCategoryTopic, TrxName: TrxName, TrxStatus: TrxCmbStatus, TrxUserName: $("#hd_sessionLogin").val() });
                 $.ajax({
-                    url: "WebServiceGetDataMaster.asmx/UpdateTransactionTrmCategoryDetail",
+                    url: "WebServiceGetDataMaster.asmx/InsertTransactionTrmCategoryDetail_2_1",
                     method: "POST",
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
@@ -390,7 +499,6 @@ function ActionUpdate() {
                     data: form_data,
                     success: function () {
                         console.log(form_data)
-
                         $("#ModalChannel").modal('hide');
                         window.location.href = "TrmCategoryDetail_2_1.aspx";
                     },
@@ -404,9 +512,6 @@ function ActionUpdate() {
                     }
                 });
 
-            } else {
-                //swal("Your imaginary file is safe!");
-                //$("#ModalChannel").modal('hide');
             }
         });
 }
