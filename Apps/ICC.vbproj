@@ -191,6 +191,7 @@
     <Content Include="apps\asmx\Coll_TrxTaskboard.asmx" />
     <Content Include="apps\asmx\Coll_TrxTransaksi.asmx" />
     <Content Include="apps\asmx\Coll_TrxUpload.asmx" />
+    <Content Include="apps\asmx\CsatService.asmx" />
     <Content Include="apps\asmx\Dashboard_L1.asmx" />
     <Content Include="apps\asmx\MailSystemService.asmx" />
     <Content Include="apps\asmx\Out_Dashboard.asmx" />
@@ -292,6 +293,14 @@
     <Content Include="apps\Coll_TrxTaskboard.aspx" />
     <Content Include="apps\Coll_TrxTransaksi.aspx" />
     <Content Include="apps\Coll_TrxUpload.aspx" />
+    <Content Include="apps\csat\ui\csat.aspx" />
+    <Content Include="apps\csat\ui\expired.html" />
+    <Content Include="apps\csat\ui\images\biasa.png" />
+    <Content Include="apps\csat\ui\images\kecewa.png" />
+    <Content Include="apps\csat\ui\images\puas.png" />
+    <Content Include="apps\csat\ui\js\index_act.js" />
+    <Content Include="apps\csat\ui\multiple.html" />
+    <Content Include="apps\csat\ui\selesai.html" />
     <Content Include="apps\css\bootstrap_extend.css" />
     <Content Include="apps\css\color_theme.css" />
     <Content Include="apps\css\icons\cryptocoins-master\cryptocoins-colors.css" />
@@ -24006,6 +24015,10 @@
       <DependentUpon>Coll_TrxUpload.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="apps\asmx\CsatService.asmx.vb">
+      <DependentUpon>CsatService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="apps\asmx\Dashboard_L1.asmx.vb">
       <DependentUpon>Dashboard_L1.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -24390,6 +24403,13 @@
     <Compile Include="apps\Coll_TrxUpload.aspx.vb">
       <DependentUpon>Coll_TrxUpload.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="apps\csat\ui\csat.aspx.designer.vb">
+      <DependentUpon>csat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\csat\ui\csat.aspx.vb">
+      <DependentUpon>csat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="apps\CVG_Repot_DigitalChannel.aspx.designer.vb">
       <DependentUpon>CVG_Repot_DigitalChannel.aspx</DependentUpon>
