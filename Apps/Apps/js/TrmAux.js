@@ -310,10 +310,9 @@ function LogoutSystem() {
                     updateAuxDatakelola($("#SM_MultiChatToken").val(), "logout", $("#SM_CompanyToken").val());
                     location.href = "../auth_login.aspx?signout=api";
                 }
-				else {
+                else {
                     location.href = "../auth_login.aspx?signout=api";
                 }
-
             }
 
         },

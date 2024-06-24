@@ -1,28 +1,4 @@
 ﻿$(document).ready(function () {
-    //$.ajax({
-    //    type: "POST",
-    //    url: "WebServiceGetDataMaster.asmx/UIDESK_TrmMasterCombo",
-    //    data: "{TrxID:'UideskIndonesia', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxAction: 'UIDESK124'}",
-    //    contentType: "application/json; charset=utf-8",
-    //    dataType: "json",
-    //    success: function (data) {
-
-    //        var json = JSON.parse(data.d);
-    //        var i, x, result = "";
-    //        if (json.length == 0) {
-    //            console.log("ChannelWhatsApp_NotFound")
-    //            updateLoginAuxDatakelola($("#SM_MultiChatToken").val(), "logout", $("#SM_CompanyToken").val());
-    //        }
-
-    //    },
-    //    error: function (xmlHttpRequest, textStatus, errorThrown) {
-    //        console.log(xmlHttpRequest.responseText);
-    //        console.log(textStatus);
-    //        console.log(errorThrown);
-    //    }
-    //})
-
-    getKotaKabupaten();
 
     $("#LoaderChannel").hide();
     TrxAttachmentTicket($("#hd_sessionLogin").val());
@@ -169,8 +145,10 @@ function ActionInsertCustomer(cusTomerid, channel, threadid, numberid, voice, su
     var TrxUsername = $("#hd_sessionLogin").val();
     var TrxCusTomerName = $("#cusTomerName").val();
     var TrxCusTomerEmail = $("#cusTomerEmail").val();
+    var TrxCusTomerPhone = "";
+    if ($("#cusTomerPhone").val() != "")
+         TrxCusTomerPhone = "62" + $("#cusTomerPhone").val().slice(1);
 
-   var TrxCusTomerPhone = "62" + $("#cusTomerPhone").val().slice(1);
     var TrxCusTomerGender = $("#cusTomerGender").val();
     var TrxCusTomerDate = $("#cusTomerDate").val();
     var TrxCustomerPolisNumber = "-";
@@ -197,20 +175,20 @@ function ActionInsertCustomer(cusTomerid, channel, threadid, numberid, voice, su
         }
 
     }
-    if (TrxCusTomerPhone != '') {
-        var numberNya = /^[0-9]+$/;
-        if (TrxCusTomerPhone.match(numberNya)) {
-            var PhoneLengt = TrxCusTomerPhone.toString().length;
-            if (PhoneLengt > '6' && PhoneLengt < '20') {
-            } else {
-                AutoValidasiWarning($("#hd_sessionLogin").val(), "Format <b>phone number</b> not valid")
-                return false
-            }
-        } else {
-            AutoValidasiWarning($("#hd_sessionLogin").val(), "Format <b>Phone Number</b> is numeric")
-            return false;
-        }
-    }
+    //if (TrxCusTomerPhone != '') {
+    //    var numberNya = /^[0-9]+$/;
+    //    if (TrxCusTomerPhone.match(numberNya)) {
+    //        var PhoneLengt = TrxCusTomerPhone.toString().length;
+    //        if (PhoneLengt > '6' && PhoneLengt < '20') {
+    //        } else {
+    //            AutoValidasiWarning($("#hd_sessionLogin").val(), "Format <b>phone number</b> not valid")
+    //            return false
+    //        }
+    //    } else {
+    //        AutoValidasiWarning($("#hd_sessionLogin").val(), "Format <b>Phone Number</b> is numeric")
+    //        return false;
+    //    }
+    //}
     //if (TrxCusTomerGender == '--Select--' || TrxCusTomerGender == '' || TrxCusTomerGender == '0') {
     //    AutoValidasiWarning($("#hd_sessionLogin").val(), "<b>Gender</b> is empty")
     //    return false;
@@ -2564,76 +2542,7 @@ function getProvince(value) {
 }
 
 
-function getKotaKabupaten(value) {
-    var cmbDatacusTomerCity = $('#cusTomerCity');   
-    var resultSourceCategory = "";
-    
 
-    var settings = {
-        "url": "https://alamat.thecloudalert.com/api/kecamatan/get/indonesia",
-        "method": "GET",
-        "timeout": 0,
-        "headers": {
-            "Cookie": "PHPSESSID=3ie8pj35sitmffprrtgju3kt9f"
-        },
-    };
-
-    $.ajax(settings).done(function (response) {
-
-        var json = response.result;
-        console.log("API city " + response.message)
-        var i, x;
-
-        cmbDatacusTomerCity.empty();
-        cmbDatacusTomerCity.append('<option value="">Select</option>');
-        if (response.message == "Berhasil") {
-            for (i = 0; i < json.length; i++) {
-
-                resultSourceCategory = '<option value="' + response.result[i].id + '">' + response.result[i].text + '</option>';
-                cmbDatacusTomerCity.append(resultSourceCategory);
-
-            }
-           
-        }
-        GetDatakab();
-
-    });
-}
-
-function GetDatakab(value) {
-    var cmbDatacusTomerCity = $('#cusTomerCity');
-
-
-
-
-    var settings = {
-        "url": "https://alamat.thecloudalert.com/api/getdata?type=kabupaten&country=indonesia",
-        "method": "GET",
-        "timeout": 0,
-        "headers": {
-            "Cookie": "PHPSESSID=3ie8pj35sitmffprrtgju3kt9f"
-        },
-    };
-
-    $.ajax(settings).done(function (response) {
-
-        var json = response.result;
-        console.log("API city " + response.message)
-        var i, x;
-
-       
-        if (response.message == "Berhasil") {
-            for (i = 0; i < json.length; i++) {
-
-               
-                cmbDatacusTomerCity.append(resultSourceCategory);
-
-            }
-            console.log(response);
-        } 
-
-    });
-}
 function getCity(value) {
     var cmbDatacusTomerCity = $('#cusTomerDistrict');
     var idgetProvince = $("#cusTomerCity").val();
@@ -3503,7 +3412,8 @@ function SearchingDataCustomer(ChannelAccount) {
 
                     } else if (json[i].Result == "DataGkAdaDiUpload") {
 
-                        $("#cusTomerPhone").val(ChannelAccount)
+                        $("#cusTomerPhone").val("")
+
                         $("#modal-SearchAPI").modal('show');
                         $("#modal-SearchUser").modal('hide');
 
@@ -4539,7 +4449,7 @@ function ValidasiDataCustomer(ChannelAccount) {
                             } else if (json[i].Result == "DataGkAdaDiUpload") {
 
                                 $("#chat-box-body").empty()
-                                $("#cusTomerPhone").val(ChannelAccount)
+                                $("#cusTomerPhone").val("")
                                 $("#modal-SearchAPI").modal('hide');
                                 $("#modal-SearchUser").modal('hide');
                                 $("#modal-center").modal('show');
@@ -4602,7 +4512,13 @@ function ValidasiDataCustomer(ChannelAccount) {
                         } else if (json[i].Result == "DataGkAdaDiUpload") {
 
                             $("#chat-box-body").empty()
-                            $("#cusTomerPhone").val(ChannelAccount)
+                            $("#cusTomerPhone").val("")
+                            $("#TxtChannelValue").val(ChannelAccount)
+                            $("#cmbOtherChannel").val(getParameterByName("channel"))
+
+                            
+
+                            
                             $("#modal-SearchAPI").modal('hide');
                             $("#modal-SearchUser").modal('hide');
                             $("#modal-center").modal('show');

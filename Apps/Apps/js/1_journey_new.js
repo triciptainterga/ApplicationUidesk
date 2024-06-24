@@ -8,6 +8,7 @@ var companyToken;
 $(document).ready(function () {
     urlDatakelola = $("#SM_UrlDatakelola").val();
     companyToken = $("#SM_CompanyToken").val();
+
     
 
 	getWS_MasterLoad();

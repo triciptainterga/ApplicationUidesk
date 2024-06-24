@@ -71,7 +71,7 @@ function getWS_1_Thread_select() {
                     //} else {
                     //    var FollowThread = json[i].ValueThread
                     //}
-                    if (json[i].ValueThread == "E-mail" || json[i].ValueThread == "EMAIL") {
+                    if (json[i].ValueThread == "Email" || json[i].ValueThread == "EMAIL") {
                         var TrxColor = "info";
                         var urlClick = "<div class='dropdown'>" +
                             "<a data-toggle='dropdown' href='#'><i class='ti-more-alt rotate-90 text-black'></i></a>" +
@@ -438,8 +438,8 @@ function WSActionTransactionKotak() {
     })
 }
 function PreviewEmail(TrxEmailID) {
-    $("#ThreadNumber").val(TrxEmailID);
-    document.getElementById("framefile_html").src = "https://Pelni.uidesk.id/FileEmail/INBOX/" + TrxEmailID + "/file.html"
+    $("#ThreadNumber").val(TrxWhatsAppID);
+    document.getElementById("framefile_html").src = "https://show.uidesk.id/mbai/FileEmail/INBOX/" + TrxEmailID + "/file.html"
     $("#modal-center-email").modal('show')
 }
 function PreviewWhatsApp(TrxWhatsAppID,nameChannel) {

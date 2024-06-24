@@ -242,9 +242,9 @@ function OnchangeCmbLevelUser() {
     } else if (selectedValue == 'Layer 2') {
         //$("#cmbDepartment").find("option:selected").text("");
         //$("#cmbDepartment").val("");
-        $('#cmbDepartment').attr("disabled", true);
-        $('#cmbGroupAgent').show();
-        $('#divChannel').css("display", "none");
+        $('#cmbDepartment').attr("disabled", false);
+        $('#cmbGroupAgent').attr("disabled", false);
+       // $('#divChannel').css("display", "none");
     } else if (selectedValue == 'Layer 3') {
         //alert(selectedValue)
         //alert($("#cmbGroupAgent").val())
@@ -513,7 +513,6 @@ function ActionUpdate() {
     var cmbComboSiteValue = $("#ComboSite").val();
     var cmbStatusText = $("#cmbStatus").find("option:selected").text();
     var cmbStatusValue = $("#cmbStatus").val();
-	
     if ($("#TrxEmail").val() != '') {
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if ($("#TrxEmail").val().match(mailformat)) {
@@ -719,12 +718,8 @@ function TrmUserApplication(TrxUserID) {
                 $("#cmbGroupAgent option:selected").text(json[i].NamaGrup);
                 $('#cmbGroupAgent').attr('disabled', true);
                 $("#cmbGroupAgent").val(json[i].UNITKERJA);
-                //$("#ComboSite option:selected").text();
-				
-				var selectedValue = $("#ComboSite").find('option').filter(function() {
-				return $(this).text() === json[i].Site;
-					}).val();
-                $("#ComboSite").val(selectedValue);
+                $("#ComboSite option:selected").text(json[i].Site);
+                $("#ComboSite").val(json[i].ID);
                 $('#ContentPlaceHolder1_TrxTokenMeta').val(json[i].TokenMeta);
                 CKEDITOR.instances.TrxDescription.setData(json[i].Description)
 

@@ -71,6 +71,7 @@ function getParameterByName(name, url = window.location.href) {
     if (!results) return null;
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
+
 }
 function getWS_2_taskboard() {
     var ValUserID = $("#hd_sessionLogin").val();

@@ -1,10 +1,9 @@
 ﻿$(document).ready(function () {
-    //cmbCategory();
-    ///cmbEscalationUnit();
-    //ComboEskalasiLayer();
-	
+    cmbCategory();
+    cmbEscalationUnit();
+    ComboEskalasiLayer();
     TrmCategoryReason();
-    //$("#LoaderPage").hide();
+    $("#LoaderPage").hide();
 });
 function cmbCategory() {
     //var JenisKondisi = "AllWhereData";
@@ -312,16 +311,16 @@ function TrmCategoryReason() {
     $.ajax({
         type: "POST",
         url: "WebServiceGetDataMaster.asmx/TableTransactionTrmCategoryReason",
-        data: "{ TrxID:  '-', TrxCategoryID: '0', TrxSubCategory1ID: '0', TrxSubCategory2ID: '0', TrxName: '0', TrxEscalationUnit: '0', TrxLayer: '0', TrxSLA: '0', TrxStatus: '0', TrxUserName: '" + $("#hd_sessionLogin").val() + "'}",
+        data: "{ TrxID:  'SELECT', TrxCategoryID: '0', TrxSubCategory1ID: '0', TrxSubCategory2ID: '0',TrxSubCategory2_1ID: '0', TrxName: '0', TrxEscalationUnit: '0', TrxLayer: '0', TrxSLA: '0', TrxStatus: '0', TrxUserName: '" + $("#hd_sessionLogin").val() + "'}",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (data) {
             var json = JSON.parse(data.d);
             var i = "";
-			
+
             myTable.clear().draw();
             for (i = 0; i < json.length; i++) {
-				
+
                 var d = new Date(json[i].DateCreate);
                 var milisegundos = parseInt(json[i].DateCreate.replace("/Date(", "").replace(")/", ""));
                 var newDate = new Date(milisegundos).toLocaleDateString("en-UE");
@@ -339,8 +338,7 @@ function TrmCategoryReason() {
                     var TrxParam = "<span class='badge badge-pill badge-danger' style='width: 60px;'>Non Aktif</span>"
                 }
                 myTable.row.add([json[i].ID, json[i].CategoryName, json[i].CategoryType, json[i].CategoryDetail, json[i].CategoryNew, json[i].SubName, json[i].ReasonCode, json[i].Priority, json[i].TujuanEscalation, json[i].IDKamus, json[i].Layer, json[i].SLA, TrxParam, json[i].UserCreate, urlClick]).draw(false);
-            
-			}
+            }
 
         },
         error: function (xmlHttpRequest, textStatus, errorThrown) {

@@ -29,7 +29,7 @@
     <script src="apps/js/pages/sweetalert.min.js"></script>--%>
     <%--<script src="http://omni.uidesk.id/wagent/assets/plugins/socket.io-client/socket.io.min.js"></script>--%>
     <script type="text/javascript">
-      	 const IPSERVER = "https://pelni.uidesk.id/"
+        const IPSERVER = "https://crm.uidesk.id/roatex/"
         console.log("IPSERVER " + IPSERVER)
     </script>
     <script>     

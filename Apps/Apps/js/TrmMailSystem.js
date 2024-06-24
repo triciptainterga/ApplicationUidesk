@@ -2690,10 +2690,9 @@ function PreviewTableInbox(PreviewID) {
                 if (json[i].Result == "True") {
 
                     $("#modal-preview").modal('show');
-                   // document.getElementById("Preview_FrameHTML").src = "" + FileInboxHTML + "/" + PreviewID + "/file.html"
-					$("#Preview_FrameHTML").attr("src", FileInboxHTML + "/" + PreviewID + "/file.html");
-                    PreviewAttachmentInboxEmail(PreviewID);
-                    PreviewAttachmentReplyEmail(PreviewID);
+                    document.getElementById("Preview_FrameHTML").src = "" + FileInboxHTML + "/" + PreviewID + "/file.html"
+                    PreviewAttachmentInboxEmail(PreviewID)
+                    PreviewAttachmentReplyEmail(PreviewID)
 
                 } else {
                     swal(
