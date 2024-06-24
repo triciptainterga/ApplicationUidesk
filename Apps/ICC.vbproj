@@ -184,6 +184,7 @@
     <Content Include="apps\asmx\3_Channel_Sosmed_Analytic.asmx" />
     <Content Include="apps\asmx\3_Channel_Sosmed_Log.asmx" />
     <Content Include="apps\asmx\3_CreateCampaign_Grid.asmx" />
+    <Content Include="apps\asmx\5_Report_Activity.asmx" />
     <Content Include="apps\asmx\Campaign.asmx" />
     <Content Include="apps\asmx\CampaignDetail.asmx" />
     <Content Include="apps\asmx\Coll_Dashboard.asmx" />
@@ -1902,6 +1903,7 @@
     <Content Include="apps\js\pages\steps.js" />
     <Content Include="apps\js\pages\stock-prices.js" />
     <Content Include="apps\js\ProfileAPI.js" />
+    <Content Include="apps\js\Report_Activity.js" />
     <Content Include="apps\js\sweetalert.min.js" />
     <Content Include="apps\js\pages\timeline.js" />
     <Content Include="apps\js\pages\toastr.js" />
@@ -12375,6 +12377,11 @@
     <Content Include="apps\XtraDatakelola_1.aspx" />
     <Content Include="apps\XtraDatakelola_2.aspx" />
     <Content Include="apps\XtraHistoryMultichat.aspx" />
+    <Content Include="apps\XtraReportCallStatic.aspx" />
+    <Content Include="apps\XtraReportDetailConversation.aspx" />
+    <Content Include="apps\XtraReportDetailDaily.aspx" />
+    <Content Include="apps\XtraReportMonthly.aspx" />
+    <Content Include="apps\XtraReportSummaryConversation.aspx" />
     <Content Include="apps\XtraReport_TicketMapping.aspx" />
     <Content Include="apps\Xtra_ReportActivityCall.aspx" />
     <Content Include="assets\vendor_components\animate\animate.css" />
@@ -20537,6 +20544,7 @@
     <Content Include="apps\asmx\json\SampleAPI.json" />
     <Content Include="apps\asmx\json\profileAPI.json" />
     <Content Include="apps\js\voice\Clean-Audio-Player-jQuery\README.md" />
+    <Content Include="apps\4_Reports.aspx.bak" />
     <None Include="apps\R_Interaction_DBML.dbml.layout">
       <DependentUpon>R_Interaction_DBML.dbml</DependentUpon>
     </None>
@@ -23011,11 +23019,6 @@
     <Content Include="obj\Debug\ICC.vbproj.GenerateResource.Cache" />
     <Content Include="obj\Debug\ICC.xml" />
     <Content Include="obj\Debug\Tsc.out" />
-    <Content Include="SF_2020.aspx" />
-    <Content Include="SF_2021.aspx" />
-    <Content Include="SF_2022.aspx" />
-    <Content Include="SF_2023.aspx" />
-    <Content Include="SF_2024.aspx" />
     <Content Include="TrmForgot.aspx" />
     <Content Include="uidesk_background-.png" />
     <Content Include="uidesk_background.png" />
@@ -23985,6 +23988,10 @@
     </Compile>
     <Compile Include="apps\asmx\3_CreateCampaign_Grid.asmx.vb">
       <DependentUpon>3_CreateCampaign_Grid.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="apps\asmx\5_Report_Activity.asmx.vb">
+      <DependentUpon>5_Report_Activity.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="apps\asmx\Campaign.asmx.vb">
@@ -25482,6 +25489,27 @@
       <DependentUpon>XtraHistoryMultichat.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="apps\XtraReportDetailConversation.aspx.designer.vb">
+      <DependentUpon>XtraReportDetailConversation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\XtraReportDetailConversation.aspx.vb">
+      <DependentUpon>XtraReportDetailConversation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apps\XtraReportDetailDaily.aspx.designer.vb">
+      <DependentUpon>XtraReportDetailDaily.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\XtraReportDetailDaily.aspx.vb">
+      <DependentUpon>XtraReportDetailDaily.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apps\XtraReportSummaryConversation.aspx.designer.vb">
+      <DependentUpon>XtraReportSummaryConversation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\XtraReportSummaryConversation.aspx.vb">
+      <DependentUpon>XtraReportSummaryConversation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="apps\XtraReport_TicketMapping.aspx.designer.vb">
       <DependentUpon>XtraReport_TicketMapping.aspx</DependentUpon>
     </Compile>
@@ -25544,41 +25572,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="SF_2020.aspx.designer.vb">
-      <DependentUpon>SF_2020.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SF_2020.aspx.vb">
-      <DependentUpon>SF_2020.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SF_2021.aspx.designer.vb">
-      <DependentUpon>SF_2021.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SF_2021.aspx.vb">
-      <DependentUpon>SF_2021.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SF_2022.aspx.designer.vb">
-      <DependentUpon>SF_2022.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SF_2022.aspx.vb">
-      <DependentUpon>SF_2022.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SF_2023.aspx.designer.vb">
-      <DependentUpon>SF_2023.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SF_2023.aspx.vb">
-      <DependentUpon>SF_2023.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SF_2024.aspx.designer.vb">
-      <DependentUpon>SF_2024.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SF_2024.aspx.vb">
-      <DependentUpon>SF_2024.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TrmForgot.aspx.designer.vb">
       <DependentUpon>TrmForgot.aspx</DependentUpon>
