@@ -28,7 +28,7 @@ $(document).ready(function () {
         var form_data = JSON.stringify({ TicketNumber: ticid, Channel: kanal});
         $.ajax({
             type: "POST",
-            url: "../../apps/asmx/CsatService.asmx/ws_csat_initiate",
+            url: "asmx/CsatService.asmx/ws_csat_initiate",
             data: form_data,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
