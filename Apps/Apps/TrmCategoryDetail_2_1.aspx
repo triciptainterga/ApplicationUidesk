@@ -20,7 +20,7 @@
             <div class="col-12">
                 <div class="box">
                     <div class="box-header with-border">
-                        <h4 class="box-title">Data Topic 2_1&nbsp;<i class="fa fa-plus" onclick="showAdd()" style="cursor:pointer;"></i></h4>
+                        <h4 class="box-title">Data New &nbsp;<i class="fa fa-plus" onclick="showAdd()" style="cursor:pointer;"></i></h4>
                     </div>
                     <div class="box-body">
                         <table id="TrmCategoryDetail" class="table mt-0 table-hover no-wrap table-borderless" style="width: 100%; overflow-x: scroll; overflow: scroll;">
