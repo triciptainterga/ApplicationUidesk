@@ -24,15 +24,15 @@ function TrmCategoryDetail() {
                 var newDate = new Date(milisegundos).toLocaleDateString("en-UE");
                 var newTime = new Date(milisegundos).toLocaleTimeString("en-UE");
 
-                var urlClick = "<div class='dropdown'>" +
+                let urlClick = "<div class='dropdown'>" +
                     "<a data-toggle='dropdown' href='#'><i class='ti-more-alt rotate-90 text-black'></i></a>" +
                     "<div class='dropdown-menu dropdown-menu-right'>" +
-                    "<a class='dropdown-item' href='#' onclick=showUpdate('" + json[i].Id + "','" + json[i].CategoryID + "','" + json[i].SubCategory1ID + "','" + json[i].SubCategory2ID + "','" + json[i].name + "','" + json[i].Status + "')><i class='fa fa-pencil'></i> Edit</a>" +
+                    "<a class='dropdown-item' href='#' onclick=showUpdate('" + json[i].Id +"')><i class='fa fa-pencil'></i> Edit</a>" +
                     "</div>" +
                     "</div>"
                 if (json[i].Status == "Y") {
                     var TrxParam = "<span class='badge badge-pill badge-success' style='width: 60px;'>Aktif</span>"
-                } else {
+                } else if (json[i].Status == "N"){
                     var TrxParam = "<span class='badge badge-pill badge-danger' style='width: 60px;'>Non Aktif</span>"
                 }
                 //var IdData = "<label style='display:none'>'" +json[i].Id +"'</span>"
@@ -357,28 +357,49 @@ function showAdd() {
     $("#cmbCategoryType").val("");
     $("#cmbStatus").val("");
 }
- function showUpdate(TrxID,CategoryID,SubCategory1ID,SubCategory2ID,Name,Status) {
+ function showUpdate(TrxID) {
 
     $("#ModalChannel").modal('show');
     $("#Simpan").css("display", "none");
     $("#Update").css("display", "block");
-    $("#ContentPlaceHolder1_TrxID").val(TrxID);
+     $("#ContentPlaceHolder1_TrxID").val(TrxID);
+
+     $.ajax({
+         type: "POST",
+         //url: "WebServiceGetDataMaster.asmx/TableTransactionTrmCategoryDetail_2_1",
+         //data: "{TrxID:'-', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxName: '-', TrxStatus: '-'}",
+         url: "WebServiceGetDataMaster.asmx/UIDESK_TrmMasterCombo",
+         data: "{TrxID:'"+TrxID+"', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxAction: 'UIDESK310_2_1_Edit'}",
+         contentType: "application/json; charset=utf-8",
+         dataType: "json",
+         success: function (data) {
+             var json = JSON.parse(data.d);
+            
+             $('#cmbCategory').val(json[0].CategoryID);
+
+             cmbCategoryChangebyId(json[0].SubCategory1ID, json[0].SubCategory2ID)
+
+             // getWS_cmbCategoryTypeById(SubCategory2ID)
+             //$("#cmbCategoryType").val(SubCategory1ID);
+             // $("#cmbCategoryTopic").val(SubCategory2ID);
+             $('#TxtCategoryTypeName').val(json[0].name);
+             $("#cmbStatus").val(json[0].Status);
+
+             
+
+         },
+         error: function (xmlHttpRequest, textStatus, errorThrown) {
+             console.log(xmlHttpRequest.responseText);
+             console.log(textStatus);
+             console.log(errorThrown);
+         }
+     })
 
 
 
    
 
-    //$('#cmbCategory').selectedValue();
-    $('#cmbCategory').val(CategoryID);
-
-   
-     cmbCategoryChangebyId(SubCategory1ID, SubCategory2ID)
-
-     // getWS_cmbCategoryTypeById(SubCategory2ID)
-    //$("#cmbCategoryType").val(SubCategory1ID);
-   // $("#cmbCategoryTopic").val(SubCategory2ID);
-    $('#TxtCategoryTypeName').val(Name);
-    $("#cmbStatus").val(Status);
+    
         
       
 
