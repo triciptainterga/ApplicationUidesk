@@ -477,7 +477,7 @@ function ActionUpdate() {
     var TrxCmbCategory = $("#cmbCategory").val();
     var TrxCmbCategoryType = $("#cmbCategoryType").val();
     var TrxCmbCategoryTopic = $("#cmbCategoryTopic").val();
-    var TrxCmbStatus = $("#ContentPlaceHolder1_Hd_Status").val();
+    var TrxCmbStatus = $("#cmbStatus").val();
 
     if (TrxCmbCategory == '') {
         swal("Type is empty")
