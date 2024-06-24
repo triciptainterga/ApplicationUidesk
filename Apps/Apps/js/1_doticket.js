@@ -1795,6 +1795,7 @@ function getWS_CategoryType(value) {
 
             }
 
+            Get_ProductName(selectedValue);
         },
         error: function (xmlHttpRequest, textStatus, errorThrown) {
             console.log(xmlHttpRequest.responseText);
@@ -2055,12 +2056,12 @@ function getWS_SLAReason(value) {
             TicketLayer.empty();
             for (i = 0; i < json.length; i++) {
 
-                slaSpanData.append("<span class='badge badge-pill badge-primary float-right' style='font-weight:bold;font-size:11px;' id='Ticket_SLA'><i class='fa fa-clock-o'></i>&nbsp;" + json[i].SLA + " Hour</span>");
-                $("#hd_SLA").val(json[i].SLA);
+              //  slaSpanData.append("<span class='badge badge-pill badge-primary float-right' style='font-weight:bold;font-size:11px;' id='Ticket_SLA'><i class='fa fa-clock-o'></i>&nbsp;" + json[i].SLA + " Hour</span>");
+                //$("#hd_SLA").val(json[i].SLA);
                 escalationUnit(json[i].TujuanEskalasi)
                 $("#Ticket_ProductName  option:selected").text(json[i].ReasonCode)
                 $("#Ticket_ProductName option:selected").val(json[i].ReasonCode)
-                $('#Ticket_ProductName').attr('disabled', true);
+                //$('#Ticket_ProductName').attr('disabled', true);
                 //$("#Ticket_Priority option:selected").text(json[i].Priority)
                 //$("#Ticket_Priority option:selected").val(json[i].Priority)
                 //$('#Ticket_Priority').attr('disabled', true);
@@ -2453,14 +2454,16 @@ function Get_ProfileAPI() {
 function Get_ProductName(TrxID) {
     var selectedText = $("#Ticket_ProductType").find("option:selected").text();
     var selectedValue = $("#Ticket_ProductType").val();
+    var slaSpanData = $('#Ticket_SLA');
 
     var cmbProductName = $('#Ticket_ProductName');
     $.ajax({
         type: "POST",
         url: "WebServiceGetDataMaster.asmx/UIDESK_TrxTransactionTicket",
-        data: "{TrxID:'" + selectedValue + "', TrxSearching:'UideskIndonesia', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxAction: 'UIDESK327'}",
+        data: "{TrxID:'" + TrxID + "', TrxSearching:'UideskIndonesia', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxAction: 'UIDESK327'}",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
+
         success: function (data) {
 
             var json = JSON.parse(data.d);
@@ -2469,8 +2472,43 @@ function Get_ProductName(TrxID) {
             cmbProductName.empty()
             for (i = 0; i < json.length; i++) {
 
-                result = '<option value="' + json[i].Product_Name + '">' + json[i].Product_Name + '</option>';
+                result = '<option value="' + json[i].ID + '">' + json[i].Jenis + '</option>';
                 cmbProductName.append(result);
+
+                slaSpanData.html(json[i].SLA +' '+ json[i].Type);
+                $("#hd_SLA").val(json[i].SLA);
+
+            }
+
+        },
+        error: function (xmlHttpRequest, textStatus, errorThrown) {
+            console.log(xmlHttpRequest.responseText);
+            console.log(textStatus);
+            console.log(errorThrown);
+        }
+    })
+}
+function Get_DataSla() {
+    var selectedText = $("#Ticket_ProductName").find("option:selected").text();
+    var selectedValue = $("#Ticket_ProductName").val();
+    var slaSpanData = $('#Ticket_SLA');
+  
+    $.ajax({
+        type: "POST",
+        url: "WebServiceGetDataMaster.asmx/UIDESK_TrxTransactionTicket",
+        data: "{TrxID:'" + selectedValue + "', TrxSearching:'UideskIndonesia', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxAction: 'UIDESK327_SLA'}",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+
+            var json = JSON.parse(data.d);
+            var i, x, result = "";
+
+            //cmbProductName.empty()
+            for (i = 0; i < json.length; i++) {
+
+                slaSpanData.html(json[i].SLA + ' ' + json[i].Type);
+                $("#hd_SLA").val(json[i].SLA);
 
             }
 

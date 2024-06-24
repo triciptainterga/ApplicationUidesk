@@ -377,8 +377,8 @@
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label>Ticket Tag</label>
-                                                    <select name="select" id="Ticket_ProductName" class="form-control" style="height: 33px;">
+                                                    <label>SLA Ticket</label>
+                                                    <select name="select" id="Ticket_ProductName" class="form-control" onchange="Get_DataSla()" style="height: 33px;">
                                                         <option value="">Select</option>
                                                     </select>
                                                 </div>
