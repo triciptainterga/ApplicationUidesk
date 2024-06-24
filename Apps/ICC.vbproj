@@ -2046,6 +2046,8 @@
     <Content Include="apps\recording.png" />
     <Content Include="apps\Report_HistoryCall.aspx" />
     <Content Include="apps\sample_blank.html" />
+    <Content Include="apps\SF_2018.aspx" />
+    <Content Include="apps\SF_2019.aspx" />
     <Content Include="apps\spam.png" />
     <Content Include="apps\star.png" />
     <Content Include="apps\Syn_CronisePhase2.aspx" />
@@ -23000,6 +23002,11 @@
     <Content Include="obj\Debug\ICC.vbproj.GenerateResource.Cache" />
     <Content Include="obj\Debug\ICC.xml" />
     <Content Include="obj\Debug\Tsc.out" />
+    <Content Include="SF_2020.aspx" />
+    <Content Include="SF_2021.aspx" />
+    <Content Include="SF_2022.aspx" />
+    <Content Include="SF_2023.aspx" />
+    <Content Include="SF_2024.aspx" />
     <Content Include="TrmForgot.aspx" />
     <Content Include="uidesk_background-.png" />
     <Content Include="uidesk_background.png" />
@@ -24537,6 +24544,20 @@
     <Compile Include="apps\R_Transaction_DBML.vb">
       <DependentUpon>R_Transaction_DBML.dbml</DependentUpon>
     </Compile>
+    <Compile Include="apps\SF_2018.aspx.designer.vb">
+      <DependentUpon>SF_2018.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\SF_2018.aspx.vb">
+      <DependentUpon>SF_2018.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apps\SF_2019.aspx.designer.vb">
+      <DependentUpon>SF_2019.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\SF_2019.aspx.vb">
+      <DependentUpon>SF_2019.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="apps\Syn_CronisePhase2.aspx.designer.vb">
       <DependentUpon>Syn_CronisePhase2.aspx</DependentUpon>
     </Compile>
@@ -25503,6 +25524,41 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SF_2020.aspx.designer.vb">
+      <DependentUpon>SF_2020.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SF_2020.aspx.vb">
+      <DependentUpon>SF_2020.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SF_2021.aspx.designer.vb">
+      <DependentUpon>SF_2021.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SF_2021.aspx.vb">
+      <DependentUpon>SF_2021.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SF_2022.aspx.designer.vb">
+      <DependentUpon>SF_2022.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SF_2022.aspx.vb">
+      <DependentUpon>SF_2022.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SF_2023.aspx.designer.vb">
+      <DependentUpon>SF_2023.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SF_2023.aspx.vb">
+      <DependentUpon>SF_2023.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SF_2024.aspx.designer.vb">
+      <DependentUpon>SF_2024.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SF_2024.aspx.vb">
+      <DependentUpon>SF_2024.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TrmForgot.aspx.designer.vb">
       <DependentUpon>TrmForgot.aspx</DependentUpon>
