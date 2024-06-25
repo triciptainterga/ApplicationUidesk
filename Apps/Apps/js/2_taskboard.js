@@ -187,7 +187,7 @@ function getWS_DataTableTaskboard() {
                     }else if (json[i].TicketPosition == "3"){
                         var TrxPosition = "Layer 3"
                     }else if (json[i].TicketPosition == "4"){
-                        var TrxPosition = "Eksternal/Vendor"
+                        var TrxPosition = "Layer Pelni"
                     }
                     var DaySLA = json[i].UsedDaySLAOK
                     var OverDaySLA = DaySLA.replace("Over", "");
