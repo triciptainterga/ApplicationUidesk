@@ -29,14 +29,16 @@ Public Class _4_Reports_base_trx_new
         ASPxGridView1.DataBind()
     End Sub
     Private Sub ASPxGridView1_Init(sender As Object, e As EventArgs) Handles ASPxGridView1.Init
-        TempBaseTrx.SelectCommand = "select ROW_NUMBER() OVER(ORDER BY TicketNumber DESC) AS NoUrut,*,10000 as Amount,dbo.udf_StripHTML(Alamat) as AlamatNonHtml,dbo.udf_StripHTML([Description]) as DescriptionNonHtml,ClosedByNew=(select [NAME] from msuser where msuser.USERNAME=NewClosedBy),
-        CreatedByNew=(select [NAME] from msuser where msuser.USERNAME=CreatedBy),
-        EscalationName=(SELECT ORGANIZATION_NAME FROM mOrganization WHERE [4_Report_base_trx].Divisi = mOrganization.ORGANIZATION_ID) from [4_Report_base_trx] where Username='" & Session("UserName") & "'"
+        'TempBaseTrx.SelectCommand = "select ROW_NUMBER() OVER(ORDER BY TicketNumber DESC) AS NoUrut,*,10000 as Amount,dbo.udf_StripHTML(Alamat) as AlamatNonHtml,dbo.udf_StripHTML([Description]) as DescriptionNonHtml,ClosedByNew=(select [NAME] from msuser where msuser.USERNAME=NewClosedBy),
+        'CreatedByNew=(select [NAME] from msuser where msuser.USERNAME=CreatedBy),
+        'EscalationName=(SELECT ORGANIZATION_NAME FROM mOrganization WHERE [4_Report_base_trx].Divisi = mOrganization.ORGANIZATION_ID) from [4_Report_base_trx] where Username='" & Session("UserName") & "'"
+        TempBaseTrx.SelectCommand = "EXEC Cant_R_Transaction_new '" & Session("UserName") & "'"
     End Sub
     Private Sub ASPxGridView1_Load(sender As Object, e As EventArgs) Handles ASPxGridView1.Load
-        TempBaseTrx.SelectCommand = "select ROW_NUMBER() OVER(ORDER BY TicketNumber DESC) AS NoUrut,*,10000 as Amount,dbo.udf_StripHTML(Alamat) as AlamatNonHtml,dbo.udf_StripHTML([Description]) as DescriptionNonHtml,ClosedByNew=(select [NAME] from msuser where msuser.USERNAME=NewClosedBy),
-        CreatedByNew=(select [NAME] from msuser where msuser.USERNAME=CreatedBy),
-        EscalationName=(SELECT ORGANIZATION_NAME FROM mOrganization WHERE [4_Report_base_trx].Divisi = mOrganization.ORGANIZATION_ID)  from [4_Report_base_trx] where Username='" & Session("UserName") & "'"
+        'TempBaseTrx.SelectCommand = "select ROW_NUMBER() OVER(ORDER BY TicketNumber DESC) AS NoUrut,*,10000 as Amount,dbo.udf_StripHTML(Alamat) as AlamatNonHtml,dbo.udf_StripHTML([Description]) as DescriptionNonHtml,ClosedByNew=(select [NAME] from msuser where msuser.USERNAME=NewClosedBy),
+        'CreatedByNew=(select [NAME] from msuser where msuser.USERNAME=CreatedBy),
+        'EscalationName=(SELECT ORGANIZATION_NAME FROM mOrganization WHERE [4_Report_base_trx].Divisi = mOrganization.ORGANIZATION_ID)  from [4_Report_base_trx] where Username='" & Session("UserName") & "'"
+        TempBaseTrx.SelectCommand = "EXEC Cant_R_Transaction_new '" & Session("UserName") & "'"
     End Sub
     Private Sub btn_Export_Click(sender As Object, e As EventArgs) Handles btn_Export.Click
         Dim casses As String = ddList.SelectedValue
