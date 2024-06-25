@@ -400,8 +400,17 @@ function getWS_DataTicket(value) {
                     $("#ahref_Escalationto").css("display", "none");
                     $("#DivActionJourney").hide();
                 } else {
-                    $("#btnInteraction").css("display", "block")
-                    $("#btnAttachment").css("display", "block")
+                    if (json[i].Status == "Close") {
+                        $("#btnInteraction").css("display", "none")
+                        $("#btnAttachment").css("display", "none")
+                        $("#escalationto").css("display", "none");
+                        $("#ahref_Escalationto").css("display", "none");
+                        $("#DivActionJourney").hide();
+
+                    } else {
+                        $("#btnInteraction").css("display", "block")
+                        $("#btnAttachment").css("display", "block")
+                    }
                 }
 
                 if ($("#TrxLoginTypeAngka").val() == "3") {
