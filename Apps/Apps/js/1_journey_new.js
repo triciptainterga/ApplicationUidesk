@@ -1635,9 +1635,7 @@ function get_EscalationStatus(TrxValues) {
     }
 }
 function get_SelectEscalation(TrxValues) {
-    if ($("#Journey_EscalationChannel").val() == "Yes") {
+    if ($("#Journey_EscalationChannel").val() == "Yes" && $("#TrxLayerUser").val() =="Layer Pelni" ) {
         $('#modal-escalation').modal('show');
-    } else {
-        
-    }
+    } 
 }
