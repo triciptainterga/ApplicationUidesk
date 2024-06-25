@@ -43,13 +43,13 @@ $(document).ready(function () {
                     $("#channelname").val(kanal);
                     $("#ticketnumber").val(ticid);
 
-                    if (json[i].Result == "0") {
-                        window.location = "selesai.html";
-                    } else if(json[i].Result == "1"){
-                        window.location = "multiple.html";
-                    } else if (json[i].Result == "2") {
-                        window.location = "expired.html";
-                    }
+                    //if (json[i].Result == "0") {
+                    //    window.location = "selesai.html";
+                    //} else if(json[i].Result == "1"){
+                    //    window.location = "multiple.html";
+                    //} else if (json[i].Result == "2") {
+                    //    window.location = "expired.html";
+                    //}
 
                 }
 
@@ -79,7 +79,8 @@ $(document).ready(function () {
             var form_data = JSON.stringify({ UniqueID: vUniqueID, TicketNumber: vTicketNumber, Channel: vChannel, ResultCSAT: vResultCSAT, IsiKeterangan: vIsiKeterangan });
             $.ajax({
                 type: "POST",
-                url: "../../apps/asmx/CsatService.asmx/ws_csat_create",
+                url: "https://pelni.uidesk.id/apps/asmx/CsatService.asmx/ws_csat_create",
+                //url: "../../apps/asmx/CsatService.asmx/ws_csat_create",
                 data: form_data,
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
@@ -89,7 +90,15 @@ $(document).ready(function () {
                     var i, x, result = "";
                     console.log(json);
 
-                    //window.location = "selesai.html";
+
+                     if (json[0].Result == "0") {
+                        window.location = "selesai.html";
+                    } else if(json[0].Result == "1"){
+                        window.location = "multiple.html";
+                    } else if (json[0].Result == "2") {
+                        window.location = "expired.html";
+                    }
+                    window.location = "selesai.html";
 
                 },
                 error: function (xmlHttpRequest, textStatus, errorThrown) {
