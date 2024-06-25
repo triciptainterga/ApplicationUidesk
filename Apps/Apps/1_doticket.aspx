@@ -282,7 +282,7 @@
                                            <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Status &nbsp;<span class="text-danger">*</span></label>
-                                                    <select name="select" id="Ticket_Status" required class="form-control" style="height: 33px;">
+                                                    <select name="select" id="Ticket_Status"   onchange="get_escalation()" required class="form-control" style="height: 33px;">
                                                         <option value="">Select</option>
                                                     </select>
                                                 </div>

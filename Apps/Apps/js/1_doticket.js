@@ -2208,10 +2208,11 @@ function getWS_MasterCustomerAPI(custName) {
 }
 function get_escalation() {
     if ($("#Ticket_Status").val() == "Closed") {
-        //$("#Ticket_EscalationLayer").val("1")
+        $("#Ticket_EscalationLayer").val("YES")
         $('#Ticket_EscalationLayer').attr('disabled', true);
     } else {
         $('#Ticket_EscalationLayer').attr('disabled', false);
+        $("#Ticket_EscalationLayer").val("")
     }
 }
 function get_cmbChannelHistory(value) {
