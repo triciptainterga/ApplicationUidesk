@@ -34,7 +34,7 @@
                                     <th>Topic</th>
                                     <th>New</th>
                                     <th>Subtopic</th>
-                                    <th>Ticket Tag</th>
+                                    <%--<th>Ticket Tag</th>--%>
                                     <th>Priority Scale</th>
                                     <th>Escalation Team</th>
                                     <th>Escalation Ticket</th>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3" style="display:none">
                             <div class="form-group">
                                 <label>Ticket Tag</label>
                                 <input type="text" class="form-control" id="TxtTag" placeholder="Tag">

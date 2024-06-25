@@ -202,15 +202,17 @@ function getWS_CategoryTypeDetail_Value(value) {
 
     $.ajax({
         type: "POST",
-        url: "WebServiceGetDataMaster.asmx/OnChangeTransactionTrmCategoryTopicDetail",
-        data: "{TrxID:'" + selectedValue + "', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxName: '0', TrxStatus: '0'}",
+        url: "WebServiceGetDataMaster.asmx/UIDESK_TrxTransactionTicket",
+        data: "{TrxID:'" + selectedValue + "', TrxSearching:'UideskIndonesia', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxAction: 'UIDESK310_2_1'}",
+        //url: "WebServiceGetDataMaster.asmx/OnChangeTransactionTrmCategoryType",
+        //data: "{TrxID:'" + selectedValue + "', TrxUserName: '" + $("#hd_sessionLogin").val() + "', TrxName: '0', TrxStatus: '0'}",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (data) {
             var json = JSON.parse(data.d);
             var i, x, resultCategoryType = "";
 
-            cmbCategoryTopic.empty();
+            $('#cmbCategoryTopic').empty();
             cmbCategoryTopic.append('<option value="">Select</option>');
             for (i = 0; i < json.length; i++) {
                 resultCategoryType = '<option value="' + json[i].SubCategory2_1ID + '">' + json[i].SubName + '</option>';
@@ -337,7 +339,7 @@ function TrmCategoryReason() {
                 } else {
                     var TrxParam = "<span class='badge badge-pill badge-danger' style='width: 60px;'>Non Aktif</span>"
                 }
-                myTable.row.add([json[i].ID, json[i].CategoryName, json[i].CategoryType, json[i].CategoryDetail, json[i].CategoryNew, json[i].SubName, json[i].ReasonCode, json[i].Priority, json[i].TujuanEscalation, json[i].IDKamus, json[i].Layer, json[i].SLA, TrxParam, json[i].UserCreate, urlClick]).draw(false);
+                myTable.row.add([json[i].ID, json[i].CategoryName, json[i].CategoryType, json[i].CategoryDetail, json[i].CategoryNew, json[i].SubName, json[i].Priority, json[i].TujuanEscalation, json[i].IDKamus, json[i].Layer, json[i].SLA, TrxParam, json[i].UserCreate, urlClick]).draw(false);
             }
 
         },
@@ -448,10 +450,10 @@ function ActionSimpan() {
         swal("Subtopic is empty")
         return false;
     } 
-    if ($("#TxtTag").val() == '') {
-        swal("Tag is empty")
-        return false;
-    }  
+    //if ($("#TxtTag").val() == '') {
+    //    swal("Tag is empty")
+    //    return false;
+    //}  
     if (cmbEscalationUnit == '') {
         swal("Escalation team is empty")
         return false;
