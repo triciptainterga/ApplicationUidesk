@@ -47,12 +47,12 @@
                                         <div class="box-body">
                                             <div class="form-group">
                                                 <label>Full name 1</label>
-                                                <input type="text" id="Ticket_FullName" class="form-control" placeholder="Full name">
+                                                <input type="text" id="Ticket_FullName" class="form-control" placeholder="Full name" readonly="readonly">
                                             </div>
                                             <div class="form-group">
                                                 <label>Phone number</label>
                                                 <%--<small class="sidetitle">E.g. +62123-1456-78900</small>--%>
-                                                <input type="text" id="Ticket_Phone" class="form-control" placeholder="Phone number">
+                                                <input type="text" id="Ticket_Phone" class="form-control" placeholder="Phone number" readonly="readonly">
                                             </div>
                                             <div class="form-group" style="display:none">
                                                 <label>E-mail</label>
@@ -103,7 +103,7 @@
                                             <div class="form-group">
                                                 <label>City</label>
                                                 <%--<small class="sidetitle">E.g. +62123-1456-78900</small>--%>
-                                                <input type="text" id="Ticket_City" class="form-control" placeholder="City">
+                                                <input type="text" id="Ticket_City" class="form-control" placeholder="City" readonly="readonly">
                                             </div>
                                             <div class="form-group" style="display:none">
                                                 <label>District</label>
