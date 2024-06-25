@@ -25,6 +25,9 @@ function TrmCounting() {
                 } else if (json[i].LevelUser == "Layer 3") {
                     $("#layer3").append(json[i].LevelLayer + " Data User");
                     console.log("layer 3 " + json[i].LevelLayer)
+                } else if (json[i].LevelUser == "Layer Pelni") {
+                    $("#layer3").append(json[i].LevelLayer + " Data User");
+                    console.log("layer Pelni " + json[i].LevelLayer)
                 } else if (json[i].LevelUser == "Supervisor") {
                     $("#layerSpv").append(json[i].LevelLayer + " Data User");
                     console.log("Supervisor " + json[i].LevelLayer)

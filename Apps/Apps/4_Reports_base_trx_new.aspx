@@ -77,7 +77,7 @@
                                 <dx:GridViewDataTextColumn Caption="SLA (Hours)" FieldName="SLA" CellStyle-HorizontalAlign="Left" Width="150px"></dx:GridViewDataTextColumn>
                                 <%--<dx:GridViewDataTextColumn Caption="VIP User" FieldName="CusStatus" Width="150px"></dx:GridViewDataTextColumn>--%>
                                 <%--<dx:GridViewDataTextColumn Caption="Address" FieldName="AlamatNonHtml" Width="150px"></dx:GridViewDataTextColumn>--%>                                
-								 <dx:GridViewDataTextColumn Caption="Escalation" FieldName="Escalation" Width="150px"></dx:GridViewDataTextColumn>
+								  <%--<dx:GridViewDataTextColumn Caption="Escalation" FieldName="Escalation" Width="150px"></dx:GridViewDataTextColumn>--%>   
                                 <dx:GridViewDataTextColumn Caption="Group Name" FieldName="AgentGroupName" Width="150px"></dx:GridViewDataTextColumn>
                                 <dx:GridViewDataTextColumn Caption="Site Name" FieldName="SiteName" Width="150px"></dx:GridViewDataTextColumn>
                                 <dx:GridViewDataTextColumn Caption="Ticket Status" FieldName="NewStatus" Width="150px"></dx:GridViewDataTextColumn>

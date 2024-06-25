@@ -400,7 +400,7 @@ function getWS_DataTicket(value) {
                     $("#ahref_Escalationto").css("display", "none");
                     $("#DivActionJourney").hide();
                 } else {
-                    if (json[i].Status == "Close") {
+                    if (json[i].Status == "Closed") {
                         $("#btnInteraction").css("display", "none")
                         $("#btnAttachment").css("display", "none")
                         $("#escalationto").css("display", "none");
