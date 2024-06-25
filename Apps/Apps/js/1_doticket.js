@@ -142,6 +142,7 @@ function AutoValidasi(TrxCreatedby, Message) {
     });
 }
 function ActionInsertCustomer(cusTomerid, channel, threadid, numberid, voice, subject) {
+    even.preventDefault()
     var TrxUsername = $("#hd_sessionLogin").val();
     var TrxCusTomerName = $("#cusTomerName").val();
     var TrxCusTomerEmail = $("#cusTomerEmail").val();
@@ -179,24 +180,7 @@ function ActionInsertCustomer(cusTomerid, channel, threadid, numberid, voice, su
         }
 
     }
-    //if (TrxCusTomerPhone != '') {
-    //    var numberNya = /^[0-9]+$/;
-    //    if (TrxCusTomerPhone.match(numberNya)) {
-    //        var PhoneLengt = TrxCusTomerPhone.toString().length;
-    //        if (PhoneLengt > '6' && PhoneLengt < '20') {
-    //        } else {
-    //            AutoValidasiWarning($("#hd_sessionLogin").val(), "Format <b>phone number</b> not valid")
-    //            return false
-    //        }
-    //    } else {
-    //        AutoValidasiWarning($("#hd_sessionLogin").val(), "Format <b>Phone Number</b> is numeric")
-    //        return false;
-    //    }
-    //}
-    //if (TrxCusTomerGender == '--Select--' || TrxCusTomerGender == '' || TrxCusTomerGender == '0') {
-    //    AutoValidasiWarning($("#hd_sessionLogin").val(), "<b>Gender</b> is empty")
-    //    return false;
-    //}
+   
     if (TrxCusTomerNIK == '' || TrxCusTomerNIK == '0') {
     } else {
         var numberNya = /^[0-9]+$/;
@@ -2063,14 +2047,14 @@ function getWS_SLAReason(value) {
               //  slaSpanData.append("<span class='badge badge-pill badge-primary float-right' style='font-weight:bold;font-size:11px;' id='Ticket_SLA'><i class='fa fa-clock-o'></i>&nbsp;" + json[i].SLA + " Hour</span>");
                 //$("#hd_SLA").val(json[i].SLA);
                 escalationUnit(json[i].TujuanEskalasi)
-                $("#Ticket_ProductName  option:selected").text(json[i].ReasonCode)
-                $("#Ticket_ProductName option:selected").val(json[i].ReasonCode)
+               // $("#Ticket_ProductName  option:selected").text(json[i].ReasonCode)
+                //$("#Ticket_ProductName option:selected").val(json[i].ReasonCode)
                 //$('#Ticket_ProductName').attr('disabled', true);
                 //$("#Ticket_Priority option:selected").text(json[i].Priority)
                 //$("#Ticket_Priority option:selected").val(json[i].Priority)
                 //$('#Ticket_Priority').attr('disabled', true);
-                $("#Ticket_EscalationLayer").val(json[i].IDKamus);
-                $('#Ticket_EscalationLayer').attr('disabled', false);
+               // $("#Ticket_EscalationLayer").val(json[i].IDKamus);
+                //$('#Ticket_EscalationLayer').attr('disabled', false);
                 CKEDITOR.instances.Ticket_NoteAgent.setData(json[i].Response_Agent)
                 $("#Ticket_Layer").css("display", "block")
                 if (json[i].IDKamus == "NO") {
@@ -2211,13 +2195,11 @@ function getWS_MasterCustomerAPI(custName) {
     });
 }
 function get_escalation() {
+    event.preventDefault();
     if ($("#Ticket_Status").val() == "Closed") {
         $("#Ticket_EscalationLayer").val("YES")
         $('#Ticket_EscalationLayer').attr('disabled', true);
-    } else {
-        $('#Ticket_EscalationLayer').attr('disabled', false);
-        $("#Ticket_EscalationLayer").val("")
-    }
+    } 
 }
 function get_cmbChannelHistory(value) {
     var selectedText = $("#Select_Channel_History").find("option:selected").text();
@@ -4663,8 +4645,8 @@ $(function () {
             //var TrxSLA = $("#hd_SLA").val();
             //var TrxLayer = $("#Ticket_EscalationLayer").val();
             if ($("#Ticket_EscalationLayer").val() == "YES") {
-                var TrxLayer = $("#ContentPlaceHolder1_hd_Layer").val();
-                //var TrxLayer = "1";
+                //var TrxLayer = $("#ContentPlaceHolder1_hd_Layer").val();
+                var TrxLayer = "2";
             } else {
                 var TrxLayer = "1";
             }
