@@ -1328,7 +1328,7 @@
                                     <input type="text" class="form-control" id="cusTomerPassword" placeholder="Password">
                                 </div>
                             </div>
-                             <div class="col-md-3" >
+                             <div class="col-md-6" >
                                 <div class="form-group">
                                     <label>Province</label>
                                     <select name="select" onchange="getProvince(1);" id="cusTomerProvince" class="form-control" style="height: 33px;">
@@ -1336,7 +1336,7 @@
                                     </select>
                                 </div>
                             </div>
-                             <div class="col-md-9">
+                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>City</label>
                                     <select name="select" onchange="getCity(1);" id="cusTomerCity" class="form-control" style="height: 33px;">
@@ -1370,7 +1370,7 @@
                                         <option value="">Select</option>
                                     </select>
                                     <%--<input type="text" class="form-control" id="cusTomerFacebook" placeholder="Zip code">--%>
-                                </div>
+                                </div>r
                             </div>
                         </div>
                         <div class="row" style="display: none;">

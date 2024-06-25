@@ -146,8 +146,12 @@ function ActionInsertCustomer(cusTomerid, channel, threadid, numberid, voice, su
     var TrxCusTomerName = $("#cusTomerName").val();
     var TrxCusTomerEmail = $("#cusTomerEmail").val();
     var TrxCusTomerPhone = "";
-    if ($("#cusTomerPhone").val() != "")
-         TrxCusTomerPhone = "62" + $("#cusTomerPhone").val().slice(1);
+    if ($("#cusTomerPhone").val() == "0")
+        TrxCusTomerPhone = "62" + $("#cusTomerPhone").val().slice(1);
+    else
+        TrxCusTomerPhone =  $("#cusTomerPhone").val();
+
+   
 
     var TrxCusTomerGender = $("#cusTomerGender").val();
     var TrxCusTomerDate = $("#cusTomerDate").val();
