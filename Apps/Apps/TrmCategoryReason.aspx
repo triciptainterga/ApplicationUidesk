@@ -35,11 +35,11 @@
                                     <th>New</th>
                                     <th>Subtopic</th>
                                     <%--<th>Ticket Tag</th>--%>
-                                    <th>Priority Scale</th>
+                                    <%--<th>Priority Scale</th>--%>
                                     <th>Escalation Team</th>
                                     <th>Escalation Ticket</th>
                                     <th>Layer</th>
-                                    <th>SLA</th>
+                                    <%--<th>SLA</th>--%>
                                     <th>Status</th>
                                     <th>User Create</th>
                                     <%--<th style="width: 200px;">Date Create</th>--%>

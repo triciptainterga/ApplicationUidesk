@@ -339,7 +339,7 @@ function TrmCategoryReason() {
                 } else {
                     var TrxParam = "<span class='badge badge-pill badge-danger' style='width: 60px;'>Non Aktif</span>"
                 }
-                myTable.row.add([json[i].ID, json[i].CategoryName, json[i].CategoryType, json[i].CategoryDetail, json[i].CategoryNew, json[i].SubName, json[i].Priority, json[i].TujuanEscalation, json[i].IDKamus, json[i].Layer, json[i].SLA, TrxParam, json[i].UserCreate, urlClick]).draw(false);
+                myTable.row.add([json[i].ID, json[i].CategoryName, json[i].CategoryType, json[i].CategoryDetail, json[i].CategoryNew, json[i].SubName, json[i].TujuanEscalation, json[i].IDKamus, json[i].Layer, TrxParam, json[i].UserCreate, urlClick]).draw(false);
             }
 
         },
