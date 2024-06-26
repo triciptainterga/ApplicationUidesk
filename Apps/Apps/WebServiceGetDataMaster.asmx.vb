@@ -2651,7 +2651,7 @@ Public Class WebServiceGetDataMaster
     End Function
     <WebMethod(EnableSession:=True)>
     <ScriptMethod(UseHttpGet:=False, ResponseFormat:=ResponseFormat.Json)>
-    Public Function InsertTransactionTrmCategoryReason(ByVal TrxCategoryID As String, ByVal TrxSubCategory1ID As String, ByVal TrxSubCategory2ID As String, ByVal TrxName As String,
+    Public Function InsertTransactionTrmCategoryReason(ByVal TrxCategoryID As String, ByVal TrxSubCategory1ID As String, ByVal TrxSubCategory2ID As String, ByVal TrxSubCategory2_1ID As String, ByVal TrxName As String,
                                                      ByVal TrxEscalationUnit As String, ByVal TrxLayer As String, ByVal TrxSLA As String, ByVal TrxStatus As String,
                                                        ByVal TrxUserName As String, ByVal TrxReasonCode As String, ByVal TrxEscalationTicket As String, ByVal TrxPriority As String) As String
         Dim listTickets As List(Of resultInsert) = New List(Of resultInsert)()
@@ -2671,7 +2671,7 @@ Public Class WebServiceGetDataMaster
                 sqlComm.Parameters.AddWithValue("TrxCategoryID", TrxCategoryID)
                 sqlComm.Parameters.AddWithValue("TrxSubCategory1ID", TrxSubCategory1ID)
                 sqlComm.Parameters.AddWithValue("TrxSubCategory2ID", TrxSubCategory2ID)
-                sqlComm.Parameters.AddWithValue("@TrxSubCategory2_1ID", "0")
+                sqlComm.Parameters.AddWithValue("@TrxSubCategory2_1ID", TrxSubCategory2_1ID)
                 sqlComm.Parameters.AddWithValue("TrxName", AntiXssEncoder.HtmlEncode(TrxName.Trim, True))
                 sqlComm.Parameters.AddWithValue("TrxEscalationUnit", TrxEscalationUnit)
                 sqlComm.Parameters.AddWithValue("TrxLayer", TrxLayer)

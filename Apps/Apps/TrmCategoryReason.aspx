@@ -114,8 +114,8 @@
                                 <input type="text" class="form-control" id="TxtTag" placeholder="Tag">
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
+                        <div class="col-md-3" style="display:none">
+                            <div class="form-group" >
                                 <label>Priority</label>
                                 <select name="select" id="cmbPriorityScale" class="form-control" style="height: 33px;">
                                     <option value="">Select</option>
@@ -143,8 +143,16 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
+                         <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Status</label>
+                                <select name="select" id="cmbStatus" class="form-control" onchange="getWS_Status(1)" style="height: 33px;">
+                                    <option value="">Select</option>
+                                    <option value="Y">Aktif</option>
+                                    <option value="N">Non Aktif</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label>Layer</label>
@@ -155,22 +163,17 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <div class="col-md-3" style="display:none">
                             <div class="form-group">
                                 <label>SLA(Days)</label>
                                 <input type="text" class="form-control" id="TxtSLA" placeholder="SLA">
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Status</label>
-                                <select name="select" id="cmbStatus" class="form-control" onchange="getWS_Status(1)" style="height: 33px;">
-                                    <option value="">Select</option>
-                                    <option value="Y">Aktif</option>
-                                    <option value="N">Non Aktif</option>
-                                </select>
-                            </div>
-                        </div>
+                       
                     </div>
 
                 </div>

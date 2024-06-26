@@ -2055,6 +2055,7 @@
     <Content Include="apps\Qc_Trm.aspx" />
     <Content Include="apps\Qc_Trx.aspx" />
     <Content Include="apps\recording.png" />
+    <Content Include="apps\ReportCSAT.aspx" />
     <Content Include="apps\Report_HistoryCall.aspx" />
     <Content Include="apps\sample_blank.html" />
     <Content Include="apps\SF_2018.aspx" />
@@ -24541,6 +24542,13 @@
       <DependentUpon>Qc_Trx.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="apps\ReportCSAT.aspx.designer.vb">
+      <DependentUpon>ReportCSAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\ReportCSAT.aspx.vb">
+      <DependentUpon>ReportCSAT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="apps\Report_HistoryCall.aspx.designer.vb">
       <DependentUpon>Report_HistoryCall.aspx</DependentUpon>
     </Compile>
@@ -25488,6 +25496,13 @@
     <Compile Include="apps\XtraHistoryMultichat.aspx.vb">
       <DependentUpon>XtraHistoryMultichat.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="apps\XtraReportCallStatic.aspx.designer.vb">
+      <DependentUpon>XtraReportCallStatic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\XtraReportCallStatic.aspx.vb">
+      <DependentUpon>XtraReportCallStatic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="apps\XtraReportDetailConversation.aspx.designer.vb">
       <DependentUpon>XtraReportDetailConversation.aspx</DependentUpon>

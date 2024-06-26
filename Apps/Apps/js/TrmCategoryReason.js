@@ -466,10 +466,10 @@ function ActionSimpan() {
         swal("Layer is empty")
         return false;
     }
-    if (TrxSLA == '') {
-        swal("SLA is empty")
-        return false;
-    } 
+    //if (TrxSLA == '') {
+    //    swal("SLA is empty")
+    //    return false;
+    //} 
     if (TrxStatus == '') {
         swal("Status is empty")
         return false;
@@ -487,7 +487,7 @@ function ActionSimpan() {
                     TrxCategoryID: CmbCategoryValue, TrxSubCategory1ID: CmbCategoryTypeValue, TrxSubCategory2ID: CmbCategoryDetailValue, TrxSubCategory2_1ID: CmbCategoryTopicValue,
                     TrxName: TxtCategoryReasonName, TrxEscalationUnit: cmbEscalationUnit, TrxLayer: cmbLayerValue, TrxSLA: TrxSLA,
                     TrxStatus: TrxStatus, TrxUserName: $("#hd_sessionLogin").val(), TrxReasonCode: $("#TxtTag").val(), TrxEscalationTicket: $("#cmbEscalationTicket").val(),
-                    TrxPriority: $("#cmbPriorityScale").val()
+                    TrxPriority: $("#cmbPriorityScale").val(), 
                 });
                 $.ajax({
                     url: "WebServiceGetDataMaster.asmx/InsertTransactionTrmCategoryReason",
