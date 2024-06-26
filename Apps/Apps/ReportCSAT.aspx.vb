@@ -16,18 +16,18 @@ Public Class ReportCSAT
     Dim sqldr, read, sqlDtr As SqlDataReader
     Dim execute As New ClsConn
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        tempTrxSLA.SelectCommand = "select a.TicketNumber,a.Channel,b.ValueDetail ,a.ResultCSAT from Temp_TrxCSAT a  
+        tempTrxSLA.SelectCommand = "select a.TicketNumber,a.Channel,b.ValueDetail ,a.ResultCSAT,a.UserName,a.CreatedDatefrom Temp_TrxCSAT a  
 left join Temp_TrxCSAT_Detail b
 on a.UniqueID = b.UniqueID"
     End Sub
     Private Sub ASPxGridView1_Init(sender As Object, e As EventArgs) Handles ASPxGridView1.Init
-        tempTrxSLA.SelectCommand = "select a.TicketNumber,a.Channel,b.ValueDetail ,a.ResultCSAT from Temp_TrxCSAT a  
+        tempTrxSLA.SelectCommand = "select a.TicketNumber,a.Channel,b.ValueDetail ,a.ResultCSAT,a.UserName,a.CreatedDate from Temp_TrxCSAT a  
 left join Temp_TrxCSAT_Detail b
 on a.UniqueID = b.UniqueID"
     End Sub
 
     Private Sub ASPxGridView1_Load(sender As Object, e As EventArgs) Handles ASPxGridView1.Load
-        tempTrxSLA.SelectCommand = "select a.TicketNumber,a.Channel,b.ValueDetail ,a.ResultCSAT from Temp_TrxCSAT a  
+        tempTrxSLA.SelectCommand = "select a.TicketNumber,a.Channel,b.ValueDetail ,a.ResultCSAT,a.UserName,a.CreatedDate from Temp_TrxCSAT a  
 left join Temp_TrxCSAT_Detail b
 on a.UniqueID = b.UniqueID"
     End Sub

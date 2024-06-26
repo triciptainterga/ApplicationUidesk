@@ -1426,6 +1426,8 @@ function Display_TrmCustomerUpload(ID) {
                 $("#CRM_Name").val(json[i].Name)
                 $("#CRM_PhoneNumber").val(json[i].HP)
                 $("#CRM_Email").val(json[i].Email)
+                if (json[i].Birth == null)
+                    json[i].Birth = "1900-01-01";
                 var milisegundos = parseInt(json[i].Birth.replace("/Date(", "").replace(")/", ""));
                 var newDate = new Date(milisegundos).toLocaleDateString("en-GB");
                 var getDateBirth = newDate.split('/');
@@ -1990,6 +1992,9 @@ function getWS_MasterCustomerSelected(custNik) {
                 $("#Ticket_FullName").val(json[i].Name);
                 $("#Ticket_Phone").val(json[i].HP);
                 $("#Ticket_Email").val(json[i].Email);
+                if (json[i].Birth == null)
+                    json[i].Birth = "1900-01-01";
+
                 var milisegundos = parseInt(json[i].Birth.replace("/Date(", "").replace(")/", ""));
                 var newDate = new Date(milisegundos).toLocaleDateString("en-GB");
                 var getDateBirth = newDate.split('/');
@@ -2100,6 +2105,8 @@ function getWS_DataTicket(value) {
                 $("#Reported_Email").val(json[i].EMAIL_PELAPOR);
                 $("#Reported_Phone").val(json[i].PHONE_PELAPOR);
                 $("#Reported_Address").val(json[i].ALAMAT_PELAPOR);
+                if (json[i].TglKejadian == null)
+                    json[i].TglKejadian = "1900-01-01";
                 var milisegundos = parseInt(json[i].TglKejadian.replace("/Date(", "").replace(")/", ""));
                 var newDate = new Date(milisegundos).toLocaleDateString("en-GB");
                 var getDateBirth = newDate.split('/');
@@ -2457,13 +2464,14 @@ function Get_ProductName(TrxID) {
             var i, x, result = "";
 
             cmbProductName.empty()
+            cmbProductName.append('<option value="">Select</option>');
             for (i = 0; i < json.length; i++) {
 
                 result = '<option value="' + json[i].ID + '">' + json[i].Jenis + '</option>';
                 cmbProductName.append(result);
 
-                slaSpanData.html(json[i].SLA +' '+ json[i].Type);
-                $("#hd_SLA").val(json[i].SLA);
+                //slaSpanData.html(json[i].SLA +' '+ json[i].Type);
+                //$("#hd_SLA").val(json[i].SLA);
 
             }
 
@@ -2900,6 +2908,10 @@ function ShowActionUpdate() {
                     $("#cusTomerFacebook").val(json[i].Facebook);
                     $("#cusTomerInstagram").val(json[i].Instagram);
                     $("#cusTomerTwitter").val(json[i].Twitter);
+
+                    if (json[i].Birth == null)
+                        json[i].Birth = "1900-01-01";
+                    
                     var milisegundos = parseInt(json[i].Birth.replace("/Date(", "").replace(")/", ""));
                     var newDate = new Date(milisegundos).toLocaleDateString("en-GB");
                     var getDateBirth = newDate.split('/');

@@ -11,7 +11,7 @@
             <div class="col-xl-12 col-lg-12 col-12">
                 <div class="box">
                     <div class="box-header with-border">
-                        <h4 class="box-title">Report Sales Force 2020&nbsp;</h4>
+                        <h4 class="box-title">Report CSAT</h4>
                     </div>
                     <div class="box-body p-15">
                         <dx:ASPxGridView ID="ASPxGridView1" ClientInstanceName="ASPxGridView" runat="server" Width="100%"
@@ -31,6 +31,8 @@
                                 <dx:GridViewDataTextColumn Caption="Channel" FieldName="Channel" Width="250px"></dx:GridViewDataTextColumn>
                                 <dx:GridViewDataTextColumn Caption="ValueDetail" FieldName="ValueDetail" Width="250px"></dx:GridViewDataTextColumn>
                                 <dx:GridViewDataTextColumn Caption="ResultCSAT" FieldName="ResultCSAT" Width="250px"></dx:GridViewDataTextColumn>
+                                <dx:GridViewDataTextColumn Caption="User Name" FieldName="UserName" Width="250px"></dx:GridViewDataTextColumn>
+                                <dx:GridViewDataTextColumn Caption="Created Date" FieldName="CreatedDate" Width="250px"></dx:GridViewDataTextColumn>
                                
                             </Columns>
                         </dx:ASPxGridView>
