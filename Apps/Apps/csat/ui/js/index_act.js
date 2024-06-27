@@ -76,7 +76,7 @@ $(document).ready(function () {
             let vResultCSAT = $("#resultCSAT").val();
             let vIsiKeterangan = $("#comments").val();
 
-            var form_data = JSON.stringify({ UniqueID: vUniqueID, TicketNumber: vTicketNumber, Channel: vChannel, ResultCSAT: vResultCSAT, IsiKeterangan: vIsiKeterangan });
+        var form_data = JSON.stringify({ UniqueID: vUniqueID, TicketNumber: vTicketNumber, Channel: vChannel, ResultCSAT: vResultCSAT, IsiKeterangan: vIsiKeterangan, UserName: '" + $("#hd_sessionLogin").val() + "'});
             $.ajax({
                 type: "POST",
                 url: "https://pelni.uidesk.id/apps/asmx/CsatService.asmx/ws_csat_create",

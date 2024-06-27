@@ -232,7 +232,7 @@ Public Class CsatService
     End Function
     <WebMethod(EnableSession:=True)>
     <ScriptMethod(UseHttpGet:=False, ResponseFormat:=ResponseFormat.Json)>
-    Public Function ws_csat_create(ByVal UniqueID As String, ByVal TicketNumber As String, ByVal Channel As String, ByVal ResultCSAT As String, ByVal IsiKeterangan As String) As String
+    Public Function ws_csat_create(ByVal UniqueID As String, ByVal TicketNumber As String, ByVal Channel As String, ByVal ResultCSAT As String, ByVal IsiKeterangan As String, ByVal UserName As String) As String
         Dim connstring As String = ConfigurationManager.ConnectionStrings("DefaultConnection").ConnectionString
         Dim dt As DataTable = New DataTable()
         Dim NameSP As String = "Exec SP_TempTrxCSAT"
@@ -246,6 +246,7 @@ Public Class CsatService
                 sqlComm.Parameters.AddWithValue("@Channel", Channel)
                 sqlComm.Parameters.AddWithValue("@ResultCSAT", ResultCSAT)
                 sqlComm.Parameters.AddWithValue("@IsiKeterangan", IsiKeterangan)
+                sqlComm.Parameters.AddWithValue("@UserName", UserName)
                 sqlComm.CommandType = CommandType.StoredProcedure
                 Dim da As SqlDataAdapter = New SqlDataAdapter()
                 Dim ds As DataSet = New DataSet()
