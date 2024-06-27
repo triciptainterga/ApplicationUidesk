@@ -2204,8 +2204,8 @@ function getWS_MasterCustomerAPI(custName) {
 function get_escalation() {
     event.preventDefault();
     if ($("#Ticket_Status").val() == "Closed") {
-        $("#Ticket_EscalationLayer").val("YES")
-        $('#Ticket_EscalationLayer').attr('disabled', true);
+        $("#Ticket_EscalationLayer").val("NO")
+        //$('#Ticket_EscalationLayer').attr('disabled', true);
     } 
 }
 function get_cmbChannelHistory(value) {
