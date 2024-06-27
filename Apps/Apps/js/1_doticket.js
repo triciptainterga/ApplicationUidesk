@@ -4436,6 +4436,7 @@ function PreviewWhatsApp(TrxWhatsAppID) {
     $("#modal-center-email").modal('show')
 }
 function ValidasiDataCustomer(ChannelAccount) {
+
     if (getParameterByName("channel") == "WhatsApp" || getParameterByName("channel") == "Whatsapp") {
         if (ChannelAccount == null || ChannelAccount == "") {
         }
@@ -4520,6 +4521,20 @@ function ValidasiDataCustomer(ChannelAccount) {
 
         if (ChannelAccount == null || ChannelAccount == "") {
         } else {
+
+        
+
+            // Replace '0812' with '62'
+            //firstPart = phoneNumber.slice(0, 4);
+           // alert(ChannelAccount.slice(0, 1))
+            if (ChannelAccount.slice(0,1) =="0")
+                ChannelAccount = ChannelAccount.slice(0, 1).replace("62");
+            if (ChannelAccount.slice(0, 1) == "+")
+                ChannelAccount = ChannelAccount.slice(0, 1).replace("62");
+            if (ChannelAccount.slice(0, 1) == "0")
+                ChannelAccount = ChannelAccount.slice(0, 1).replace("62");
+          
+
             var form_data = JSON.stringify({ filterData: ChannelAccount });
             $.ajax({
                 url: "asmx/ServiceCustomer.asmx/ValidasiDataCustomer",
@@ -4542,14 +4557,14 @@ function ValidasiDataCustomer(ChannelAccount) {
 
                         } else if (json[i].Result == "DataAdaDiUpload") {
 
-                            $("#Ticket_SearchCustomer").val(ChannelAccount)
+                            $("#cusTomerPhone").val(ChannelAccount)
                             UIDESK_TrmCustomerUpload(ChannelAccount)
                             $("#modal-SearchUser").modal('show');
 
                         } else if (json[i].Result == "DataGkAdaDiUpload") {
 
                             $("#chat-box-body").empty()
-                            $("#cusTomerPhone").val("")
+                            $("#cusTomerPhone").val(ChannelAccount)
                             $("#TxtChannelValue").val(ChannelAccount)
                             $("#cmbOtherChannel").val(getParameterByName("channel"))
 
