@@ -28,6 +28,8 @@
     <%-- <script src="apps/js/jquery-1.9.1.min.js"></script>
     <script src="apps/js/pages/sweetalert.min.js"></script>--%>
     <%--<script src="http://omni.uidesk.id/wagent/assets/plugins/socket.io-client/socket.io.min.js"></script>--%>
+
+   
     <script type="text/javascript">
         const IPSERVER = "https://crm.uidesk.id/roatex/"
         console.log("IPSERVER " + IPSERVER)
@@ -645,6 +647,8 @@
     <script src="js/pages/timeline.js"></script>
     <script src="js/pages/calendar.js"></script>
     <script src="js/TrmAux.js"></script>
+
+     <script src="https://malsup.github.io/jquery.blockUI.js"></script>
 
     <!-- Vendor JS -->
     <!-- VoixImplem -->

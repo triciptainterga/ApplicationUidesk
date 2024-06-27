@@ -142,7 +142,7 @@ function AutoValidasi(TrxCreatedby, Message) {
     });
 }
 function ActionInsertCustomer(cusTomerid, channel, threadid, numberid, voice, subject) {
-    even.preventDefault()
+    //even.preventDefault()
     var TrxUsername = $("#hd_sessionLogin").val();
     var TrxCusTomerName = $("#cusTomerName").val();
     var TrxCusTomerEmail = $("#cusTomerEmail").val();
@@ -150,9 +150,9 @@ function ActionInsertCustomer(cusTomerid, channel, threadid, numberid, voice, su
     if ($("#cusTomerPhone").val() == "0")
         TrxCusTomerPhone = "62" + $("#cusTomerPhone").val().slice(1);
     else
-        TrxCusTomerPhone =  $("#cusTomerPhone").val();
+        TrxCusTomerPhone = $("#cusTomerPhone").val();
 
-   
+
 
     var TrxCusTomerGender = $("#cusTomerGender").val();
     var TrxCusTomerDate = $("#cusTomerDate").val();
@@ -180,7 +180,7 @@ function ActionInsertCustomer(cusTomerid, channel, threadid, numberid, voice, su
         }
 
     }
-   
+
     if (TrxCusTomerNIK == '' || TrxCusTomerNIK == '0') {
     } else {
         var numberNya = /^[0-9]+$/;
@@ -1757,7 +1757,7 @@ function getWS_MasterLoad() {
             });
             return false;
         }
-        
+
     });
 
 }
@@ -1844,7 +1844,7 @@ function getWS_CategoryTypeReason(value) {
             cmbDataSourceEnquiryReason.empty();
             cmbDataSourceEnquiryReason.append('<option value="">Select</option>');
             for (i = 0; i < json.length; i++) {
-              
+
                 resultSourceEnquiryReason = '<option value="' + json[i].SubCategory2_1ID + '">' + json[i].SubName + '</option>';
                 cmbDataSourceEnquiryReason.append(resultSourceEnquiryReason);
 
@@ -2049,16 +2049,16 @@ function getWS_SLAReason(value) {
             TicketLayer.empty();
             for (i = 0; i < json.length; i++) {
 
-              //  slaSpanData.append("<span class='badge badge-pill badge-primary float-right' style='font-weight:bold;font-size:11px;' id='Ticket_SLA'><i class='fa fa-clock-o'></i>&nbsp;" + json[i].SLA + " Hour</span>");
+                //  slaSpanData.append("<span class='badge badge-pill badge-primary float-right' style='font-weight:bold;font-size:11px;' id='Ticket_SLA'><i class='fa fa-clock-o'></i>&nbsp;" + json[i].SLA + " Hour</span>");
                 //$("#hd_SLA").val(json[i].SLA);
                 escalationUnit(json[i].TujuanEskalasi)
-               // $("#Ticket_ProductName  option:selected").text(json[i].ReasonCode)
+                // $("#Ticket_ProductName  option:selected").text(json[i].ReasonCode)
                 //$("#Ticket_ProductName option:selected").val(json[i].ReasonCode)
                 //$('#Ticket_ProductName').attr('disabled', true);
                 //$("#Ticket_Priority option:selected").text(json[i].Priority)
                 //$("#Ticket_Priority option:selected").val(json[i].Priority)
                 //$('#Ticket_Priority').attr('disabled', true);
-               // $("#Ticket_EscalationLayer").val(json[i].IDKamus);
+                // $("#Ticket_EscalationLayer").val(json[i].IDKamus);
                 //$('#Ticket_EscalationLayer').attr('disabled', false);
                 CKEDITOR.instances.Ticket_NoteAgent.setData(json[i].Response_Agent)
                 $("#Ticket_Layer").css("display", "block")
@@ -2069,9 +2069,9 @@ function getWS_SLAReason(value) {
                 }
                 //$("#Ticket_EscalationLayer").val(json[i].Layer)
                 $("#ContentPlaceHolder1_hd_Layer").val(json[i].Layer);
-				$("#Ticket_Priority").find("option:selected").text();
+                $("#Ticket_Priority").find("option:selected").text();
                 $("#Ticket_Priority").val(json[i].Priority);
-				
+
             }
 
         },
@@ -2206,7 +2206,7 @@ function get_escalation() {
     if ($("#Ticket_Status").val() == "Closed") {
         $("#Ticket_EscalationLayer").val("NO")
         //$('#Ticket_EscalationLayer').attr('disabled', true);
-    } 
+    }
 }
 function get_cmbChannelHistory(value) {
     var selectedText = $("#Select_Channel_History").find("option:selected").text();
@@ -2487,7 +2487,7 @@ function Get_DataSla() {
     var selectedText = $("#Ticket_ProductName").find("option:selected").text();
     var selectedValue = $("#Ticket_ProductName").val();
     var slaSpanData = $('#Ticket_SLA');
-  
+
     $.ajax({
         type: "POST",
         url: "WebServiceGetDataMaster.asmx/UIDESK_TrxTransactionTicket",
@@ -2536,7 +2536,7 @@ function getProvince(value) {
     //});
 
     var settings = {
-        "url": "https://alamat.thecloudalert.com/api/kabkota/get/?d_provinsi_id=" + idgetProvince +"",
+        "url": "https://alamat.thecloudalert.com/api/kabkota/get/?d_provinsi_id=" + idgetProvince + "",
         "method": "GET",
         "timeout": 0,
         "headers": {
@@ -2580,7 +2580,7 @@ function getCity(value) {
     var cmbDatacusTomerCity = $('#cusTomerDistrict');
     var idgetProvince = $("#cusTomerCity").val();
     var resultSourceCategory = "";
-    
+
 
 
     var settings = {
@@ -2686,7 +2686,7 @@ function getZipCode(value) {
     var resultSourceCategory = "";
 
     var settings = {
-        "url": "https://alamat.thecloudalert.com/api/kodepos/get/?d_kabkota_id=" + idgetCity + "&d_kecamatan_id=" + idgetProvince +"",
+        "url": "https://alamat.thecloudalert.com/api/kodepos/get/?d_kabkota_id=" + idgetCity + "&d_kecamatan_id=" + idgetProvince + "",
         "method": "GET",
         "timeout": 0,
         "headers": {
@@ -2911,7 +2911,7 @@ function ShowActionUpdate() {
 
                     if (json[i].Birth == null)
                         json[i].Birth = "1900-01-01";
-                    
+
                     var milisegundos = parseInt(json[i].Birth.replace("/Date(", "").replace(")/", ""));
                     var newDate = new Date(milisegundos).toLocaleDateString("en-GB");
                     var getDateBirth = newDate.split('/');
@@ -3608,6 +3608,7 @@ function TableHistoryTicket() {
             var i, x, result = "";
 
             myTable.clear().draw();
+
             for (i = 0; i < json.length; i++) {
 
                 var d = new Date(json[i].DateCreate);
@@ -3632,7 +3633,7 @@ function TableHistoryTicket() {
                 } else {
                     var LaporanID = json[i].RefID
                 }
-                var Status = "<span class='badge badge-pill badge-" + StatusColor + "' style='width: 60px;'>" + json[i].Status + "</span>"
+                var Status = "<span class='badge badge-pill badge-" + StatusColor + "' style='width: 60px;'>" + StatusColor + "</span>"
                 myTable.row.add([json[i].TicketSourceName, json[i].TicketNumber, LaporanID, json[i].CategoryName, Status, json[i].NAME, newDate + ' ' + newTime, urlClick]).draw(false);
             }
 
@@ -4522,18 +4523,12 @@ function ValidasiDataCustomer(ChannelAccount) {
         if (ChannelAccount == null || ChannelAccount == "") {
         } else {
 
-        
+
 
             // Replace '0812' with '62'
             //firstPart = phoneNumber.slice(0, 4);
-           // alert(ChannelAccount.slice(0, 1))
-            if (ChannelAccount.slice(0,1) =="0")
-                ChannelAccount = ChannelAccount.slice(0, 1).replace("62");
-            if (ChannelAccount.slice(0, 1) == "+")
-                ChannelAccount = ChannelAccount.slice(0, 1).replace("62");
-            if (ChannelAccount.slice(0, 1) == "0")
-                ChannelAccount = ChannelAccount.slice(0, 1).replace("62");
-          
+
+
 
             var form_data = JSON.stringify({ filterData: ChannelAccount });
             $.ajax({
@@ -4557,20 +4552,26 @@ function ValidasiDataCustomer(ChannelAccount) {
 
                         } else if (json[i].Result == "DataAdaDiUpload") {
 
-                            $("#cusTomerPhone").val(ChannelAccount)
-                            UIDESK_TrmCustomerUpload(ChannelAccount)
+
+                        
+                         
+
+                            $("#cusTomerPhone").val(ReplaceNoHp(ChannelAccount))
+                            $("#TxtChannelValue").val(ReplaceNoHp(ChannelAccount))
+                            UIDESK_TrmCustomerUpload(ReplaceNoHp(ChannelAccount))
                             $("#modal-SearchUser").modal('show');
 
                         } else if (json[i].Result == "DataGkAdaDiUpload") {
 
+                          
                             $("#chat-box-body").empty()
-                            $("#cusTomerPhone").val(ChannelAccount)
-                            $("#TxtChannelValue").val(ChannelAccount)
+                            $("#cusTomerPhone").val(ReplaceNoHp(ChannelAccount))
+                            $("#TxtChannelValue").val(ReplaceNoHp(ChannelAccount))
                             $("#cmbOtherChannel").val(getParameterByName("channel"))
 
-                            
 
-                            
+
+
                             $("#modal-SearchAPI").modal('hide');
                             $("#modal-SearchUser").modal('hide');
                             $("#modal-center").modal('show');
@@ -4589,6 +4590,21 @@ function ValidasiDataCustomer(ChannelAccount) {
             });
         }
     }
+}
+function ReplaceNoHp(NoHP) {
+   
+
+    if (NoHP.charAt(0) == "0")
+        NoHP = '62' + NoHP.substring(1);
+    if (NoHP.charAt(0) == "+")
+        NoHP = '62' + NoHP.substring(1);
+    if (NoHP.charAt(0) == "8")
+        NoHP = '62' + NoHP;
+
+
+    return NoHP.replace(/\s/g, "")
+
+    
 }
 function VehicleSelect() {
     $.ajax({
@@ -4745,8 +4761,8 @@ $(function () {
                 return false;
             }
             var TrxTollRoadSegment = $("#Toll_road_segment").val();
-            event.preventDefault(); 
-            var form = document.forms["myForm"]; 
+            event.preventDefault();
+            var form = document.forms["myForm"];
             swal({
                 title: "Do you want to process?",
                 icon: "warning",
@@ -4755,7 +4771,7 @@ $(function () {
             })
                 .then((willDelete) => {
                     if (willDelete) {
-                        var form_data = JSON.stringify({ TrxUsername: TrxUsername, TrxCustomerID: TrxCustomerID, TxtAccount: TxtAccount, TrxPelapor: encodeData(TrxPelapor), TrxPelaporEmail: TrxPelaporEmail, TrxPelaporPhone: TrxPelaporPhone, TrxPelaporAddress: encodeData(TrxPelaporAddress), TrxKejadian: TrxKejadian, TrxPenyebab: TrxPenyebab, TrxPenerimaPengaduan: TrxPenerimaPengaduan, TrxStatusPelapor: TrxStatusPelapor, TrxSkalaPrioritas: TrxSkalaPrioritas, TrxJenisNasabah: TrxJenisNasabah, TrxNomorRekening: TrxNomorRekening, TrxSumberInformasi: TrxSumberInformasi, TrxCategory: TrxCategory, TrxLevel1: TrxLevel1, TrxLevel2: TrxLevel2, TrxLevel2_1 : TrxLevel2_1, TrxLevel3: TrxLevel3, TrxComplaint: encodeData(TrxConvertComplaint), TrxResponse: encodeData(TrxConvertResponse), TrxChannel: TrxChannel, TrxStatus: TrxStatus, TrxEskalasi: TrxEskalasi, TrxSLA: TrxSLA, TrxExtendCategory: TrxExtendCategory, TrxLayer: TrxLayer, TrxThreadID: TxtThreadID, TxtThreadID: TxtThreadID, TrxGenesysID: TrxGenesysID, TxtContactID: TxtContactID, TrxIDchannel: TrxIDchannel, TrxProductName: TrxProductName, TrxTollRoadSegment: TrxTollRoadSegment });
+                        var form_data = JSON.stringify({ TrxUsername: TrxUsername, TrxCustomerID: TrxCustomerID, TxtAccount: TxtAccount, TrxPelapor: encodeData(TrxPelapor), TrxPelaporEmail: TrxPelaporEmail, TrxPelaporPhone: TrxPelaporPhone, TrxPelaporAddress: encodeData(TrxPelaporAddress), TrxKejadian: TrxKejadian, TrxPenyebab: TrxPenyebab, TrxPenerimaPengaduan: TrxPenerimaPengaduan, TrxStatusPelapor: TrxStatusPelapor, TrxSkalaPrioritas: TrxSkalaPrioritas, TrxJenisNasabah: TrxJenisNasabah, TrxNomorRekening: TrxNomorRekening, TrxSumberInformasi: TrxSumberInformasi, TrxCategory: TrxCategory, TrxLevel1: TrxLevel1, TrxLevel2: TrxLevel2, TrxLevel2_1: TrxLevel2_1, TrxLevel3: TrxLevel3, TrxComplaint: encodeData(TrxConvertComplaint), TrxResponse: encodeData(TrxConvertResponse), TrxChannel: TrxChannel, TrxStatus: TrxStatus, TrxEskalasi: TrxEskalasi, TrxSLA: TrxSLA, TrxExtendCategory: TrxExtendCategory, TrxLayer: TrxLayer, TrxThreadID: TxtThreadID, TxtThreadID: TxtThreadID, TrxGenesysID: TrxGenesysID, TxtContactID: TxtContactID, TrxIDchannel: TrxIDchannel, TrxProductName: TrxProductName, TrxTollRoadSegment: TrxTollRoadSegment });
                         $.ajax({
                             url: "WebServiceTransaction.asmx/Insert_TransactionTicket",
                             method: "POST",
@@ -4768,7 +4784,7 @@ $(function () {
                                 var result = "";
                                 console.log("huhu : " + form_data)
                                 for (i = 0; i < json.length; i++) {
-                                      //$.toast({
+                                    //$.toast({
                                     //        heading: '<b>Hi agent ' + $("#hd_sessionLogin").val() + '</b>',
                                     //        text: 'Your data ticket has been submited...',
                                     //        position: 'top-right',

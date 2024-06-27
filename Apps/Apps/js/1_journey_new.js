@@ -398,24 +398,29 @@ function getWS_DataTicket(value) {
                     $("#btnAttachment").css("display", "none")
                     $("#escalationto").css("display", "none");
                     $("#ahref_Escalationto").css("display", "none");
-                    $("#DivActionJourney").hide();
+                    if ($("#TrxLoginTypeAngka").val() != "1") {
+                        $("#DivActionJourney").hide();
+
+
+                    } else {
+                        $("#btnInteraction").css("display", "block")
+                        $("#btnAttachment").css("display", "block")
+                    }
+
                 } else {
                     if (json[i].Status == "Closed") {
                         $("#btnInteraction").css("display", "none")
                         $("#btnAttachment").css("display", "none")
                         $("#escalationto").css("display", "none");
                         $("#ahref_Escalationto").css("display", "none");
+
+
                         $("#DivActionJourney").hide();
 
                     } else {
                         $("#btnInteraction").css("display", "block")
                         $("#btnAttachment").css("display", "block")
                     }
-                }
-
-                if ($("#TrxLoginTypeAngka").val() == "3") {
-                    $("#escalationto").css("display", "none");
-                    $("#ahref_Escalationto").css("display", "none");
                 }
 
                 var TrxTicketPosition = json[i].TicketPosition
