@@ -122,7 +122,7 @@
         }
         .custom-background {
           /* Adjust these properties as needed  https://www.pelni.co.id/cfind/source/thumb/images/ticket-reservation/cover_w1920_h380_tw1920_th380_x10_y10_web.jpg */
-          background-image: url('https://pelni.uidesk.id/Background.jpeg)');
+          background-image: url('https://pelni.uidesk.id/Background.jpeg');
           background-size: cover;
           background-position: center;
           /* Add any other desired background properties */
