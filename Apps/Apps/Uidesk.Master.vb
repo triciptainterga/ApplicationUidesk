@@ -235,7 +235,7 @@ Public Class Uidesk
                                     "left outer join " &
                                     "user3 on.user3.SubMenuID=USER_SettingChannel.SubMenuID left outer join user2 on.USER_SettingChannel.SubMenuID = user2.SubMenuID " &
                                     "left outer join User1 on USER_SettingChannel.MenuID = user1.MenuID " &
-                                    "where user3.SubMenuID='" & _reader("SubMenuID") & "' and USER_SettingChannel.UserName='Agent1' "
+                                    "where user3.SubMenuID='" & _reader("SubMenuID") & "' and USER_SettingChannel.UserName='" & Session("UserName") & "' "
                     '_strsqlselect = "SELECT *, DetailMenuName as MenuTreeName FROM USER_SettingChannel where UserName='" & Session("UserName") & "' And SubMenuID='" & _reader("SubMenuID") & "' And DetailMenuName IS NOT NULL"
                 Else
                     _strsqlselect = "select distinct user4.UserID, user4.MenuID, user1.MenuName, user2.SubMenuID, user2.SubMenuName, user3.SubMenuIDTree, " &
