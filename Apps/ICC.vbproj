@@ -2060,6 +2060,11 @@
     <Content Include="apps\sample_blank.html" />
     <Content Include="apps\SF_2018.aspx" />
     <Content Include="apps\SF_2019.aspx" />
+    <Content Include="apps\SF_2020.aspx" />
+    <Content Include="apps\SF_2021.aspx" />
+    <Content Include="apps\SF_2022.aspx" />
+    <Content Include="apps\SF_2023.aspx" />
+    <Content Include="apps\SF_2024.aspx" />
     <Content Include="apps\spam.png" />
     <Content Include="apps\star.png" />
     <Content Include="apps\Syn_CronisePhase2.aspx" />
@@ -24591,6 +24596,41 @@
     </Compile>
     <Compile Include="apps\SF_2019.aspx.vb">
       <DependentUpon>SF_2019.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apps\SF_2020.aspx.designer.vb">
+      <DependentUpon>SF_2020.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\SF_2020.aspx.vb">
+      <DependentUpon>SF_2020.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apps\SF_2021.aspx.designer.vb">
+      <DependentUpon>SF_2021.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\SF_2021.aspx.vb">
+      <DependentUpon>SF_2021.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apps\SF_2022.aspx.designer.vb">
+      <DependentUpon>SF_2022.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\SF_2022.aspx.vb">
+      <DependentUpon>SF_2022.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apps\SF_2023.aspx.designer.vb">
+      <DependentUpon>SF_2023.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\SF_2023.aspx.vb">
+      <DependentUpon>SF_2023.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apps\SF_2024.aspx.designer.vb">
+      <DependentUpon>SF_2024.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\SF_2024.aspx.vb">
+      <DependentUpon>SF_2024.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="apps\Syn_CronisePhase2.aspx.designer.vb">
