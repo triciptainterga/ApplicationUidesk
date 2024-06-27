@@ -3000,6 +3000,7 @@ Public Class WebServiceGetDataMaster
             LogError(HttpContext.Current.Session("UserName"), ex, strExec)
         Finally
             Dim objectTickets As resultInsert = New resultInsert()
+            _Result = "Success"
             If _Result = "Success" Then
                 objectTickets.Result = "True"
                 objectTickets.TrxID = _Valuenya
