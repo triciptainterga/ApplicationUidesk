@@ -177,6 +177,7 @@
     <Content Include="apps\4_Report_AUX.aspx" />
     <Content Include="apps\4_Report_Chat.aspx" />
     <Content Include="apps\4_Report_email.aspx" />
+    <Content Include="apps\4_Report_EmailResponseTime.aspx" />
     <Content Include="apps\4_Report_FB.aspx" />
     <Content Include="apps\4_Report_IG.aspx" />
     <Content Include="apps\4_Report_Mention.aspx" />
@@ -2056,6 +2057,7 @@
     <Content Include="apps\Qc_Trx.aspx" />
     <Content Include="apps\recording.png" />
     <Content Include="apps\ReportCSAT.aspx" />
+    <Content Include="apps\ReportThread_Mar24.aspx" />
     <Content Include="apps\Report_HistoryCall.aspx" />
     <Content Include="apps\sample_blank.html" />
     <Content Include="apps\SF_2018.aspx" />
@@ -23956,6 +23958,13 @@
       <DependentUpon>4_Report_email.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="apps\4_Report_EmailResponseTime.aspx.designer.vb">
+      <DependentUpon>4_Report_EmailResponseTime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\4_Report_EmailResponseTime.aspx.vb">
+      <DependentUpon>4_Report_EmailResponseTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="apps\4_Report_FB.aspx.designer.vb">
       <DependentUpon>4_Report_FB.aspx</DependentUpon>
     </Compile>
@@ -24552,6 +24561,13 @@
     </Compile>
     <Compile Include="apps\ReportCSAT.aspx.vb">
       <DependentUpon>ReportCSAT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apps\ReportThread_Mar24.aspx.designer.vb">
+      <DependentUpon>ReportThread_Mar24.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\ReportThread_Mar24.aspx.vb">
+      <DependentUpon>ReportThread_Mar24.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="apps\Report_HistoryCall.aspx.designer.vb">
