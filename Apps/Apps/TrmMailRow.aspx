@@ -63,8 +63,8 @@
                                 <dx:GridViewDataTextColumn Caption="Handle" FieldName="FLAG_HANDLING" Width="100px"></dx:GridViewDataTextColumn>
                                 <dx:GridViewDataTextColumn Caption="Handle Type" FieldName="DIRECTION" Width="100px"></dx:GridViewDataTextColumn>
                                 <dx:GridViewDataTextColumn Caption="Reply" FieldName="FLAGING_EMAIL_REPLY" Width="100px" PropertiesTextEdit-EncodeHtml="false"></dx:GridViewDataTextColumn>
-								<dx:GridViewDataTextColumn Caption="Kategori" FieldName="DIRECTION" Width="100px"></dx:GridViewDataTextColumn>
-							</Columns>
+                                <dx:GridViewDataTextColumn Caption="Kategori" FieldName="DIRECTION" Width="100px"></dx:GridViewDataTextColumn>
+                            </Columns>
                         </dx:ASPxGridView>
 
                         <hr />
