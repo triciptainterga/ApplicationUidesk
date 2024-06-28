@@ -2128,6 +2128,7 @@
     <Content Include="apps\TrmLevelUser.aspx" />
     <Content Include="apps\TrmLicense.aspx" />
     <Content Include="apps\TrmMailHour.aspx" />
+    <Content Include="apps\TrmMailRow.aspx" />
     <Content Include="apps\TrmMailSystem.aspx" />
     <Content Include="apps\TrmMasterSite.aspx" />
     <Content Include="apps\TrmMaxhandle.aspx" />
@@ -25025,6 +25026,13 @@
     </Compile>
     <Compile Include="apps\TrmMailHour.aspx.vb">
       <DependentUpon>TrmMailHour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apps\TrmMailRow.aspx.designer.vb">
+      <DependentUpon>TrmMailRow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apps\TrmMailRow.aspx.vb">
+      <DependentUpon>TrmMailRow.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="apps\TrmMailSystem.aspx.designer.vb">
