@@ -214,6 +214,7 @@ function getWS_JourneyTicketLoad(value) {
             for (i = 0; i < json.length; i++) {
 
                 var HeaderTicketNumber = json[i].TicketNumber
+
                 if (json[i].ThreadDescription == null) {
                     var TrxThreadDescription = "";
                 } else {

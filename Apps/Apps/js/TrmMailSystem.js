@@ -92,7 +92,7 @@ function TrmInboxEmailSelected() {
                 $("#ReplyEmailService").val(json[i].account);
                 $("#ReplyTo").val(ReplaceEmailCC(json[i].EFROM + ";" + json[i].ETO));
                 $("#ReplySubject").val("RE :" + json[i].ESUBJECT);
-                if (json[i].ECC == "cs@brilife.co.id;" || json[i].ECC == "helpdesk.distribution@brilife.co.id;") {
+                if (json[i].ECC == "" || json[i].ECC == "") {
                     $("#ReplyECC").val("");
                 } else {
                     $("#ReplyECC").val(json[i].ECC);

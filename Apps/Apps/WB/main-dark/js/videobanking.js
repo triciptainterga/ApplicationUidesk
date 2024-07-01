@@ -5,7 +5,7 @@ function getData() {
     var jsonText = JSON.stringify({ BulanNya: "7",TahunNya: "2022",JenisReport: "Performance",TypeReport: "Non Call",SkillAgent: "Video Banking",UserName: "90135204" });
     $.ajax({
         type: "POST",
-        url: "http://localhost/brilifecc/apps/asmx/WS_QM_Wallboard.asmx/WS_DataWB2Monthly",
+        url: "",
         data: jsonText,
         contentType: "application/json; charset=utf-8",
         dataType: "json",

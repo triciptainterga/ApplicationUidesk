@@ -209,37 +209,37 @@ function CmbSosialMediaAccount(TrxValue) {
 
         CmbSosialMediaTransaksi.empty();
         for (i = 0; i < json.length; i++) {
-            if (TrxValue == "5" && json[i].channel_id == "1") {
+            if (TrxValue == "4" && json[i].channel_id == "1") {
                 result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
                 CmbSosialMediaTransaksi.append(result);
-            } else if (TrxValue == "9" && json[i].channel_id == "2") {
+            } else if (TrxValue == "12" && json[i].channel_id == "2") {
                 result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
                 CmbSosialMediaTransaksi.append(result);
-            } else if (TrxValue == "4" && json[i].channel_id == "4") {
+            } else if (TrxValue == "13" && json[i].channel_id == "4") {
                 result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
                 CmbSosialMediaTransaksi.append(result);
-            } else if (TrxValue == "5" && json[i].channel_id == "5") {
-                result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
-                CmbSosialMediaTransaksi.append(result);
-            } else if (TrxValue == "14" && json[i].channel_id == "14") {
-                result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
-                CmbSosialMediaTransaksi.append(result);
-            } else if (TrxValue == "14" && json[i].channel_id == "4") {
-                result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
-                CmbSosialMediaTransaksi.append(result);
-            }else if (TrxValue == "15" && json[i].channel_id == "15") {
-                result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
-                CmbSosialMediaTransaksi.append(result);
-            } else if (TrxValue == "16" && json[i].channel_id == "16") {
-                result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
-                CmbSosialMediaTransaksi.append(result);
-            } else if (TrxValue == "18" && json[i].channel_id == "3") {
-                result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
-                CmbSosialMediaTransaksi.append(result);
-            } else if (TrxValue == "13" && json[i].channel_id == "7") {
-                result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
-                CmbSosialMediaTransaksi.append(result);
-            }
+            //} else if (TrxValue == "5" && json[i].channel_id == "5") {
+            //    result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
+            //    CmbSosialMediaTransaksi.append(result);
+            //} else if (TrxValue == "14" && json[i].channel_id == "14") {
+            //    result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
+            //    CmbSosialMediaTransaksi.append(result);
+            //} else if (TrxValue == "14" && json[i].channel_id == "4") {
+            //    result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
+            //    CmbSosialMediaTransaksi.append(result);
+            //}else if (TrxValue == "15" && json[i].channel_id == "15") {
+            //    result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
+            //    CmbSosialMediaTransaksi.append(result);
+            //} else if (TrxValue == "16" && json[i].channel_id == "16") {
+            //    result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
+            //    CmbSosialMediaTransaksi.append(result);
+            //} else if (TrxValue == "18" && json[i].channel_id == "3") {
+            //    result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
+            //    CmbSosialMediaTransaksi.append(result);
+            //} else if (TrxValue == "13" && json[i].channel_id == "7") {
+            //    result = '<option value="' + json[i].account_id + '">' + json[i].name + '</option>';
+            //    CmbSosialMediaTransaksi.append(result);
+            //}
         }
     });
 }
@@ -380,7 +380,7 @@ function Add_DropdownSosialMedia(smID) {
     var TrxText = $("#CmbSosialMediaType").find("option:selected").text();
     var TrxValue = $("#CmbSosialMediaType").val();
     CmbSosialMediaAccount(TrxValue);
-    if (TrxValue == "13") {
+    if (TrxValue == "4" || TrxValue == "12" || TrxValue == "13") {
         $("#DivSubdit").show();
         $("#DivLayanan").show();
     } else {

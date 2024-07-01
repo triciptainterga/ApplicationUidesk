@@ -117,13 +117,13 @@
         #example2 {
             width: 100%;
             /*padding: 125px;*/
-            background: url(https://brilife.co.id/documents/20123/48892/slider-one.jpg/950e2b25-1359-ee67-9281-f5c40de51fac?t=1606157220045);
+            background: url("");
             background-repeat: repeat;
             /*margin-left:10px;*/
         }
     </style>
 </head>
-<body class="example2" style="background-image: url(https://brilife.co.id/documents/20123/48892/slider-one.jpg/950e2b25-1359-ee67-9281-f5c40de51fac?t=1606157220045);">
+<body class="example2" style="background-image: url('');">
     <br />
     <br />
     <br />

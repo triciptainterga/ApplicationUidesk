@@ -869,8 +869,8 @@ function Click_DetailNomorPolis(NomorPolis) {
     var jsonText = JSON.stringify({ NoPolis: NomorPolis });
     $.ajax({
         type: "POST",
-        //url: "https://cc-api-dev.brilife.co.id/contactserviceapi/profiling/profilingPolisDetail",
-        url: "https://cc-api.brilife.co.id/contactserviceapi/profiling/profilingPolisDetail",
+       
+        url: "",
         contentType: "application/json; charset=utf-8",
         data: jsonText,
         dataType: "json",
@@ -2261,8 +2261,8 @@ function Get_ProfileAPI() {
         var jsonText = JSON.stringify({ NIK: $("#API_FilterValue").val(), NoPolis: "" });
         $.ajax({
             type: "POST",
-            //url: "https://cc-api-dev.brilife.co.id/contactserviceapi/profiling/profilingPolisSearch",
-            url: "https://cc-api.brilife.co.id/contactserviceapi/profiling/profilingPolisSearch",
+            
+            url: "",
             contentType: "application/json; charset=utf-8",
             data: jsonText,
             dataType: "json",
@@ -2371,8 +2371,7 @@ function Get_ProfileAPI() {
         }
 
         var settings = {
-            //"url": "https://cc-api-dev.brilife.co.id/contactserviceapi/profiling/profilingPolisSearch",
-            "url": "https://cc-api.brilife.co.id/contactserviceapi/profiling/profilingPolisSearch",
+            "url": "",
             "method": "POST",
             "timeout": 0,
             "headers": {
@@ -3295,7 +3294,7 @@ function selectedThread() {
                 $("#Ticket_DateofTransaction").val(DateOfTransaction[2] + "-" + DateOfTransaction[1] + "-" + DateOfTransaction[0] + "");
                 $("#Reported_Channel_Contact").val(getParameterByName("account"));
 
-                if (getParameterByName("channel") == "Email" || getParameterByName("channel") == "EMAIL" || getParameterByName("channel") == "email") {
+                if (getParameterByName("channel") == "E-mail" || getParameterByName("channel") == "EMAIL" || getParameterByName("channel") == "email") {
 
                     $('#DivSubjectEmail').css('display', 'block');
                     $("#Ticket_Subject_Email").val(json[i].Subject);
@@ -3860,8 +3859,7 @@ function TrmListPolisNumber(ValueID) {
     var myTable = $('#TrmPolisNumber').DataTable();
     $.ajax({
         type: "POST",
-        //url: "https://cc-api-dev.brilife.co.id/contactserviceapi/profiling/profilingPolisList",
-        url: "https://cc-api.brilife.co.id/contactserviceapi/profiling/profilingPolisList",
+        url: "",
         contentType: "application/json; charset=utf-8",
         data: jsonText,
         dataType: "json",
@@ -4428,6 +4426,9 @@ function Post_HelpdeskDataLead() {
             }
         });
 }
+function PreviewAttachment() {
+    $("#modal-preview-file").modal('show');
+}
 function PreviewEmail(TrxEmailID) {
     document.getElementById("framefile_html").src = "http://10.28.2.222/brilifecc/FileEmail/INBOX/" + TrxEmailID + "/file.html"
     $("#modal-center-email").modal('show')
@@ -4556,8 +4557,8 @@ function ValidasiDataCustomer(ChannelAccount) {
                         
                          
 
-                            $("#cusTomerPhone").val(ReplaceNoHp(ChannelAccount))
-                            $("#TxtChannelValue").val(ReplaceNoHp(ChannelAccount))
+                            //$("#cusTomerPhone").val(ReplaceNoHp(ChannelAccount))
+                            //$("#TxtChannelValue").val(ReplaceNoHp(ChannelAccount))
                             UIDESK_TrmCustomerUpload(ReplaceNoHp(ChannelAccount))
                             $("#modal-SearchUser").modal('show');
 
@@ -4565,8 +4566,18 @@ function ValidasiDataCustomer(ChannelAccount) {
 
                           
                             $("#chat-box-body").empty()
-                            $("#cusTomerPhone").val(ReplaceNoHp(ChannelAccount))
-                            $("#TxtChannelValue").val(ReplaceNoHp(ChannelAccount))
+                         
+
+                            if (getParameterByName("channel") == "Email") {
+                                $("#cusTomerPhone").val("")
+                                $("#TxtChannelValue").val(ChannelAccount)
+                                $("#cmbOtherChannel").val(getParameterByName("channel"))
+                            } else {
+                                getParameterByName("channel")
+                                $("#cusTomerPhone").val(ReplaceNoHp(ChannelAccount))
+                                $("#TxtChannelValue").val(ReplaceNoHp(ChannelAccount))
+                               
+                            }
                             $("#cmbOtherChannel").val(getParameterByName("channel"))
 
 

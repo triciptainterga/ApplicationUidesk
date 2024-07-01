@@ -16,7 +16,7 @@ function OnChange_Profile() {
 }
 function TestingNoPolis() {
     var settings = {
-        "url": "https://cc-api-dev.brilife.co.id/contactserviceapi/profiling/profilingPolisSearch",
+        "url": "",
         "method": "POST",
         "timeout": 0,
         "headers": {
@@ -96,7 +96,7 @@ function Get_ProfileAPI() {
         console.log("jsonText 1" + jsonText)
         $.ajax({
             type: "POST",
-            url: "https://cc-api-dev.brilife.co.id/contactserviceapi/profiling/profilingPolisSearch",
+            url: "/contactserviceapi/profiling/profilingPolisSearch",
             contentType: "application/json; charset=utf-8",
             data: jsonText,
             dataType: "json",
@@ -179,7 +179,7 @@ function Get_ProfileAPI() {
         }
 
         var settings = {
-            "url": "https://cc-api-dev.brilife.co.id/contactserviceapi/profiling/profilingPolisSearch",
+            "url": "",
             "method": "POST",
             "timeout": 0,
             "headers": {
@@ -225,7 +225,7 @@ function TrmListPolisNumber() {
     var myTable = $('#TrmPolisNumber').DataTable();
     $.ajax({
         type: "POST",
-        url: "https://cc-api-dev.brilife.co.id/contactserviceapi/profiling/profilingPolisList",
+        url: "",
         contentType: "application/json; charset=utf-8",
         data: jsonText,
         dataType: "json",
@@ -253,7 +253,7 @@ function Click_DetailNomorPolis(NomorPolis) {
     var jsonText = JSON.stringify({ NoPolis: NomorPolis });
     $.ajax({
         type: "POST",
-        url: "https://cc-api-dev.brilife.co.id/contactserviceapi/profiling/profilingPolisDetail",
+        url: "",
         contentType: "application/json; charset=utf-8",
         data: jsonText,
         dataType: "json",

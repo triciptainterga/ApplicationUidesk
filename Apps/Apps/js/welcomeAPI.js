@@ -29,8 +29,8 @@ function GetAPI_PolisNumber() {
                 $.ajax({
                     type: "GET",
                     //url: "asmx/json/SampleAPI.json",
-                    url: "https://cc-api.brilife.co.id/contactserviceapi/wellcomeCall",
-                    //url: "https://cc-api-dev.brilife.co.id/contactserviceapi/wellcomeCall",
+                    url: "",
+                   
                     contentType: "application/json; charset=utf-8",
                     data: jsonText,
                     dataType: "json",

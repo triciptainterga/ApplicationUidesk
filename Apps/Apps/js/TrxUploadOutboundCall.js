@@ -1773,7 +1773,7 @@ function GetAPI_PolisNumber() {
 }
 //function moveFileToDatabase(asalNya,tujuanNya){
 //	var tujuanNya = asalNya;
-//    var jsonText = JSON.stringify({ asal: "http://10.28.2.222/brilifecc/FileUploadOutbound/" + asalNya, tujuan: tujuanNya });
+//    var jsonText = JSON.stringify({ asal: "https://pelni.uidesk.id/FileUploadOutbound/" + asalNya, tujuan: tujuanNya });
 //    console.log(jsonText);
 //    $.ajax({
 //        type: "POST",
@@ -1797,8 +1797,8 @@ function GetAPI_PolisNumber() {
 //}
 function moveFileToDatabase(asalNya, tujuanNya) {
     var tujuanNya = asalNya;
-    var jsonText = JSON.stringify({ asal: "http://10.28.2.222/dev_brilife/FileUploadOutbound/" + asalNya, tujuan: tujuanNya });
-    //var jsonText = JSON.stringify({ asal: "http://10.28.2.222/brilifecc/FileUploadOutbound/" + asalNya, tujuan: tujuanNya });
+    var jsonText = JSON.stringify({ asal: "https://pelni.uidesk.id/FileUploadOutbound/" + asalNya, tujuan: tujuanNya });
+    //var jsonText = JSON.stringify({ asal: "https://pelni.uidesk.id/FileUploadOutbound/" + asalNya, tujuan: tujuanNya });
     var uuu = "uidesk";
     var aaa = "uidesk12345";
     console.log(jsonText);

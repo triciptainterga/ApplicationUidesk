@@ -324,6 +324,8 @@ Public Class auth_login
                 Session("Foto") = sqldr("URL").ToString
                 Session("Ext") = sqldr("PBXUSER").ToString
                 Session("MultiChatToken") = sqldr("TokenMeta").ToString
+                Session("UrlDatakelola") = sqldr("UrlDatakelola").ToString
+                Session("CompanyToken") = sqldr("CompanyToken").ToString
 
                 VariabelCookiesUsername.Values("CookiesUserName") = sqldr("UserName").ToString
                 VariabelCookiesUsername.Expires = DateTime.Now.AddDays(AddCookiess)
@@ -473,7 +475,7 @@ Public Class auth_login
         Return True
     End Function
     Private Sub CheckLicense()
-        sql = "EXEC [SP_INV_CHECK_LIC_SUM]  '" & Login_Username.Value & "','UideskIndonesia','BRILife','2021-12-17','2030-12-17'"
+        sql = "EXEC [SP_INV_CHECK_LIC_SUM]  '" & Login_Username.Value & "','UideskIndonesia','','2021-12-17','2030-12-17'"
         Try
             readerlic = Proses.ExecuteReader(sql)
             If readerlic.HasRows Then
