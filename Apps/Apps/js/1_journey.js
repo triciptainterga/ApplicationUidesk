@@ -107,13 +107,13 @@ function getWS_JourneyTicketLoad(value) {
                     var IconChannel = "Call"
                     var IconChannelSosialMedia = ""
                 } else if (json[i].ValueThread == "EMAIL") {
-                    var FileHTML = "http://10.28.2.222/dev_brilife//FileEmail/INBOX/" + json[i].ThreadID + "/file.html"
+                    var FileHTML = "https://pelni.uidesk.id//FileEmail/INBOX/" + json[i].ThreadID + "/file.html"
                     var IconChannel = json[i].ValueThread
                     var IconChannelSosialMedia = ""
                 } else if (json[i].ValueThread == "Whatsapp") {
-                    var FileHTML = "http://10.28.2.222/dev_brilife//apps/template/wa.html?convid=" + json[i].GenesysNumber + ""
+                    var FileHTML = "https://pelni.uidesk.id//apps/template/wa.html?convid=" + json[i].GenesysNumber + ""
                     var IconChannel = json[i].ValueThread
-                    var FileHTMLSosialMedia = "http://10.28.2.222/dev_brilife/apps/template/socialmedia.html?convid=" + json[i].GenesysNumber + ""
+                    var FileHTMLSosialMedia = "https://pelni.uidesk.id/apps/template/socialmedia.html?convid=" + json[i].GenesysNumber + ""
                     var IconChannelSosialMedia = '<a href=' + FileHTMLSosialMedia + ' target="_blank"><span class="timeline-label">' +
                         '<img alt="Profile" src="../images/icon/Information1.png" class="avatar mr-10">' +
                         '</span></a>'

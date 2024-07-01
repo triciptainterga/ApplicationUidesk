@@ -2228,7 +2228,7 @@ function ForwardEmailSelected(ForwardID) {
                 //$("#ForwardComboFrom").val(json[i].ETO);
                 //$("#ForwardTo").val(json[i].EFROM);
                 $("#ForwardSubject").val("FWD :" + json[i].ESUBJECT);
-                if (json[i].ECC == "cs@brilife.co.id" || json[i].ECC == "helpdesk.distribution@brilife.co.id") {
+                if (json[i].ECC == "" || json[i].ECC == "") {
                     $("#ForwardECC").val("");
                 } else {
                     $("#ForwardECC").val(json[i].ECC);
@@ -2420,7 +2420,7 @@ function ForwardAttachment(ForwardAttachmentID) {
                     '<span class="mailbox-attachment-icon"><i class="fa fa-file-' + FileTypes + '-o text-danger"></i></span>' +
                     '<div class="mailbox-attachment-info">' +
                     '<a href="#" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i>' + json[i].FILENAME.substring(0, 10) + '</a>' +
-                    '<a href=http://10.28.2.222/brilifecc/FileEmail/OUTBOX/' + json[i].URL + ' target="_blank" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a><a href="#" target="_blank" class="btn btn-default btn-xs pull-right" onclick=deleteAttachment(' + json[i].ID + ')><i class="fa fa-trash-o"></i></a>' +
+                    '<a href=https://pelni.uidesk.id/FileEmail/OUTBOX/' + json[i].URL + ' target="_blank" class="btn btn-default btn-xs pull-right"><i class="fa fa-cloud-download"></i></a><a href="#" target="_blank" class="btn btn-default btn-xs pull-right" onclick=deleteAttachment(' + json[i].ID + ')><i class="fa fa-trash-o"></i></a>' +
                     '</span>' +
                     '</div>' +
                     '</li>' +

@@ -363,11 +363,11 @@ function WSActionTransactionKotak() {
     })
 }
 function PreviewEmail(TrxEmailID) {
-    document.getElementById("framefile_html").src = "http://10.28.2.222/brilifecc/FileEmail/INBOX/" + TrxEmailID + "/file.html"
+    document.getElementById("framefile_html").src = "https://pelni.uidesk.id/FileEmail/INBOX/" + TrxEmailID + "/file.html"
     $("#modal-center-email").modal('show')
 }
 function PreviewWhatsApp(TrxWhatsAppID) {
-    document.getElementById("framefile_html").src = "http://10.28.2.222/brilifecc/apps/template/wa.html?convid=" + TrxWhatsAppID + ""
+    document.getElementById("framefile_html").src = "https://pelni.uidesk.id/apps/template/wa.html?convid=" + TrxWhatsAppID + ""
     //document.getElementById("framefile_html").src = "http://omnichannel.uidesk.id/omnichannel_dev/apps/template/wa.html?convid=" + TrxWhatsAppID.replace("WA-", "") + ""
     //document.getElementById("framefile_html").src = "http://omnichannel.uidesk.id/omnichannel_dev/apps/template/wa.html?convid=51"
     $("#modal-center-email").modal('show')

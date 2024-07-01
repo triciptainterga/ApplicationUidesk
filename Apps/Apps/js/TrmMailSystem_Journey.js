@@ -87,7 +87,7 @@ function TrmInboxEmailSelected() {
                 $("#ReplyEmailService").val(json[i].account);
                 $("#ReplyTo").val(ReplaceEmailCC(json[i].EFROM + ";" + json[i].ETO));
                 $("#ReplySubject").val("RE :" + json[i].ESUBJECT);
-                if (json[i].ECC == "cs@brilife.co.id;" || json[i].ECC == "helpdesk.distribution@brilife.co.id;") {
+                if (json[i].ECC == ";" || json[i].ECC == ";") {
                     $("#ReplyECC").val("");
                 } else {
                     $("#ReplyECC").val(json[i].ECC);
@@ -2157,7 +2157,7 @@ function ForwardEmailSelected(ForwardID) {
                 //$("#ForwardComboFrom").val(json[i].ETO);
                 //$("#ForwardTo").val(json[i].EFROM);
                 $("#ForwardSubject").val("FWD :" + json[i].ESUBJECT);
-                if (json[i].ECC == "cs@brilife.co.id" || json[i].ECC == "helpdesk.distribution@brilife.co.id") {
+                if (json[i].ECC == "" || json[i].ECC == "") {
                     $("#ForwardECC").val("");
                 } else {
                     $("#ForwardECC").val(json[i].ECC);
@@ -3419,7 +3419,7 @@ function OnchangeFormatTypeForward(FormatID) {
 function ReplaceEmailCC(AddressEmail) {
     //alert(AddressEmail)
     let dummyString = AddressEmail;
-    newString = dummyString.replace('helpdesk.distribution@brilife.co.id;', '').replace('cs@brilife.co.id;', '').replace('Helpdesk.distribution@brilife.co.id;', '').replace('CS@brilife.co.id;', '').replace('Helpdesk.Distribution@brilife.co.id;', '');
+    newString = dummyString.replace(';', '').replace(';', '').replace(';', '').replace(';', '').replace(';', '');
     //alert(newString);
     return newString
 }
