@@ -143,6 +143,17 @@ Public Class auth_login
                 Response.Cookies.Add(nameCookie)
                 Session.RemoveAll()
             End If
+        ElseIf Request.QueryString("signout") = "api" Then
+            Dim TrxCookiesUserName As String = String.Empty
+            Dim VariabelCookiesUsername As HttpCookie = HttpContext.Current.Request.Cookies("CookiesUserName")
+            TrxCookiesUserName = If(VariabelCookiesUsername IsNot Nothing, VariabelCookiesUsername.Value.Split("="c)(1), "undefined")
+            If TrxCookiesUserName <> "undefined" Then
+                _ClassAux.InsertLogoutActivity("9", Session("UserName"), "Insert")
+                Dim nameCookie As HttpCookie = Request.Cookies("CookiesUserName")
+                nameCookie.Expires = DateTime.Now.AddDays(-1)
+                Response.Cookies.Add(nameCookie)
+                Session.RemoveAll()
+            End If
         End If
         If Request.QueryString("usdesk") <> "" And Request.QueryString("epic") = "1" Then
             Dim strCountingEpic As String = String.Empty
