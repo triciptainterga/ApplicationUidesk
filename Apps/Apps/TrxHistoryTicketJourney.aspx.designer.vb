@@ -21,4 +21,22 @@ Partial Public Class TrxHistoryTicketJourney
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TrxCustomerID As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
+    '''TrxLayerEskalasi control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TrxLayerEskalasi As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
+    '''PhoneNumberReported control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PhoneNumberReported As Global.System.Web.UI.WebControls.HiddenField
 End Class

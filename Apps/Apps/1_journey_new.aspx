@@ -246,7 +246,18 @@
                                                     <option value="No">No</option>
                                                 </select>
                                             </div>
+                                            
                                         </div>
+                                          <div class="col-lg-3">
+                                        <div class="form-group" id="DivUserEskalation" style="display:none">
+                                               
+                                                <select name="select" id="IdUserEskalation" required class="form-control" style="height: 33px;" >
+                                                    <option value="">Select</option>
+                                                    <option value="Layer 2">Layer 2</option>
+                                                    <option value="Layer 3">Layer 3</option>
+                                                </select>
+                                            </div>
+                                           </div>
                                         <div class="col-lg-3" id="CreateNotaDinas" style="display:none">
                                             <div class="form-group">
                                                 <p class="font-weight-normal" id="P_Notadinas">Membuat Nota Dinas</p>

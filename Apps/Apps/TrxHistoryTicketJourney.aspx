@@ -493,7 +493,7 @@
                                 <div class="d-inline-block mt-10">
 
                                     <a class="btn default btn-outline image-popup-vertical-fit" href="#" onclick="modalEscalation()" id="ahref_Escalationto"><i class="fa fa-pencil" id="escalationto"></i></a>
-                                    <a class="btn default btn-outline" href="1_Journey.aspx?ticketid=<%=Server.UrlEncode(Request.QueryString("ticketid"))%>"><i class="fa fa-refresh"></i></a>
+                                    <a class="btn default btn-outline" href="1_Journey_new.aspx?ticketid=<%=Server.UrlEncode(Request.QueryString("ticketid"))%>"><i class="fa fa-refresh"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -1641,7 +1641,39 @@ function get_EscalationStatus(TrxValues) {
     }
 }
 function get_SelectEscalation(TrxValues) {
-    if ($("#Journey_EscalationChannel").val() == "Yes" && $("#TrxLayerUser").val() =="Layer Pelni" ) {
-        $('#modal-escalation').modal('show');
-    } 
+    var isdata = false;
+    var TicketNumber = getParameterByName("ticketid");
+    $.ajax({
+        type: "POST",
+        url: "WebServiceGetDataMaster.asmx/UIDESK_CheckTrxJourneyEscalation",
+        data: "{TrxID:'" + TicketNumber + "'}",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+
+            var json = JSON.parse(data.d);
+         
+            if ($("#Journey_EscalationChannel").val() == "Yes" && $("#TrxLayerUser").val() == "Layer Pelni") {
+                if (json[0].countdata = "1")
+                    $('#DivUserEskalation').hide();
+                else
+                    $('#DivUserEskalation').show();
+
+                $('#modal-escalation').modal('show');
+              
+
+            }
+            else {
+                $('#DivUserEskalation').hide();
+            }
+               
+
+        },
+        error: function (xmlHttpRequest, textStatus, errorThrown) {
+            console.log(xmlHttpRequest.responseText);
+            console.log(textStatus);
+            console.log(errorThrown);
+        }
+    })
+  
 }

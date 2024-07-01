@@ -5691,4 +5691,32 @@ Public Class WebServiceGetDataMaster
         Dim js As JavaScriptSerializer = New JavaScriptSerializer()
         Return js.Serialize(listTickets)
     End Function
+    <WebMethod(EnableSession:=True)>
+    <ScriptMethod(UseHttpGet:=False, ResponseFormat:=ResponseFormat.Json)>
+    Public Function UIDESK_CheckTrxJourneyEscalation(ByVal TrxID As String) As String
+        Dim connstring As String = ConfigurationManager.ConnectionStrings("DefaultConnection").ConnectionString
+        Dim dt As DataTable = New DataTable()
+
+        Try
+            Using conn As SqlConnection = New SqlConnection(connstring)
+                conn.Open()
+                Dim sqlComm As SqlCommand = New SqlCommand("UIDESK_CheckTrxJourneyEscalation", conn)
+                sqlComm.Parameters.AddWithValue("@TrxTicketNumber", TrxID)
+
+                sqlComm.CommandType = CommandType.StoredProcedure
+                Dim da As SqlDataAdapter = New SqlDataAdapter()
+                Dim ds As DataSet = New DataSet()
+                da.SelectCommand = sqlComm
+                da.Fill(ds)
+                dt = ds.Tables(0)
+                conn.Close()
+            End Using
+        Catch ex As Exception
+            LogError(HttpContext.Current.Session("UserName"), ex, "")
+        Finally
+            LogSuccess(HttpContext.Current.Session("UserName"), "")
+        End Try
+        Dim tableJson As String = BigConvertDataTabletoString(dt)
+        Return tableJson
+    End Function
 End Class

@@ -23,7 +23,9 @@ Public Class XtraReportDetailConversation
         Dim queryInsert As String = "EXEC UIDESK_MULTICHAT_HISTORY '" & Param & "','" & Session("UserName") & "','" & Format(dt_strdate.Value, "yyyy-MM-dd") & "','" & Format(dt_endate.Value, "yyyy-MM-dd") & "'"
         com = New SqlCommand(queryInsert, con)
         Try
+
             con.Open()
+            com.CommandTimeout = 60
             com.ExecuteNonQuery()
             con.Close()
         Catch ex As Exception

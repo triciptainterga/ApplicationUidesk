@@ -57,7 +57,7 @@
                             <%--<dx:GridViewDataTextColumn Caption="Source_Chat" FieldName="code" Width="200px"></dx:GridViewDataTextColumn>--%>
                             <%--<dx:GridViewDataTextColumn Caption="Account" FieldName="AccountName" Width="200px"></dx:GridViewDataTextColumn>--%>
                             <dx:GridViewDataTextColumn Caption="Username" FieldName="Username" Width="250px"></dx:GridViewDataTextColumn>
-                            <dx:GridViewDataTextColumn Caption="User Type" FieldName="UserType" Width="250px"></dx:GridViewDataTextColumn>
+                            <dx:GridViewDataTextColumn Caption="User Type" FieldName="Agentname" Width="250px"></dx:GridViewDataTextColumn>
                             <%--<dx:GridViewDataTextColumn Caption="Status" FieldName="status" Width="200px"></dx:GridViewDataTextColumn>--%>
                             <%--<dx:GridViewDataTextColumn Caption="Role" FieldName="sender_type" Width="200px"></dx:GridViewDataTextColumn>--%>
                             <dx:GridViewDataTextColumn Caption="Message" Settings-AllowHeaderFilter="true" FieldName="message" Width="1000px"></dx:GridViewDataTextColumn>
