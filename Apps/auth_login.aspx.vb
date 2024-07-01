@@ -349,7 +349,7 @@ Public Class auth_login
         End If
         If Login_True = "YesExist" Then
             If Session("lvluser") = "Layer 1" Then
-                Response.Redirect("apps/2_taskboard.aspx?status=Open")
+                Response.Redirect("apps/2_taskboard.aspx?status=Open&api=1")
                 'Response.Redirect("apps/1_Thread.aspx?")
                 'Response.Redirect("apps/Tele_TrxTaskboard.aspx?")
             Else
