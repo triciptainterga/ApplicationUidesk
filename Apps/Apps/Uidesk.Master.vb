@@ -173,7 +173,15 @@ Public Class Uidesk
             End If
             Dim Parameter As String = String.Empty
             If _read("DivID") = "1" Then
-                Parameter = "&mid=" & _read("MenuID").ToString & ""
+                If Session("lvluser") = "Layer 1" Then
+                    If _read("MenuName") = "Log Out" Then
+                        Parameter = "&mid=" & _read("MenuID").ToString & "&user=" & Session("UserName") & "&token_agent=" & Session("MultiChatToken") & "&value=logout&token_company=" & Session("CompanyToken") & ""
+                    Else
+                        Parameter = "&mid=" & _read("MenuID").ToString & ""
+                    End If
+                Else
+                    Parameter = "&mid=" & _read("MenuID").ToString & ""
+                End If
             Else
                 Parameter = "?mid=" & _read("MenuID").ToString & ""
             End If
